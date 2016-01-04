@@ -1,4 +1,4 @@
-# Application Essay
+# Application Materials
 
 **Summary of new app idea: (max 500 words). You should consider how your app meets the aims of the challenge. How does it empower or support women in STEMM? What about the app is novel - what does it offer that is not already available? What experience/skills do you/your team possess that could help bring the app to life?**
 
@@ -25,3 +25,9 @@ On the surface, the STEMM Role Models app will provide a resource for conference
 [3]: http://anneslist.net
 [4]: http://thewomensroom.org.uk
 [5]: https://github.com/KirstieJane/STEMMRoleModels/blob/master/MeetTheTeam.md
+
+
+**If your app is shortlisted, our mentors can help you develop it before the Pitch and Prize Day at the RF mentoring event: please advise us on what help you need**
+
+We would benefit from support for application development and user interface design. We also appreciate that we are planning to solicit contact information and personal reviews, and would benefit from mentoring to ensure we meet all data protection requirements.
+
