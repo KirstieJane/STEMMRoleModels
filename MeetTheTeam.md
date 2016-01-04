@@ -1,6 +1,13 @@
 # Meet the Team
 
-## Kirstie Whitaker <img src="https://kirstiewhitaker.files.wordpress.com/2013/12/2012-11-06_1352162750.jpg" width="150" align="right"/>
-
+## Kirstie Whitaker
+<img src="https://kirstiewhitaker.files.wordpress.com/2013/12/2012-11-06_1352162750.jpg" width="150" align="right"/>
 The lead developer for the STEMM Role Models app is [Kirstie Whitaker](www.kirstiewhitaker.com). She's a postdoctoral researcher in the Department of Psychiatry at the University of Cambridge studying brain development during adolescence. Kirstie is the secretary of the [University of Cambridge Women's Staff Network](http://www.equality.admin.cam.ac.uk/diversity-networks/womens-staff-network) and a passionate advocate for the promotion of women and underrepresented minorities in STEMM fields. She coaches for [Codebar](https://codebar.io/) in Cambridge and co-organises the [Cambridge Women and Technology meetup group](http://www.meetup.com/Cambridge-Women-and-technology). She's excited to extend her coding skills to mobile app development and to empower women in all areas of Science, Technology, Engineering, Mathematics and Medicine.
-
+<BR CLEAR=ALL>
+## Amy Orsborn
+<img src="https://wp.nyu.edu/amyo/wp-content/uploads/sites/646/2014/09/IMG_20140627_124741-195x300.jpg" width="150" align="right"/>
+[Amy Orsborn](https://wp.nyu.edu/amyo/) is a postdoctoral researcher at New York University. Her research focuses on the application of engineering techniques to study the central nervous system and on developing tools to study neural signals at different spatial scales. She is a talented illustrator and has used her skills to communicate a [plethora of scientific findings](https://wp.nyu.edu/amyo/illustrations/). 
+<BR CLEAR=ALL>
+## Natalia Bilenko
+<img src="http://nbilenko.com/brain_still.png" width="150" align="right"/>
+[Natalia Bilenko](http://nbilenko.com/) is a graduate student at the University of California at Berkeley. She uses computational techniques and functional MRI to better understand how the brain responds to movies, speech and written text. Her interactive web projects include visualizations of [narrative structure](http://nbilenko.com/projects/narrative.html), [faculty affiliations](http://neuroscience.berkeley.edu/faculty-by-department/) and [scientific collaborations](http://nbilenko.com/bsr/collaborations/).
