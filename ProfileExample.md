@@ -17,7 +17,7 @@
 ## Role model summary:
 
 * [x] Woman
-* [ ] Non-white
+* [ ] Person of colour
 * [ ] LGBTQ
 * [ ] Person with disability
 * [ ] Non-traditional career path
