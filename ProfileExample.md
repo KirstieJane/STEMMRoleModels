@@ -7,11 +7,12 @@
 * *Current Dept/Institution/Company:* Department of Psychiatry, University of Cambridge
 * *Country:* UK
 
-## Research information:
+## Expertise:
 
 * *Field*: Neuroscience
 * *Specific field key words*: Developmental cognitive neuroimaging; MRI; fMRI; DTI; longitudinal analyses; reproducible and replicable research; emergence of psychiatric disorders; adolescence; network analyses; graph theory; cortical thickness; myelination; depression;
 * *Pubmed link*: http://www.ncbi.nlm.nih.gov/pubmed?term=Kirstie%20J%20Whitaker[Author]
+* *GitHub link*: https://github.com/KirstieJane
 * *ORCID*: http://orcid.org/0000-0001-8498-4059
 
 ## Role model summary:
