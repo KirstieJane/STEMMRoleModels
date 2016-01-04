@@ -1,8 +1,6 @@
 # Application Essay
 
-## Challenge 1
-
-Summary of new app idea: (max 500 words). You should consider how your app meets the aims of the challenge. How does it empower or support women in STEMM? What about the app is novel - what does it offer that is not already available? What experience/skills do you/your team possess that could help bring the app to life?
+**Summary of new app idea: (max 500 words). You should consider how your app meets the aims of the challenge. How does it empower or support women in STEMM? What about the app is novel - what does it offer that is not already available? What experience/skills do you/your team possess that could help bring the app to life?**
 
 Women are underrepresented as speakers at conferences even when taking into account the lower base rate of women working in STEMM fields [1]. Many explanations have been suggested to explain this paucity; implicit bias likely plays a role, and imposter syndrome may prevent women from applying or promoting themselves, but, more simply, selection committees simply do not know whom to contact outside the “usual suspects”.
 
@@ -16,10 +14,8 @@ All STEMM Role Models app development team members are women who have presented 
 
 On the surface, the STEMM Role Models app will provide a resource for conference organisers who are committed to overcoming their implicit biases and promoting a diverse representation at their event. But more profoundly, by encouraging the community to support its members it will empower women to overcome the effects of imposter syndrome and thrive in their careers.
 
-[1] http://biaswatchneuro.com
-[2] https://github.com/KirstieJane/STEMMRoleModels/blob/master/ProfileExample.md
-[3] http://anneslist.net
-[4] http://thewomensroom.org.uk
-[5] https://github.com/KirstieJane/STEMMRoleModels/blob/master/MeetTheTeam.md
-
-
+[1]: http://biaswatchneuro.com
+[2]: https://github.com/KirstieJane/STEMMRoleModels/blob/master/ProfileExample.md
+[3]: http://anneslist.net
+[4]: http://thewomensroom.org.uk
+[5]: https://github.com/KirstieJane/STEMMRoleModels/blob/master/MeetTheTeam.md
