@@ -4,7 +4,7 @@
 
 * *Highest academic degree:* PhD in Neuroscience
 * *Current job title:* Postdoctoral fellow
-* *Current Dept/Institution:* Department of Psychiatry, University of Cambridge
+* *Current Dept/Institution/Company:* Department of Psychiatry, University of Cambridge
 * *Country:* UK
 
 ## Research information:
