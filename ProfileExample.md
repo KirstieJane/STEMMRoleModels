@@ -11,7 +11,7 @@
 ## Research information:
 
 * *Field*: Neuroscience
-* *Specific field key words*: Developmental cognitive neuroimaging, MRI, fMRI, DTI, 
+* *Specific field key words*: Developmental cognitive neuroimaging; MRI; fMRI; DTI; longitudinal analyses; reproducible and replicable research; emergence of psychiatric disorders; adolescence; network analyses; graph theory; cortical thickness; myelination; depression;
 * *Pubmed Link*: http://www.ncbi.nlm.nih.gov/pubmed?term=Kirstie%20J%20Whitaker[Author]
 * *ORCID*: http://orcid.org/0000-0001-8498-4059
 
@@ -22,8 +22,8 @@
 * [ ] LGBTQ
 * [ ] Person with disability
 * [ ] Non-traditional career path
-* [ ] Other
-
+* [x] Other
+  * Studied abroad in Canada (Commonwealth scholarship) and USA (Fulbright scholarship) 
 
 ## Contact information:
 
