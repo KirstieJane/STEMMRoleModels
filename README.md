@@ -9,3 +9,7 @@ You can also see our [Lean Canvas business plan](https://app.leanstack.com/canva
 
 Any feedback can be provided by emailing Kirstie at kw401 AT cam DOT ac DOT uk, contacting her on [twitter](https://twitter.com/kirstie_j) or by [opening an issue](https://github.com/KirstieJane/STEMMRoleModels/issues) at this github repository.
 
+
+This project was developed as part of the Mozilla Working Open Workshop held in Berlin February 2016. 
+
+![](mozillascience.github.io/working-open-workshop/assets/images/science-fox.svg)
