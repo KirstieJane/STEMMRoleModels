@@ -1,5 +1,8 @@
-# STEMMRoleModels
-Code for STEMM Role Models App developed by Kirstie Whitaker as part of the Rosalind Franklin Appathon 2016.
+# STEMM Role Models App
+
+Inspire future generations by providing the most exciting and diverse speakers for your conference.
+
+GitHub is a platform that allows f for STEMM Role Models App developed by Kirstie Whitaker as part of the Rosalind Franklin Appathon 2016.
 
 Other team members are listed in the [MeetTheTeam.md](https://github.com/KirstieJane/STEMMRoleModels/blob/master/MeetTheTeam.md) markdown file.
 
