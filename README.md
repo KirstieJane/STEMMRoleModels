@@ -12,4 +12,4 @@ Any feedback can be provided by emailing Kirstie at kw401 AT cam DOT ac DOT uk, 
 
 This project was developed as part of the Mozilla Working Open Workshop held in Berlin February 2016. 
 
-![](mozillascience.github.io/working-open-workshop/assets/images/science-fox.svg)
+![](http://mozillascience.github.io/working-open-workshop/assets/images/science-fox.svg)
