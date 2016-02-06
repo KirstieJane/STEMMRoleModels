@@ -16,6 +16,7 @@ This document (the README) is a hub to give you a bit more information about the
 * [What do we need?](#what-do-we-need)
 * [How can you get involved?](#get-involved)
 * [How can you find out more?](#find-out-more)
+* [Glossary](#glossary)
 
 ## What are we doing?
 
@@ -33,7 +34,9 @@ The STEMM Role Models app will:
 
 * Improve visibility for researchers and developers by making a database that is easy to search with customizable keywords
 * Allow anyone to add researchers so the database can grow without relying on women promoting themselves
-* Provide information that is useful for making decisions on key note invitations such as links to blogs, social media, journal articles, youtube clips, previous invited presentations
+* Provide information that is useful for making decisions on key note invitations such as links to blogs, social media, journal articles, youtube clips, a list of previous invited presentations and testimonals.
+
+Everyone in the database will have the opportunity to identify themselves as one or more of a selection of different under-represented groups in STEMM. The goal is to ensure that ***conference organisers are able to access a diverse and representative group of the most exciting researchers in their field around the world***.
 
 ## Who are we?
 
@@ -82,6 +85,15 @@ And of course, you'll want to know our:
 ## Contact us
 
 If you want to report a problem or suggest an enhancement we'd love for you to [open an issue](../../issues) at this github repository because then we can get right on it. But you can also contact [Kirstie][link_kirstiejane] by email (look underneath her picture) or on [twitter](https://twitter.com/kirstie_j).
+
+## Glossary
+
+* **STEMM**: Science, technology, engineering, mathematics and medicine
+* **README file**: a document that introduces an open project to the public and any potential contributors
+* **repository** or **repo**: a collection of documents related to your project, in which you create and save new code or content
+* **Roadmap**: a document outlining the schedule of work to be done on a project
+* **Milestone**: an event or state marking a specific stage in development on the project
+* **Issue**: the GitHub term for tasks, enhancements, and bugs for your projects
 
 ## Thank you
 
