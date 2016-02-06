@@ -2,7 +2,47 @@
 
 Inspire future generations by providing the most exciting and diverse speakers for your conference.
 
-## Where we came from
+
+## Welcome!
+
+First and foremost, Welcome! Willkommen! Bienvenue!
+
+Thank you for visiting the STEMM role models project repository.
+
+This document (the README) is a hub to give you a bit more information about the project. Jump straight to one of the sections below, or just scroll down to find out more.
+
+* [What are we doing? And why?](#what-are-we-doing)
+* [Who are we?](#who-are-we)
+* [What do we need?](#what-do-we-need)
+* [How can you get involved?](#get-involved)
+* [How can you find out more?](#find-out-more)
+
+## What are we doing?
+
+Show what you're doing, for who, and why.
+
+Explain what makes your project special, useful, exciting!
+
+## Who are we?
+
+Show how to get started using or contribution to the project
+
+
+## What do we need?
+
+State what resources and contributions you're looking for
+
+
+## Get involved
+
+Code of conduct link
+
+## Find out more
+
+Point to other key resources, such as a contributing.md file and a roadmap.
+
+
+***
 
 The organisers of the Rosalind Franklin Appathon 
 
