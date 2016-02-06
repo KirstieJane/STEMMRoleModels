@@ -16,7 +16,7 @@ This document (the README file) is a hub to give you some information about the 
 * [What do we need?](#what-do-we-need)
 * [How can you get involved?](#get-involved)
 * [Get in touch](#contact-us)
-* [Find out more?](#find-out-more)
+* [Find out more](#find-out-more)
 * [Understand the jargon](#glossary)
 
 ## What are we doing?
@@ -87,9 +87,13 @@ You might be interested in:
 
 And of course, you'll want to know our:
 
-* [Contributers' guidlines](CONTRIBUTING.md)
+* [Contributers' guidelines](CONTRIBUTING.md)
 * [Roadmap](../../issues/1)
 
+
+## Thank you
+
+Thank you so much (Danke shone! Merci beaucoup!) for visiting the project and we do hope that you'll join us on this amazing journey to support women and other under-represented groups in STEMM.
 
 ## Glossary
 
@@ -100,9 +104,6 @@ And of course, you'll want to know our:
 * **Milestone**: an event or state marking a specific stage in development on the project
 * **Issue**: the GitHub term for tasks, enhancements, and bugs for your projects
 
-## Thank you
-
-Thank you so much (danke shone! merci beaucoup!) for visiting the project and we do hope that you'll join us on this amazing journey to support women and other under-represented groups in STEMM.
 
 [link_ucberkeley]: http://www.berkeley.edu/
 [link_kirstiejane]: https://github.com/KirstieJane
