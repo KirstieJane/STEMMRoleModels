@@ -15,8 +15,9 @@ This document (the README file) is a hub to give you some information about the 
 * [Who are we?](#who-are-we)
 * [What do we need?](#what-do-we-need)
 * [How can you get involved?](#get-involved)
-* [How can you find out more?](#find-out-more)
-* [Glossary](#glossary)
+* [Get in touch](#contact-us)
+* [Find out more?](#find-out-more)
+* [Understand the jargon](#glossary)
 
 ## What are we doing?
 
@@ -62,11 +63,19 @@ We need expertise in fundraising, app development, user experience design, datab
 
 We'd love your feedback along the way, and of course, we'd love you to be **in the database** once it exists.
 
+Our primary goal is to support women in STEMM and while the app is aimed at conference organisers, we're excited to plug another hole in the leaky pipeline by supporting the professional development of any and all of our contributers. If you're looking to learn to code, try out working collaboratively, get some experience writing grant applications or translate you skills to the digital domain, we're here to help.
+
 ## Get involved
 
-If you think you can help in any of the areas listed above (and I bet you can) or in any of the many areas that we haven't yet thought of (and here I'm *sure* you can) then please check out our [contributers' guidelines](CONTRIBUTING.md) and our [roadmap](../../issues/1).
+If you think you can help in any of the areas listed above (and we bet you can) or in any of the many areas that we haven't yet thought of (and here we're *sure* you can) then please check out our [contributers' guidelines](CONTRIBUTING.md) and our [roadmap](../../issues/1).
 
 Please note that it's very important to us that we maintain a positive and supportive enviroment for everyone who wants to participate. When you join us we ask that you follow our [code of conduct](CODE_OF_CONDUCT.md) in all interactions both on and offline.
+
+
+## Contact us
+
+If you want to report a problem or suggest an enhancement we'd love for you to [open an issue](../../issues) at this github repository because then we can get right on it. But you can also contact [Kirstie][link_kirstiejane] by email (kw401 AT cam DOT ac DOT uk) or on [twitter](https://twitter.com/kirstie_j).
+
 
 ## Find out more
 
@@ -81,10 +90,6 @@ And of course, you'll want to know our:
 * [Contributers' guidlines](CONTRIBUTING.md)
 * [Roadmap](../../issues/1)
 
-
-## Contact us
-
-If you want to report a problem or suggest an enhancement we'd love for you to [open an issue](../../issues) at this github repository because then we can get right on it. But you can also contact [Kirstie][link_kirstiejane] by email (look underneath her picture) or on [twitter](https://twitter.com/kirstie_j).
 
 ## Glossary
 
