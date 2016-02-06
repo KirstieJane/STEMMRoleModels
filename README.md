@@ -36,7 +36,7 @@ The STEMM Role Models app will:
 * Allow anyone to add researchers so the database can grow without relying on women promoting themselves
 * Provide information that is useful for making decisions on key note invitations such as links to blogs, social media, journal articles, youtube clips, a list of previous invited presentations and testimonals.
 
-Everyone in the database will have the opportunity to identify themselves as one or more of a selection of different under-represented groups in STEMM. The goal is to ensure that ***conference organisers are able to access a diverse and representative group of the most exciting researchers in their field around the world***.
+Everyone in the database will have the opportunity to identify themselves as one or more of a selection of different under-represented groups in STEMM. The goal is to ensure that ***conference organisers are able to access a diverse and representative group of the most exciting researchers in their field from around the world***.
 
 ## Who are we?
 
