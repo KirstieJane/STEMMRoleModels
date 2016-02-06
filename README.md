@@ -1,6 +1,6 @@
 # STEMM Role Models App
 
-Inspire future generations by providing the most exciting and diverse speakers for your conference.
+***Inspire future generations by providing the most exciting and diverse speakers for your conference.***
 
 
 ## Welcome!
@@ -9,7 +9,7 @@ First and foremost, Welcome! :tada: Willkommen! :confetti_ball: Bienvenue! :ball
 
 Thank you for visiting the STEMM Role Models app project repository.
 
-This document (the README) is a hub to give you a bit more information about the project. Jump straight to one of the sections below, or just scroll down to find out more.
+This document (the README file) is a hub to give you some information about the project. Jump straight to one of the sections below, or just scroll down to find out more.
 
 * [What are we doing? And why?](#what-are-we-doing)
 * [Who are we?](#who-are-we)
@@ -72,8 +72,8 @@ Please note that it's very important to us that we maintain a positive and suppo
 
 You might be interested in:
 
-* Our original application to the Rosalind Franklin Appathon: (ApplicationMaterials/RFAppathon/ApplicationMaterials_FirstRound.md)
-* An example profile: [application_materials/RFAppathon/ProfileExample.md]
+* Our original application to the Rosalind Franklin Appathon: [ApplicationMaterials_FirstRound.md](ApplicationMaterials/RFAppathon/ApplicationMaterials_FirstRound.md)
+* An example profile: [ProfileExample.md](ProfileExample.md)
 * Our [Lean Canvas business plan][link_leancanvas]
 
 And of course, you'll want to know our:
