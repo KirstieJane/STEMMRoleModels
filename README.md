@@ -7,7 +7,7 @@ Inspire future generations by providing the most exciting and diverse speakers f
 
 First and foremost, Welcome! :tada: Willkommen! :confetti_ball: Bienvenue! :balloon::balloon::balloon:
 
-Thank you for visiting the STEMM role models project repository.
+Thank you for visiting the STEMM Role Models app project repository.
 
 This document (the README) is a hub to give you a bit more information about the project. Jump straight to one of the sections below, or just scroll down to find out more.
 
