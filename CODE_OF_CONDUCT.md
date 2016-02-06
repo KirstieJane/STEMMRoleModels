@@ -1,10 +1,10 @@
 # Code of Conduct
 
-We value the participation of every member of our community and want to ensure an enjoyable and fulfilling experience for all. Accordingly, everyone who participates in the development of the STEMM Role Models app are expected to show respect and courtesy to other community members at all time.
+We value the participation of every member of our community and want to ensure an that every contributer has an enjoyable and fulfilling experience. Accordingly, everyone who participates in the development of the STEMM Role Models app is expected to show respect and courtesy to other community members at all time.
 
-The STEMM Role Models app development team is dedicated to a ***harassment-free experience for everyone***, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age or religion. We do not tolerate harassment by and/or of members of our community in any form.
+The STEMM Role Models app development team are dedicated to a ***harassment-free experience for everyone***, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age or religion. **We do not tolerate harassment by and/or of members of our community in any form**.
 
-We are particularly motivated to support new and/or anxious contributers, people who are looking to learn and develop their skills and anyone who has experienced discimination in the past. 
+We are particularly motivated to support new and/or anxious contributers, people who are looking to learn and develop their skills, and anyone who has experienced discimination in the past. 
 
 To make clear what is expected, we ask all members of the community to conform to the following Code of Conduct.
 
