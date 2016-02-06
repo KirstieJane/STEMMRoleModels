@@ -5,7 +5,7 @@ Inspire future generations by providing the most exciting and diverse speakers f
 
 ## Welcome!
 
-First and foremost, Welcome! Willkommen! Bienvenue!
+First and foremost, Welcome! :tada: Willkommen! :confetti_ball: Bienvenue! :balloon::balloon::balloon:
 
 Thank you for visiting the STEMM role models project repository.
 
@@ -27,7 +27,7 @@ Explain what makes your project special, useful, exciting!
 
 The founders of the STEMM Role Models app - [Kirstie][link_KirstieJane], Amy, Natalia, Erin and Elizabeth - are friends from their time in graduate school at [UC Berkeley][link_ucberkeley]. There's more information about them (and some pictures) in the [MeetTheTeam](MeetTheTeam.md) file.
 
-The development of this app is mentored by the team behind the [Rosalind Franklin Appathon][link_rfappapthon] - a challenge launched in 2015 to find and support the development of new mobile phone apps to empower women in STEMM. The competition is funded by the [Royal Society's Rosalind Franklin award][link_royalsociety_rfaward] which was won in 2014 by the head of Prof [Rachel McKendry][link_rachelmckendry]. Check out her [awesome lecture][link_rachelmckendry_talk] on _Harnessing the power of mobile phones and big data for global health_.
+The development of this app is mentored by the team behind the [Rosalind Franklin Appathon][link_rfappapthon] - a challenge launched in 2015 to find and support the development of new mobile phone apps to empower women in STEMM. The competition is funded by the [Royal Society's Rosalind Franklin award][link_royalsociety_rfaward] which was won in 2014 by the Prof [Rachel McKendry][link_rachelmckendry]. Check out her [awesome lecture][link_rachelmckendry_talk] on _Harnessing the power of mobile phones and big data for global health_.
 
 <a href="https://www.mozillascience.org/about">
   <img 
@@ -37,7 +37,7 @@ The development of this app is mentored by the team behind the [Rosalind Frankli
   </img>
 </a>
 
-[Kirstie][link_kirstiejane] is an invited member of the inaugural [Open Leaders Cohort][link_openleaderscohort] of the [Mozilla Science Lab][link_mozsci]. They brought together open science advocates from around the world to participate in the first [Working Open Workshop][link_mozwow] in Berlin in February 2016. The [training exercises][link_mozwow] (which are free and easy to reuse) focused on how to build and effectively engage communities so they can work together to develop tools and resources for the greater good.
+[Kirstie][link_kirstiejane] is an invited member of the inaugural [Open Leaders Cohort][link_openleaderscohort] of the [Mozilla Science Lab][link_mozsci] who brought together open science advocates from around the world to participate in the first [Working Open Workshop][link_mozwow] in Berlin in February 2016. The [training exercises][link_mozwow] (which are free and easy to reuse) focused on how to build and effectively engage communities so they can work together to develop tools and resources for the greater good.
 
 ## What do we need?
 
