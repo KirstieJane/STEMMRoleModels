@@ -2,7 +2,11 @@
 
 Inspire future generations by providing the most exciting and diverse speakers for your conference.
 
-GitHub is a platform that allows f for STEMM Role Models App developed by Kirstie Whitaker as part of the Rosalind Franklin Appathon 2016.
+## Where we came from
+
+The organisers of the Rosalind Franklin Appathon 
+
+GitHub is a platform that allows open collaboration along with super snazzy version control. This STEMM Role Models App repository was created by Kirstie Whitaker but everyone is welcome to join.
 
 Other team members are listed in the [MeetTheTeam.md](https://github.com/KirstieJane/STEMMRoleModels/blob/master/MeetTheTeam.md) markdown file.
 
