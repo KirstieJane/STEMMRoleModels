@@ -19,9 +19,21 @@ This document (the README) is a hub to give you a bit more information about the
 
 ## What are we doing?
 
-Show what you're doing, for who, and why.
+### The problem
 
-Explain what makes your project special, useful, exciting!
+* Women and other minorities are less likely to be invited to speak at academic and tech conferences
+* Women are less likely to promote themselves: they are more likely to suffer from the [imposter syndrome][link_impostersyndrome]
+* It's difficult for conference organisers to know how good an invited speaker will be if they haven't seen them present before
+
+So, if even the very best intentioned conference organisers (who know the powerful and supportive effects that seeing a diverse panel of presenters have for under-represented groups) have mostly seen presentations by (straight, white, cis-gendered) men then they're likely to invite men again. And so the cycle continues.
+
+### The solution
+
+The STEMM Role Models app will:
+
+* Improve visibility for researchers and developers by making a database that is easy to search with customizable keywords
+* Allow anyone to add researchers so the database can grow without relying on women promoting themselves
+* Provide information that is useful for making decisions on key note invitations such as links to blogs, social media, journal articles, youtube clips, previous invited presentations
 
 ## Who are we?
 
@@ -41,7 +53,7 @@ The development of this app is mentored by the team behind the [Rosalind Frankli
 
 ## What do we need?
 
-You! In whatever way you can help.
+**You**! In whatever way you can help.
 
 We need expertise in fundraising, app development, user experience design, database maintenance (particularly ensuring the highest quality data protection plans are in place), software sustainability, documentation and technical writing and project management.
 
@@ -49,27 +61,27 @@ We'd love your feedback along the way, and of course, we'd love you to be **in t
 
 ## Get involved
 
-If you think you can help in any of the areas listed above (and I bet you can) or in any of the many areas that we haven't yet thought of (and here I'm *sure* you can) then please check out our [contributers' guidelines][CONTRIBUTING.md] and our [roadmap][../../issues/1].
+If you think you can help in any of the areas listed above (and I bet you can) or in any of the many areas that we haven't yet thought of (and here I'm *sure* you can) then please check out our [contributers' guidelines](CONTRIBUTING.md) and our [roadmap](../../issues/1).
 
-Please note that it's very important to us that we maintain a positive and supportive enviroment for everyone who wants to participate. When you join us we ask that you follow our [code of conduct][CODE_OF_CONDUCT.md] in all interactions both on and offline.
+Please note that it's very important to us that we maintain a positive and supportive enviroment for everyone who wants to participate. When you join us we ask that you follow our [code of conduct](CODE_OF_CONDUCT.md) in all interactions both on and offline.
 
 ## Find out more
 
 You might be interested in:
 
-* Our original application to the Rosalind Franklin Appathon: [application_materials/RFAppathon/FirstRound.md]
+* Our original application to the Rosalind Franklin Appathon: (ApplicationMaterials/RFAppathon/ApplicationMaterials_FirstRound.md)
 * An example profile: [application_materials/RFAppathon/ProfileExample.md]
 * Our [Lean Canvas business plan][link_leancanvas]
 
 And of course, you'll want to know our:
 
-* [Contributers' guidlines][CONTRIBUTING.md]
-* [Roadmap][../../issues/1]
+* [Contributers' guidlines](CONTRIBUTING.md)
+* [Roadmap](../../issues/1)
 
 
 ## Contact us
 
-If you want to report a problem or suggest an enhancement we'd love for you to [open an issue][../../issues] at this github repository because then we can get right on it. But you can also contact [Kirstie][link_kirstiejane] by email (look underneath her picture) or on [twitter](https://twitter.com/kirstie_j).
+If you want to report a problem or suggest an enhancement we'd love for you to [open an issue](../../issues) at this github repository because then we can get right on it. But you can also contact [Kirstie][link_kirstiejane] by email (look underneath her picture) or on [twitter](https://twitter.com/kirstie_j).
 
 ## Thank you
 
@@ -86,3 +98,4 @@ Thank you so much (danke shone! merci beaucoup!) for visiting the project and we
 [link_mozwow]: http://mozillascience.github.io/working-open-workshop/index.html
 [link_researchfox]: http://mozillascience.github.io/working-open-workshop/assets/images/science-fox.svg
 [link_leancanvas]: https://app.leanstack.com/canvases/p/2e4a5016-7fb5-4c77-b1cf-ed65518b7603
+[link_impostersyndrome]: https://en.wikipedia.org/wiki/Impostor_syndrome
