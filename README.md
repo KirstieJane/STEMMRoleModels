@@ -93,7 +93,7 @@ And of course, you'll want to know our:
 
 ## Thank you
 
-Thank you so much (Danke shone! Merci beaucoup!) for visiting the project and we do hope that you'll join us on this amazing journey to support women and other under-represented groups in STEMM.
+Thank you so much (Danke schön! Merci beaucoup!) for visiting the project and we do hope that you'll join us on this amazing journey to support women and other under-represented groups in STEMM.
 
 ## Glossary
 
