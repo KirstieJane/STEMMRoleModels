@@ -50,11 +50,11 @@ Instructions on submitting a pull request coming soon.
 
 ## Who's involved
 
-You can meet the leadership team in the [Meet the Team][link_meettheteam] file but we haven't yet implemented a protocol ot officially list our contributers. Stay tuned, or give us your suggestions at the [how should we acknoweldge our contributers][link_howacknowledge] issue!
+You can meet the leadership team in the [Meet the Team][link_meettheteam] file but we haven't yet implemented a protocol to officially list our contributers. Stay tuned, or give us your suggestions at the [how should we acknowledge our contributers][link_howacknowledge] issue!
 
 ## How we say thank you
 
-We haven't yet implemented a protocol to offically acknowedge people who join us. Stay tuned, or give us your suggestions at the [how should we acknoweldge our contributers][link_howacknowledge] issue!
+We haven't yet implemented a protocol to offically acknowedge people who join us. Stay tuned, or give us your suggestions at the [how should we acknowledge our contributers][link_howacknowledge] issue!
 
 ## How to get in touch
 
