@@ -41,7 +41,7 @@ Everyone in the database will have the opportunity to identify themselves as one
 
 ## Who are we?
 
-The founders of the STEMM Role Models app - [Kirstie][link_KirstieJane], Amy, Natalia, Erin and Elizabeth - are friends from their time in graduate school at [UC Berkeley][link_ucberkeley]. There's more information about them (and some pictures) in the [MeetTheTeam](MeetTheTeam.md) file.
+The founders of the STEMM Role Models app - [Kirstie][link_KirstieJane], Amy, [Erin][link_Erin] and [Elizabeth][link_Elizabeth] - are friends from their time in graduate school at [UC Berkeley][link_ucberkeley]. There's more information about them (and some pictures) in the [MeetTheTeam](MeetTheTeam.md) file.
 
 The development of this app is mentored by the team behind the [Rosalind Franklin Appathon][link_rfappapthon] - a challenge launched in 2015 to find and support the development of new mobile phone apps to empower women in STEMM. The competition is funded by the [Royal Society's Rosalind Franklin award][link_royalsociety_rfaward] which was won in 2014 by the Prof [Rachel McKendry][link_rachelmckendry]. Check out her [awesome lecture][link_rachelmckendry_talk] on _Harnessing the power of mobile phones and big data for global health_.
 
@@ -107,6 +107,8 @@ Thank you so much (Danke schön! Merci beaucoup!) for visiting the project and w
 
 [link_ucberkeley]: http://www.berkeley.edu/
 [link_kirstiejane]: https://github.com/KirstieJane
+[link_erin]: https://github.com/erich001
+[link_elizabeth]: https://github.com/elizabethjm
 [link_rfappapthon]: http://www.rfappathon.org/
 [link_royalsociety_rfaward]: https://royalsociety.org/grants-schemes-awards/awards/rosalind-franklin-award/ 
 [link_rachelmckendry]: https://www.ucl.ac.uk/tb/people/steering-group/rachel-mckendry
