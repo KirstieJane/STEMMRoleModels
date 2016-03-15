@@ -1,9 +1,8 @@
 # STEMM Role Models App
 
-[![Join the chat at https://gitter.im/KirstieJane/STEMMRoleModels](https://badges.gitter.im/KirstieJane/STEMMRoleModels.svg)](https://gitter.im/KirstieJane/STEMMRoleModels?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 ***Inspire future generations by providing the most exciting and diverse speakers for your conference.***
 
+[![Join the chat at https://gitter.im/KirstieJane/STEMMRoleModels](https://badges.gitter.im/KirstieJane/STEMMRoleModels.svg)](https://gitter.im/KirstieJane/STEMMRoleModels?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Welcome!
 
