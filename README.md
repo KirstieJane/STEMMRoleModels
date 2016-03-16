@@ -77,12 +77,13 @@ Please note that it's very important to us that we maintain a positive and suppo
 
 If you want to report a problem or suggest an enhancement we'd love for you to [open an issue](../../issues) at this github repository because then we can get right on it. But you can also contact [Kirstie][link_kirstiejane] by email (kw401 AT cam DOT ac DOT uk) or on [twitter](https://twitter.com/kirstie_j).
 
+You can also hang out, ask questions and share stories in the [STEMMRoleModels room](https://gitter.im/KirstieJane/STEMMRoleModels) on Gitter.
 
 ## Find out more
 
 You might be interested in:
 
-* Our original application to the Rosalind Franklin Appathon: [ApplicationMaterials_FirstRound.md](ApplicationMaterials/RFAppathon/ApplicationMaterials_FirstRound.md)
+* Our applications to the Rosalind Franklin Appathon: [ApplicationMaterials_FirstRound.md](ApplicationMaterials/RFAppathon/ApplicationMaterials_FirstRound.md) and [ApplicationMaterials_SecondRound.md](ApplicationMaterials/RFAppathon/ApplicationMaterials_SecondRound.md)
 * An example profile: [ProfileExample.md](ProfileExample.md)
 * Our [Lean Canvas business plan][link_leancanvas]
 
