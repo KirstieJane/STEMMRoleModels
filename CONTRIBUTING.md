@@ -20,7 +20,7 @@ You can find all currently open conversations under the [issues tab][link_issues
 
 The current list of labels are [here][link_labels] and include:
 
-* [Question][link_question]: This label highlights all issues that are questions and is a great place to start. Whomever has opened the issue wants to hear from you! 
+* [https://img.shields.io/badge/label-question-d4c5f9.svg][link_question]: This label highlights all issues that are questions and is a great place to start. Whomever has opened the issue wants to hear from you! 
   * To reply, read the question and then put your opinions in a comment.
   * These opinions can be:
     * a thumbs up (:thumbsup:) if you're loving what you see (check out this [cheat sheet][link_emojis] for other emojis that you might like)
