@@ -20,7 +20,7 @@ You can find all currently open conversations under the [issues tab][link_issues
 
 The current list of labels are [here][link_labels] and include:
 
-* [![Question](https://img.shields.io/badge/lab-question-cc317c.svg)][link_question] Issues that are questions
+* [![Question](https://img.shields.io/badge/-question-cc317c.svg)][link_question] Issues that are questions
   * This is a great place to start. Whomever has opened the issue wants to hear from you! 
   * To reply, read the question and then respond.
     * If you want just agree with everything you can [react to the post][link_react] with one of :+1: :smile: :thinking_face: :heart: :tada:
@@ -32,31 +32,31 @@ The current list of labels are [here][link_labels] and include:
         * Before you do, take a breath and make sure that your question is related (could it be a new issue instead?)
         * If you're confident you're in the right place, then ask away :smiley:
 
-* [![Applications](https://img.shields.io/badge/lab-applications-d4c5f9.svg)][link_applications] Issues concerning applications.
+* [![Applications](https://img.shields.io/badge/-applications-d4c5f9.svg)][link_applications] Issues concerning applications.
   * Applications can include suggestions for future applications or a to do list for ongoing applications
   * The label is intentionally broad: applications can be for anything from funding or membership of workshops etc
 
-* [![No Code](https://img.shields.io/badge/label-no%20code-207de5.svg)][link_nocode]: This label highlights all issues that don't require any coding knowledge
+* [![No Code](https://img.shields.io/badge/-no%20code-207de5.svg)][link_nocode]: This label highlights all issues that don't require any coding knowledge
   * If you're looking to contribute but aren't very confident in your coding skills these issues are a great place to start.
   * All issues with the no code label are asking for feedback or suggestions
 
-* [![Help Wanted](https://img.shields.io/badge/label-help%20wanted-159818.svg)][link_helpwanted]: This label highlights all issues where a member of the team has determined that we need additional help
+* [![Help Wanted](https://img.shields.io/badge/-help%20wanted-159818.svg)][link_helpwanted]: This label highlights all issues where a member of the team has determined that we need additional help
   * If you have particular skills these are a great place to offer them
   * If you aren't sure what to offer, you could also recommend issues to your friends/colleagues who may be able to help
   
-* [![Bugs](https://img.shields.io/badge/label-bugs-fc2929.svg)][link_bugs]: this label highlights all issues that are pointing to problems in the project
+* [![Bugs](https://img.shields.io/badge/-bugs-fc2929.svg)][link_bugs]: this label highlights all issues that are pointing to problems in the project
   * If you find a bug, please give as much detail as possible in your issue
   * If you experience the same bug as one already listed, please add any additional information that you have as a comment
 
-* [![Requests](https://img.shields.io/badge/label-bugs-fbca04.svg)][link_requests]: this label highlights all issues that are asking for features (or anything else) to be added to the project
+* [![Requests](https://img.shields.io/badge/-bugs-fbca04.svg)][link_requests]: this label highlights all issues that are asking for features (or anything else) to be added to the project
   * If you have a good idea and would like to see it implemented in the STEMM Role Models project please open a new issue and add in as much detail as possible
   * Please try to make sure that your feature is distinct from any others that have already been requested or implemented. If you find one that's similar but there are subtle differences please reference the other request in your issue
 
-* [![Front end development](https://img.shields.io/badge/label-front%20end%20dev-f7c6c7.svg)][link_frontenddev]: Issues related front end development 
-  * From [wikipedia](https://en.wikipedia.org/wiki/Front_end_development): front end development, also known as client side development, is the practice of producing HTML, CSS and JavaScript for a website or web application so that a user can see and interact with them directly.
+* [![Front end development](https://img.shields.io/badge/-front%20end%20dev-f7c6c7.svg)][link_frontenddev]: Issues related front end development 
+  * From [wikipedia][link_frontenddev_wiki]: front end development, also known as client side development, is the practice of producing HTML, CSS and JavaScript for a website or web application so that a user can see and interact with them directly.
   * These issues are likely to be asking for help from experts, either in terms of submitting or reviewing code, or simply providing guidance and advice.
 
-* [![Get Together](https://img.shields.io/badge/label-get%20together-fef2c0.svg)][link_gettogether]: Issues related to planning any meetings "in real life".
+* [![Get Together](https://img.shields.io/badge/-get%20together-fef2c0.svg)][link_gettogether]: Issues related to planning any meetings "in real life".
   * If you have experience coordinating events and want to make sure we don't fall into common pitfalls please check out these issues and share your thoughts.
 
 ## Make a change
@@ -92,3 +92,4 @@ If you have a question we'd love for you to open an issue because that will be o
 [link_emojis]: http://www.emoji-cheat-sheet.com/
 [link_meettheteam]: https://github.com/KirstieJane/STEMMRoleModels/blob/master/MeetTheTeam.md
 [link_howacknowledge]: https://github.com/KirstieJane/STEMMRoleModels/issues/10
+[link_frontenddev_wiki]: https://en.wikipedia.org/wiki/Front_end_development
