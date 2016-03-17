@@ -8,7 +8,11 @@ Before you start you'll need to set up a free [GitHub][link_github] account and 
 
 ## Share your thoughts
 
-Although GitHub calls them **issues**, we'd like you to think of them as **conversation starters**. They're our way of communicating across all the members of the team (and if you're here you are a member of the STEMM Role Models team). The can be [questions][link_question], [bugs][link_bugs], [requests][link_requests], [applications][link_applications] or a myriad of other suggestions.
+Although GitHub calls them **issues**, we'd like you to think of them as **conversation starters**. They're our way of communicating across all the members of the team.
+
+(If you're here you ***already are*** a member of the STEMM Role Models team.)
+
+Your thoughts can be [questions][link_question], [bugs][link_bugs], [requests][link_requests], [applications][link_applications] or a myriad of other suggestions. In the next section we'll talk through some of the labels on each issue to help you select the ones you'd most like to help with.
 
 ### Labels
 
