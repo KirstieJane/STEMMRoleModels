@@ -20,7 +20,7 @@ You can find all currently open conversations under the [issues tab][link_issues
 
 The current list of labels are [here][link_labels] and include:
 
-* ![[https://img.shields.io/badge/label-question-d4c5f9.svg][link_question]]: This label highlights all issues that are questions and is a great place to start. Whomever has opened the issue wants to hear from you! 
+* [![Question](https://img.shields.io/badge/label-question-d4c5f9.svg)][link_question] This label highlights all issues that are questions and is a great place to start. Whomever has opened the issue wants to hear from you! 
   * To reply, read the question and then put your opinions in a comment.
   * These opinions can be:
     * a thumbs up (:thumbsup:) if you're loving what you see (check out this [cheat sheet][link_emojis] for other emojis that you might like)
@@ -28,11 +28,11 @@ The current list of labels are [here][link_labels] and include:
     * or you could ask for a clarification
   * If you'd like to posit an additional question take a breath and make sure that your question is related (could it be a new issue instead?) and if you're confident you're in the right place, then ask away :smiley:
 
-* [Applications][link_applications]: This label highlights all issues concerning applications.
+* [![Applications](https://img.shields.io/badge/label-applications-d4c5f9.svg)][link_applications]: This label highlights all issues concerning applications.
   * Applications can include suggestions for future applications or a to do list for ongoing applications
   * The label is intentionally broad: applications can be for anything from funding or membership of workshops etc
 
-* [No Code][link_nocode]: This label highlights all issues that don't require any coding knowledge
+* [![No Code](https://img.shields.io/badge/label-no%20code-d4c5f9.svg)][link_nocode]: This label highlights all issues that don't require any coding knowledge
   * If you're looking to contribute but aren't very confident in your coding skills these issues are a great place to start.
   * All issues with the no code label are asking for feedback or suggestions
 
