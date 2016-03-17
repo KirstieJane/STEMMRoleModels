@@ -64,11 +64,11 @@ We need expertise in fundraising, app development, user experience design, datab
 
 We'd love your feedback along the way, and of course, we'd love you to be **in the database** once it exists.
 
-Our primary goal is to support women in STEMM and while the app is aimed at conference organisers, we're excited to plug another hole in the leaky pipeline by supporting the professional development of any and all of our contributers. If you're looking to learn to code, try out working collaboratively, get some experience writing grant applications or translate you skills to the digital domain, we're here to help.
+Our primary goal is to support women in STEMM and while the app is aimed at conference organisers, we're excited to plug another hole in the leaky pipeline by supporting the professional development of any and all of our contributors. If you're looking to learn to code, try out working collaboratively, get some experience writing grant applications or translate you skills to the digital domain, we're here to help.
 
 ## Get involved
 
-If you think you can help in any of the areas listed above (and we bet you can) or in any of the many areas that we haven't yet thought of (and here we're *sure* you can) then please check out our [contributers' guidelines](CONTRIBUTING.md) and our [roadmap](../../issues/1).
+If you think you can help in any of the areas listed above (and we bet you can) or in any of the many areas that we haven't yet thought of (and here we're *sure* you can) then please check out our [contributors' guidelines](CONTRIBUTING.md) and our [roadmap](../../issues/1).
 
 Please note that it's very important to us that we maintain a positive and supportive enviroment for everyone who wants to participate. When you join us we ask that you follow our [code of conduct](CODE_OF_CONDUCT.md) in all interactions both on and offline.
 
@@ -89,7 +89,7 @@ You might be interested in:
 
 And of course, you'll want to know our:
 
-* [Contributers' guidelines](CONTRIBUTING.md)
+* [Contributors' guidelines](CONTRIBUTING.md)
 * [Roadmap](../../issues/1)
 
 
