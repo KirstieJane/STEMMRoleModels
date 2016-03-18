@@ -137,6 +137,8 @@ If you have a question or a comment we'd love for you to [open an issue][link_is
 
 If you'd prefer to email the [leadership team][link_meettheteam] file you can contact [Kirstie](https://github.com/KirstieJane) at kw401 AT cam DOT ac DOT uk. She's a postdoc who isn't currently paid to develop this app, so please be gentle in your correspondence and give her a couple of days to reply. If she doesn't reply to your email before or during her regular "office hours" on Monday afternoons please feel free to ping her again.
 
+## Thank you!
+
 [link_github]: https://github.com/
 [link_stemmrolemodelsrepo]: https://github.com/KirstieJane/STEMMRoleModels
 [link_signupinstructions]: https://help.github.com/articles/signing-up-for-a-new-github-account
