@@ -14,7 +14,7 @@ Scroll down or jump to one of the following sections:
 * [Recognising conributions](#recognising-contributions)
 * [Get in touch](#how-to-get-in-touch)
 
-* [I am a link to a milestone](#milestone:-ugly-website)
+* [I am a link to a milestone](#milestone-ugly-website)
 
 ### Milestone: [Ugly website](https://github.com/KirstieJane/STEMMRoleModels/milestones/Ugly%20website)
 
