@@ -71,7 +71,7 @@ The current list of labels are [here][link_labels] and include:
 
 * [![Help Wanted](https://img.shields.io/badge/-help%20wanted-159818.svg)][link_helpwanted] These issues contain a task that a member of the team has determined we need additional help with.
 
-    If you have particular skills then consider reading through these issues these are a great place to offer them.
+    If you have particular skills then consider reading through these issues as they are a great place to offer your expertise.
     
     If you aren't sure what to offer, you could also recommend issues to your friends/colleagues who may be able to help.
     
