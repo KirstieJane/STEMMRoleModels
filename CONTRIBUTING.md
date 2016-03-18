@@ -117,7 +117,7 @@ Once you've identified one of the issues above that you feel you can contribute 
 
 ## Recognising contributions
 
-If you're logged into GitHub you can see everyone who has contributed to the repository at our [lets build a hatrack page][link_contributorslive]. If you aren't logged in we have a [static version][link_contributorsstatic] of the page but it might not be completely up to date!
+If you're logged into GitHub you can see everyone who has contributed to the repository at our [live contributors page][link_contributorslive]. If you aren't logged in we have a [static version][link_contributorsstatic] of the page but it might not be completely up to date!
 
 These pages are powered by the [Let's all build a hat rack][link_hatrackhome] project, and we love them. 
 
@@ -138,6 +138,10 @@ If you have a question or a comment we'd love for you to [open an issue][link_is
 If you'd prefer to email the [leadership team][link_meettheteam] file you can contact [Kirstie](https://github.com/KirstieJane) at kw401 AT cam DOT ac DOT uk. She's a postdoc who isn't currently paid to develop this app, so please be gentle in your correspondence and give her a couple of days to reply. If she doesn't reply to your email before or during her regular "office hours" on Monday afternoons please feel free to ping her again.
 
 ## Thank you!
+
+You are awesome. :heart_eyes::sparkles::sunny:
+
+And if you've found typos in this (or any other) page, you could consider submitting your very first pull request to fix them via the [typos and broken links][link_fixingtyposissue] issue!
 
 [link_github]: https://github.com/
 [link_stemmrolemodelsrepo]: https://github.com/KirstieJane/STEMMRoleModels
@@ -171,3 +175,4 @@ If you'd prefer to email the [leadership team][link_meettheteam] file you can co
 [link_hatrackhome]: https://labhr.github.io/
 [link_hatrackidea]: http://hawthornlandings.org/2015/02/13/a-place-to-hang-your-hat/
 [link_hatrackcontributions]: http://opensource.com/life/15/10/octohat-github-non-code-contribution-tracker
+[link_fixingtyposissue]: https://github.com/KirstieJane/STEMMRoleModels/issues/22
