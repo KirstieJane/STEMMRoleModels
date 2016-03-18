@@ -90,7 +90,29 @@ The current list of labels are [here][link_labels] and include:
 
 ## Make a change
 
-Instructions on submitting a pull request coming soon.
+Once you've identified one of the issues above that you feel you can contribute to, you're ready to make a change to teh project repository! :tada::smiley:
+
+1. First, describe what you're planning to do as a comment to the issue, (and this might mean making a new issue).
+
+    Check in with a couple of other members of the STEMM Role Models development team to ensure you aren't overlapping with work that's currently underway and that everyone is on the same page with the goal of the work you're going to carry out.
+    
+    [This blog][link_pushpullblog] is a nice explanation of why putting this work in up front is so useful to everyone involved.
+    
+2. [Fork][link_fork] the [STEMM Role Models repository][link_stemmrolemodelsrepo] to your profile.
+
+    You can now do whatever you want with this copy of the project. You won't mess up anyone else's work so you're super safe.
+    
+    Make sure to [keep your fork up to date][link_updateupstreamwiki] with the master repository.
+
+3. Make the changes you've discussed.
+
+    Try to keep the changes focused rather than changing lots of things at once. If you feel tempted to branch out then please *literally* branch out: create [separate branches][link_branches] for different updates to make the next step much easier!
+
+4. Submit a [pull request][link_pullrequest].
+    
+    A member of the executive team will review your changes, have a bit of discussion and hopefully merge them in!
+
+**Success!!** :balloon::balloon::balloon: Well done! And thank you :smiley::tada::sparkles:
 
 ## Who's involved
 
@@ -105,6 +127,7 @@ We haven't yet implemented a protocol to offically acknowedge people who join us
 If you have a question we'd love for you to open an issue because that will be our fastest way of communicating and making a change. But if you'd like to email the development team you can contact [KirstieJane](https://github.com/KirstieJane) at kw401 AT cam DOT ac DOT uk. She's a postdoc who isn't currently paid to develop this app, so please be gentle in your correspondence and give her a couple of days to reply. If she doesn't reply to your email before or during her regular "office hours" on Monday afternoons please feel free to ping her again.
 
 [link_github]: https://github.com/
+[link_stemmrolemodelsrepo]: https://github.com/KirstieJane/STEMMRoleModels
 [link_signupinstructions]: https://help.github.com/articles/signing-up-for-a-new-github-account
 [link_react]: https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments
 [link_issues]: https://github.com/KirstieJane/STEMMRoleModels/issues
@@ -126,3 +149,7 @@ If you have a question we'd love for you to open an issue because that will be o
 [link_howacknowledge]: https://github.com/KirstieJane/STEMMRoleModels/issues/10
 [link_frontenddev_wiki]: https://en.wikipedia.org/wiki/Front_end_development
 [link_pullrequest]: https://help.github.com/articles/proposing-changes-to-a-project-with-pull-requests/
+[link_fork]: https://help.github.com/articles/fork-a-repo/
+[link_pushpullblog]: https://www.igvita.com/2011/12/19/dont-push-your-pull-requests/
+[link_branches]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
+[link_updateupstreamwiki]: https://github.com/KirstieJane/STEMMRoleModels/wiki/Syncing-your-fork-to-the-original-repository-via-the-browser
