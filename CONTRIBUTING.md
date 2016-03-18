@@ -51,24 +51,33 @@ The current list of labels are [here][link_labels] and include:
     
     We can not encourage you enough to submit even the tiniest change to the project repository. Let's go from :confused: & :anguished: to :smiley: & :tada: together!
 
-[![Help Wanted](https://img.shields.io/badge/-help%20wanted-159818.svg)][link_helpwanted] These issues contain a task that a member of the team has determined we need additional help with.
-* If you have particular skills then consider reading through these issues these are a great place to offer them.
-* If you aren't sure what to offer, you could also recommend issues to your friends/colleagues who may be able to help.
+* [![Help Wanted](https://img.shields.io/badge/-help%20wanted-159818.svg)][link_helpwanted] These issues contain a task that a member of the team has determined we need additional help with.
+
+    If you have particular skills then consider reading through these issues these are a great place to offer them.
+    
+    If you aren't sure what to offer, you could also recommend issues to your friends/colleagues who may be able to help.
   
-[![Bugs](https://img.shields.io/badge/-bugs-fc2929.svg)][link_bugs] These issues point to problems in the project
-* If you find a bug, please give as much detail as possible in your issue.
-* If you experience the same bug as one already listed, please add any additional information that you have as a comment.
+* [![Bugs](https://img.shields.io/badge/-bugs-fc2929.svg)][link_bugs] These issues point to problems in the project.
 
-[![Requests](https://img.shields.io/badge/-requests-fbca04.svg)][link_requests] These issues are asking for features (or anything else) to be added to the project.
-* If you have a good idea and would like to see it implemented in the STEMM Role Models project please open a new issue and add in as much detail as possible.
-* Please try to make sure that your feature is distinct from any others that have already been requested or implemented. If you find one that's similar but there are subtle differences please reference the other request in your issue.
+    If you find a bug, please give as much detail as possible in your issue.
+    
+    If you experience the same bug as one already listed, please add any additional information that you have as a comment.
 
-[![Front end development](https://img.shields.io/badge/-front%20end%20dev-f7c6c7.svg)][link_frontenddev] These issues relate front end development.
-* From [wikipedia][link_frontenddev_wiki]: front end development, also known as client side development, is the practice of producing HTML, CSS and JavaScript for a website or web application so that a user can see and interact with them directly.
-* These issues are likely to be asking for help from experts, either in terms of submitting or reviewing code, or simply providing guidance and advice.
+* [![Requests](https://img.shields.io/badge/-requests-fbca04.svg)][link_requests] These issues are asking for features (or anything else) to be added to the project.
 
-[![Get Together](https://img.shields.io/badge/-get%20together-feeda7.svg)][link_gettogether] These issues relate to planning meetings "in real life".
-* If you have experience coordinating events and want to make sure we don't fall into common pitfalls please check out these issues and share your thoughts.
+    If you have a good idea and would like to see it implemented in the STEMM Role Models project please open a new issue and add in as much detail as possible.
+    
+    Please try to make sure that your feature is distinct from any others that have already been requested or implemented. If you find one that's similar but there are subtle differences please reference the other request in your issue.
+
+* [![Front end development](https://img.shields.io/badge/-front%20end%20dev-f7c6c7.svg)][link_frontenddev] These issues relate front end development.
+
+    From [wikipedia][link_frontenddev_wiki]: front end development, also known as client side development, is the practice of producing HTML, CSS and JavaScript for a website or web application so that a user can see and interact with them directly.
+    
+    These issues are likely to be asking for help from experts, either in terms of submitting or reviewing code, or simply providing guidance and advice.
+
+* [![Get Together](https://img.shields.io/badge/-get%20together-feeda7.svg)][link_gettogether] These issues relate to planning meetings "in real life".
+
+    If you have experience coordinating events and want to make sure we don't fall into common pitfalls please check out these issues and share your thoughts.
 
 ## Make a change
 
