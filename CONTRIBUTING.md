@@ -11,6 +11,7 @@ Scroll down or jump to one of the following sections:
 * [Share your thoughts](#share-your-thoughts)
   * [A description of the different labels](#labels)
 * [Make a change](#make-a-change)
+* [Recognising conributions](#recognising-contributions)
 * [Get in touch](#how-to-get-in-touch)
 
 ## Share your thoughts
@@ -114,17 +115,27 @@ Once you've identified one of the issues above that you feel you can contribute 
 
 **Success!!** :balloon::balloon::balloon: Well done! And thank you :smiley::tada::sparkles:
 
-## Who's involved
+## Recognising contributions
 
-You can meet the leadership team in the [Meet the Team][link_meettheteam] file but we haven't yet implemented a protocol to officially list our contributers. Stay tuned, or give us your suggestions at the [how should we acknowledge our contributers][link_howacknowledge] issue!
+If you're logged into GitHub you can see everyone who has contributed to the repository at our [lets build a hatrack page][link_contributorslive]. If you aren't logged in we have a [static version][link_contributorsstatic] of the page but it might not be completely up to date!
 
-## How we say thank you
+These pages are powered by the [Let's all build a hat rack][link_hatrackhome] project, and we love them. 
 
-We haven't yet implemented a protocol to offically acknowedge people who join us. Stay tuned, or give us your suggestions at the [how should we acknowledge our contributers][link_howacknowledge] issue!
+Quoting from their [website][link_hatrackhome]:
+
+> Open Source project contribution focuses a lot on the code committed to projects, but there is so much more that goes on behind the scenes that is just as valuable to FOSS than the code itself.
+> 
+> LABHR seeks to find those that provide these non-code contributions, and thank them. 
+>
+> LABHR started as an [idea by Leslie Hawthorn][link_hatrackidea]. She advocates openly thanking people on social media, and writing recommendations.
+>
+> This idea was extended by Katie McLaughlin with her work on [automating this process on GitHub][link_hatrackcontributions]. 
 
 ## How to get in touch
 
-If you have a question we'd love for you to open an issue because that will be our fastest way of communicating and making a change. But if you'd like to email the development team you can contact [KirstieJane](https://github.com/KirstieJane) at kw401 AT cam DOT ac DOT uk. She's a postdoc who isn't currently paid to develop this app, so please be gentle in your correspondence and give her a couple of days to reply. If she doesn't reply to your email before or during her regular "office hours" on Monday afternoons please feel free to ping her again.
+If you have a question or a comment we'd love for you to [open an issue][link_issues] because that will be our fastest way of communicating, getting the answers to you and (if necessary) making a change.
+
+If you'd prefer to email the [leadership team][link_meettheteam] file you can contact [Kirstie](https://github.com/KirstieJane) at kw401 AT cam DOT ac DOT uk. She's a postdoc who isn't currently paid to develop this app, so please be gentle in your correspondence and give her a couple of days to reply. If she doesn't reply to your email before or during her regular "office hours" on Monday afternoons please feel free to ping her again.
 
 [link_github]: https://github.com/
 [link_stemmrolemodelsrepo]: https://github.com/KirstieJane/STEMMRoleModels
@@ -153,3 +164,8 @@ If you have a question we'd love for you to open an issue because that will be o
 [link_pushpullblog]: https://www.igvita.com/2011/12/19/dont-push-your-pull-requests/
 [link_branches]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
 [link_updateupstreamwiki]: https://github.com/KirstieJane/STEMMRoleModels/wiki/Syncing-your-fork-to-the-original-repository-via-the-browser
+[link_contributorslive]: https://labhr.github.io/js-hatrack/#repo=kirstiejane/Stemmrolemodels
+[link_contributorsstatic]: http://kirstiejane.github.io/STEMMRoleModels/octohatrack_output/Scrapbook_20160317092940/index.html
+[link_hatrackhome]: https://labhr.github.io/
+[link_hatrackidea]: http://hawthornlandings.org/2015/02/13/a-place-to-hang-your-hat/
+[link_hatrackcontributions]: http://opensource.com/life/15/10/octohat-github-non-code-contribution-tracker
