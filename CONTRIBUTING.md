@@ -14,10 +14,6 @@ Scroll down or jump to one of the following sections:
 * [Recognising conributions](#recognising-contributions)
 * [Get in touch](#how-to-get-in-touch)
 
-* [I am a link to a milestone](#milestone-ugly-website)
-
-### Milestone: [Ugly website](https://github.com/KirstieJane/STEMMRoleModels/milestones/Ugly%20website)
-
 ## Share your thoughts
 
 Although GitHub calls them **issues**, we'd like you to think of them as **conversation starters**. They're our way of communicating across all the members of the team.
