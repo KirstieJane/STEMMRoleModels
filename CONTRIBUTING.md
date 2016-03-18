@@ -4,7 +4,14 @@ Welcome to the STEMM Role Models app GitHub repository, and thank you for thinki
 
 The point of this file is to make it suuuuuper easy for you to get involved. So if you have any questions that aren't covered here please let us know! Check out the [Share your thoughts](#share-your-thoughts) section below for more details.
 
-Before you start you'll need to set up a free [GitHub][link_github] account and sign in. Here are some instructions: https://help.github.com/articles/signing-up-for-a-new-github-account
+Before you start you'll need to set up a free [GitHub][link_github] account and sign in. Here are some [instructions][link_signupinstructions].
+
+Scroll down or jump to one of the following sections:
+
+* [Share your thoughts](#share-your-thoughts)
+  * [A description of the different labels](#labels)
+* [Make a change](#make-a-change)
+* [Get in touch](#how-to-get-in-touch)
 
 ## Share your thoughts
 
@@ -13,6 +20,8 @@ Although GitHub calls them **issues**, we'd like you to think of them as **conve
 (If you're here you ***already are*** a member of the STEMM Role Models team.)
 
 Your thoughts can be [questions][link_question], [bugs][link_bugs], [requests][link_requests], [applications][link_applications] or a myriad of other suggestions. In the next section we'll talk through some of the labels on each issue to help you select the ones you'd most like to help with.
+
+GitHub has a nice set of help pages if you're looking for more information about [discussing projects in issues][link_discussingissues].
 
 ### Labels
 
@@ -96,9 +105,11 @@ We haven't yet implemented a protocol to offically acknowedge people who join us
 If you have a question we'd love for you to open an issue because that will be our fastest way of communicating and making a change. But if you'd like to email the development team you can contact [KirstieJane](https://github.com/KirstieJane) at kw401 AT cam DOT ac DOT uk. She's a postdoc who isn't currently paid to develop this app, so please be gentle in your correspondence and give her a couple of days to reply. If she doesn't reply to your email before or during her regular "office hours" on Monday afternoons please feel free to ping her again.
 
 [link_github]: https://github.com/
+[link_signupinstructions]: https://help.github.com/articles/signing-up-for-a-new-github-account
 [link_react]: https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments
 [link_issues]: https://github.com/KirstieJane/STEMMRoleModels/issues
 [link_labels]: https://github.com/KirstieJane/STEMMRoleModels/labels
+[link_discussingissues]: https://help.github.com/articles/discussing-projects-in-issues-and-pull-requests
 
 [link_applications]: https://github.com/KirstieJane/STEMMRoleModels/labels/applications
 [link_bugs]: https://github.com/KirstieJane/STEMMRoleModels/labels/bug
@@ -114,4 +125,4 @@ If you have a question we'd love for you to open an issue because that will be o
 [link_meettheteam]: https://github.com/KirstieJane/STEMMRoleModels/blob/master/MeetTheTeam.md
 [link_howacknowledge]: https://github.com/KirstieJane/STEMMRoleModels/issues/10
 [link_frontenddev_wiki]: https://en.wikipedia.org/wiki/Front_end_development
-[link_pullrequest]
+[link_pullrequest]: https://help.github.com/articles/proposing-changes-to-a-project-with-pull-requests/
