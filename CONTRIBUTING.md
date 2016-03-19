@@ -11,7 +11,7 @@ Scroll down or jump to one of the following sections:
 * [Share your thoughts](#share-your-thoughts)
   * [A description of the different labels](#labels)
 * [Make a change](#make-a-change)
-* [Recognising conributions](#recognising-contributions)
+* [Recognising contributions](#recognising-contributions)
 * [Get in touch](#how-to-get-in-touch)
 
 ## Share your thoughts
