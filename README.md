@@ -36,7 +36,7 @@ The STEMM Role Models app will:
 
 * Improve visibility for researchers and developers by making a database that is easy to search with customizable keywords
 * Allow anyone to add researchers so the database can grow without relying on women promoting themselves
-* Provide information that is useful for making decisions on key note invitations such as links to blogs, social media, journal articles, youtube clips, a list of previous invited presentations and testimonals.
+* Provide information that is useful for making decisions on key note invitations such as links to blogs, social media, journal articles, youtube clips, a list of previous invited presentations and testimonials.
 
 Everyone in the database will have the opportunity to identify themselves as one or more of a selection of different under-represented groups in STEMM. The goal is to ensure that ***conference organisers are able to access a diverse and representative group of the most exciting researchers in their field from around the world***.
 
@@ -70,7 +70,7 @@ Our primary goal is to support women in STEMM and while the app is aimed at conf
 
 If you think you can help in any of the areas listed above (and we bet you can) or in any of the many areas that we haven't yet thought of (and here we're *sure* you can) then please check out our [contributors' guidelines](CONTRIBUTING.md) and our [roadmap](../../issues/1).
 
-Please note that it's very important to us that we maintain a positive and supportive enviroment for everyone who wants to participate. When you join us we ask that you follow our [code of conduct](CODE_OF_CONDUCT.md) in all interactions both on and offline.
+Please note that it's very important to us that we maintain a positive and supportive environment for everyone who wants to participate. When you join us we ask that you follow our [code of conduct](CODE_OF_CONDUCT.md) in all interactions both on and offline.
 
 
 ## Contact us

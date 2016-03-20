@@ -107,7 +107,7 @@ The current list of labels are [here][link_labels] and include:
 
 ## Make a change
 
-Once you've identified one of the issues above that you feel you can contribute to, you're ready to make a change to teh project repository! :tada::smiley:
+Once you've identified one of the issues above that you feel you can contribute to, you're ready to make a change to the project repository! :tada::smiley:
 
 1. First, describe what you're planning to do as a comment to the issue, (and this might mean making a new issue).
 
