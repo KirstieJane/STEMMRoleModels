@@ -11,7 +11,7 @@ Scroll down or jump to one of the following sections:
 * [Share your thoughts](#share-your-thoughts)
   * [A description of the different labels](#labels)
 * [Make a change](#make-a-change)
-* [Recognising conributions](#recognising-contributions)
+* [Recognising contributions](#recognising-contributions)
 * [Get in touch](#how-to-get-in-touch)
 
 ## Share your thoughts
@@ -71,7 +71,7 @@ The current list of labels are [here][link_labels] and include:
 
 * [![Help Wanted](https://img.shields.io/badge/-help%20wanted-159818.svg)][link_helpwanted] These issues contain a task that a member of the team has determined we need additional help with.
 
-    If you have particular skills then consider reading through these issues these are a great place to offer them.
+    If you have particular skills then consider reading through these issues as they are a great place to offer your expertise.
     
     If you aren't sure what to offer, you could also recommend issues to your friends/colleagues who may be able to help.
     
@@ -107,7 +107,7 @@ The current list of labels are [here][link_labels] and include:
 
 ## Make a change
 
-Once you've identified one of the issues above that you feel you can contribute to, you're ready to make a change to teh project repository! :tada::smiley:
+Once you've identified one of the issues above that you feel you can contribute to, you're ready to make a change to the project repository! :tada::smiley:
 
 1. First, describe what you're planning to do as a comment to the issue, (and this might mean making a new issue).
 
