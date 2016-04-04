@@ -1,4 +1,4 @@
-SUBJECT: ***STEMM Role Models development sprint - all welcome***
+SUBJECT: ***STEMM Role Models development sprint - [DATE] - all welcome***
 
 Dear [appropriate title eg: Cambridge Neuroscientists],
 
@@ -12,9 +12,9 @@ Two important aspects set the STEMM Role Models project apart from current tools
 
 We are also dedicated to open source development and providing opportunities for women and other under-represented groups to build their confidence working in an online collaborative environment. We welcome anyone of any level of experience and at any career stage (including our friends outside the ivory tower of academia!) to join us in our adventure to build the website and assocated mobile app.
 
-You can join us at any time at our GitHub repository: \url{www.github.com/KirstieJane/STEMMRoleModels}. The README file gives an overview of the project, the CONTRIBUTING file tells you how you can start to become involved, and the CODE\_OF\_CONDUCT outlines our rules of engagement (in short, be excellent to each other).
+You can join us at any time at our [GitHub repository](www.github.com/KirstieJane/STEMMRoleModels). The [README file](https://github.com/KirstieJane/STEMMRoleModels/blob/master/README.md) gives an overview of the project, the [CONTRIBUTING file](https://github.com/KirstieJane/STEMMRoleModels/blob/master/CONTRIBUTING.md) tells you how you can get involved, and the [CODE\_OF\_CONDUCT](https://github.com/KirstieJane/STEMMRoleModels/blob/master/CODE_OF_CONDUCT.md) outlines our rules of engagement (in short, be excellent to each other).
 
-We also have a sprint half day coming up. It will be held on XXXXXXX from 2pm to 9pm in the following three modules. You do not need to attend all of the modules, we're happy to have you take part in whichever you're interested in and that fit best with your schedule:
+We also have a sprint half day coming up. It will be held on **XXXXXXX** from **2pm to 9pm** in the following three modules. You do not need to attend all of the modules, we're happy to have you take part in whichever you're interested in and that fit best with your schedule:
 
   * 2:00pm to 4:00pm - **Intro to GitHub and how to contribute to open source projects**. This session is ideal for people who aren't sure how to get started contributing to the project. Please bring your laptop, or be prepared to share with someone when you arrive, and by the end of the session you'll have a GitHub account and will have submitted your first pull request. Kirstie will give an overview presentation of both the STEMM Role Models project and an introduction to git and GitHub, and the leadership team will have created some "good first bugs" that you can complete during this session.
 
