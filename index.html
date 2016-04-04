@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <link rel="stylesheet/less" href="style.less" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+
+    <script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      less = {
+        env: "development",
+        async: false,
+        fileAsync: false,
+        poll: 1000,
+        functions: {},
+        dumpLineNumbers: "comments",
+        relativeUrls: false,
+        rootpath: ":/a.com/"
+      };
+    </script>
+    <script src="less.js"></script>
+    <meta name="viewport" content="width=320, user-scalable=no">
+  </head>
+
+  <body>
+    <header>
+      <div class="inner-wrapper">
+        <a class="button" href="http://goo.gl/forms/wDc7b8AqI3">+ Add Event Report</a>
+        <h1>Mozilla Club Events</h1>
+      </div>
+    </header>
+
+    <div class="throbber">
+      <h2>Loading reports...</h2>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+
+    <div class="month">
+      <h1>
+        <span class="event-count"></span> Events
+        <span class="participants"><span class="participant-count"></span> Participants</span>
+      </h1>
+      <div class="events">
+        <!-- event cards will be added here -->
+      </div>
+    </div>
+
+
+    <div class="event-card template">
+      <div class="event-date"><span class="value"></span></div>
+      <div class="event-club"><span class="value"></span></div>
+      <div class="event-location"><span class="value"></span></div>
+      <div class="event-attendance"><span class="value"></span> People</div>
+    </div>
+
+  </body>
+</html>
