@@ -2,15 +2,17 @@
 
 This is the Mozilla Clubs Event Reporting tool. It allows users to submit and browse through event reports.
 
-##This is a prototype!
+##This is a prototype
 
-This is a work in progress and uses test data.
+This is a work in progress and uses test data for now.
 
-**Some Links**
+##Some Links##
 
-* [The Google Form](http://goo.gl/forms/wDc7b8AqI3) used to submit event reports
-* [The Spreadsheet](https://docs.google.com/spreadsheets/d/1QHl2bjBhMslyFzR5XXPzMLdzzx7oeSKTbgR5PM8qp64/edit#gid=1045576576) where the report data ends up
-* [Event Report Dashboard](mozilla.github.io/clubs-events) that displays the reports
+* [The Google Form](http://goo.gl/forms/wDc7b8AqI3) 
+  * Used to submit event reports
+* [The Spreadsheet](https://docs.google.com/spreadsheets/d/1QHl2bjBhMslyFzR5XXPzMLdzzx7oeSKTbgR5PM8qp64/edit#gid=1045576576)   * Where the report data ends up
+* [Event Report Dashboard](mozilla.github.io/clubs-events) 
+  * Displays the reports
 
 ##How it works
 
