@@ -2,10 +2,29 @@ $(document).ready(function(){
   $.get("https://sheetsu.com/apis/v1.0/ba3cacae").done(function(data) {
     displayEvents(data);
   });
+
+  $("body").on("click",".event-card",function(){
+    showPop();
+  });
+
+  $("body").on("click",".event-popup-wrapper",function(){
+    hidePop();
+  });
+
+
 });
 
 var dayNames = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 var monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function showPop(){
+  $(".event-popup-wrapper").show();
+}
+
+function hidePop(){
+  $(".event-popup-wrapper").hide();
+}
+
 
 function displayEvents(data){
 
