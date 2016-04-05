@@ -114,7 +114,7 @@ header {
 
   .event-date {
     text-align: right;
-    margin: 0 0 15px 0;
+    margin: 0 0 25px 0;
   }
 
   .event-club {
@@ -181,7 +181,6 @@ header {
   }
 }
 
-
 .event-popup-wrapper {
   position: fixed;
   top: 0;
@@ -190,11 +189,106 @@ header {
   background: rgba(0,0,0,.7);
   display: none;
 
+  .close-pop {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: .4;
+    cursor: pointer;
+    transition: opacity .15s ease-out;
+    padding: 10px;
+    text-align: center;
+
+    .key-label {
+      color: white;
+      padding-top: 5px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    img {
+      height: 30px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+  }
+
+  .event-nav {
+    height: 40px;
+    width: 40px;
+    padding: 50px 10px;
+    position: absolute;
+    top: ~"calc(50% - 80px)";
+    opacity: .4;
+    cursor: pointer;
+    transition: opacity .15s ease-out;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    img {
+      height: 40px;
+    }
+
+    &.previous {
+      left: 40px;
+    }
+
+    &.next {
+      right: 40px;
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
   .event-popup {
     background: white;
     width: 70%;
-    min-height: 200px;
-    padding: 20px;
+    height: ~"calc(100% - 100px)";
+    padding: 20px 30px;
     margin: 30px auto 0 auto;
+    box-shadow: 0px 4px 15px rgba(0,0,0,.8);
   }
+
+  h2 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.75);
+  }
+
+  p {
+    margin: 0 0 25px 0;
+    color: rgba(0,0,0,.6);
+  }
+
+  .event-description {
+    font-size: 22px;
+    font-style: italic;
+    color: rgba(0,0,0,.5);
+  }
+
+  h1 {
+    font-weight: 400;
+    padding: 0 0 5px 0;
+    margin: 0 0 30px 0;
+    font-size: 28px;
+    border-bottom: solid 2px #ddd;
+
+    .event-date {
+      float: right;
+      font-size: 22px;
+      position: relative;
+      top: 5px;
+      color: rgba(0,0,0,.5);
+    }
+  }
+
 }
