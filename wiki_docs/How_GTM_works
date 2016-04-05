@@ -1,19 +1,19 @@
 User can add or manage the AdWords, Google analytics, Flood-light and non-Google tags using the GTM.
 
-**How it works**
+How it works
   Followings are main components of the GTM:
 
-**Account**
+Account
 Each account can contains multiple containers
-**"One account per company/organization"**
+  "One account per company/organization"
 
-**Container**
+Container
 A container includes the tracking tags (e.g. Google Analytics, AdWords Conversion Tracking tags) that you want to use on the website.
-**"One container for one website"**
+  "One container for one website"
 
-**Tags**
+Tags
 Tags are snippets of code on your site that collect data
-**"A tag must have at least one rule in order to fire"**
+  "A tag must have at least one rule in order to fire"
 Google Tag Manager supports following tag types which can be use directly:
   1. AdWords Conversion Tracking
   2. DoubleClick Floodlight Counter
@@ -25,17 +25,17 @@ There are other two custom tags available which allows you to implement custom t
   1. Custom Image Tag
   2. Custom HTML Tag
   
-**Rules**
+Rules
 The rule(s) attached to a tag govern when the tag is fired or not fired.
-**"A rule that blocks a tag from firing always overrides a firing rule"**
-Syntax: **[Macro] [Operator] [Value]**
-Example: **url** equals **example.com/index.html**
+  "A rule that blocks a tag from firing always overrides a firing rule"
+Syntax: [Macro] [Operator] [Value]
+Example: url equals example.com/index.html
 
-**Macros**
+Macros
 Macros supply dynamic data to tags and conditions.
-**"Macros are name-value pairs for which the value is populated during runtime"**
+  "Macros are name-value pairs for which the value is populated during runtime"
 
-**Types of Macro**
+  Types of Macro
   
   1. Constant String
   2. JavaScript Variable
