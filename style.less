@@ -65,11 +65,31 @@ header {
   margin: 0 auto;
   text-align: center;
 
+  .filter-events {
+    float: right;
+    width: 300px;
+    padding: 3px 0 0 0;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    top: 0px;
+    background: transparent;
+    border-bottom: solid 1px #BBB;
+    font-size: 16px;
+    transition: all .15s ease-out;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
   h1 {
     font-weight: 400;
     color: rgba(0,0,0,.7);
     text-align: left;
-    margin: 0 0 13px 0;
+    margin: 0 0 5px 0;
     padding: 0;
     font-size: 26px;
 
@@ -94,10 +114,10 @@ header {
   padding: 16px 20px;
   background: white;
   box-shadow: 0px 1px 1px rgba(0,0,0,.2);
-  margin: 0 15px 15px 0;
+  margin: 0 20px 20px 0;
   color: rgba(0,0,0,.4);
-  min-width: 200px;
-  max-width: 200px;
+  min-width: 196px;
+  max-width: 196px;
   text-align: left;
   line-height: 20px;
   pointer: cursor;
@@ -117,7 +137,7 @@ header {
     margin: 0 0 25px 0;
   }
 
-  .event-club {
+  .club-name {
     color: rgba(0,0,0,.8);
   }
 
@@ -291,4 +311,36 @@ header {
     }
   }
 
+}
+
+a {
+  color: #1a77c4;
+}
+.shakeleft {
+  animation: shakeleft .2s ease-out;
+}
+.shakeright {
+  animation: shakeright .2s ease-out;
+}
+
+
+@keyframes shakeleft {
+  0% {   transform: translateX(0); }
+  50% {  transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes shakeright {
+  0% {   transform: translateX(0); }
+  50% {  transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+.fa {
+  width: 16px;
+  text-align: center;
+}
+
+.fa-user {
+  font-size: 90%;
 }

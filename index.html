@@ -1,6 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet/less" href="style.less" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
 
     <script src="jquery.js" type="text/javascript" charset="utf-8"></script>
@@ -38,6 +39,8 @@
 
     <div class="month">
       <h1>
+        <input class="filter-events" placeholder="Search & filter"/>
+
         <span class="event-count"></span> Events
         <span class="participants"><span class="participant-count"></span> Participants</span>
       </h1>
@@ -68,22 +71,39 @@
 
             <h2>Description</h2>
             <p class="event-description">
-              <span class="value">
-                We did some stuff We did some stuff We did some stuff We did some stuff
-              </span>
+              <span class="value"></span>
             </p>
 
-            <h2>Location</h2>
+            <h2>Event Location</h2>
             <p class="event-location">
-              <span class="value">
-                It was in this place, tennessee.
-              </span>
+              <span class="value"></span>
             </p>
+
+            <h2>Web Literacy Concepts Covered</h2>
+            <p class="event-skills">
+              <span class="value"></span>
+            </p>
+
 
             <h2>Attendance</h2>
             <p class="event-attendance">
               <span class="value">12</span> People
             </p>
+
+            <h2>Club Location</h2>
+            <p class="event-city">
+                <span class="value"></div>
+            </p>
+            <p class="event-country">
+                <span class="value"></div>
+            </p>
+
+            <h2>Club Organizer</h2>
+            <p>
+              Luke Pacholski<br/>
+              <a href="https://twitter.com/flukeout">@flukeout</a>
+            </p>
+
 
         </div>
       </div>
@@ -91,9 +111,9 @@
 
     <div class="event-card template">
       <div class="event-date"><span class="value"></span></div>
-      <div class="event-club"><span class="value"></span></div>
-      <div class="event-location"><span class="value"></span></div>
-      <div class="event-attendance"><span class="value"></span> People</div>
+      <div class="club-name"><span class="value"></span></div>
+      <div class="event-location"><i class="fa fa-map-marker"></i> <span class="value"></span></div>
+      <div class="event-attendance"><i class="fa fa-user"></i> <span class="value"></span> People</div>
     </div>
 
   </body>

@@ -3,13 +3,68 @@
 // Then we can use those IDs to show the full versions in teh popup. Woop
 
 // PROTOTYPE TODO - localstorage handling, so you dont have to get new data all the time if you dont want to
+// TODO - should probably add the ID in the cleanupData method... not when it's displayed
 
 var dataKeys = {
+  "Timestamp" : "event-date",
+  "Your Name" : "club-organizer",
   "Club Name" : "club-name",
-  "Event Description" : "event-description",
+  "Club Link" : "club-link",
+  "City" : "event-city",
+  "Country" : "club-country",
   "Event Location" : "event-location",
-  "How many people were there?" : "event-attendance",
-  "Timestamp" : "event-date"
+  "Attendance" : "event-attendance",
+  "Event Description" : "event-description",
+  "Event Creations" : "event-creations",
+  "Web Literacy Skills" : "event-skills",
+  "Links to Curriculum" : "event-links-curriculum",
+  "Links to Photos (Optional)" : "event-links-photos",
+  "Links to Blogpost (Optional)" : "event-links-blogpost",
+  "Links to Video (Optional)" : "event-links-video",
+  "Feedback from Attendees" : "event-feedback-attendees",
+  "Your Feedback" : "event-feedback-organizer"
+}
+
+function cleanupData(){
+  for(var i = 0; i < data.length; i++){
+    var item = data[i];
+    for(var k in item) {
+      var itemData = JSON.stringify(item[k]);
+      var newKey = dataKeys[k];
+      delete item[k];
+      item[newKey] = JSON.parse(itemData);
+    }
+  }
+}
+
+function filterEvents(term){
+
+  var matchingIDs = [];
+
+  for(var i = 0; i < data.length; i++){
+    var item = data[i];
+
+    for(var k in item){
+      var value = item[k];
+      if(typeof value ==  "string"){
+        value = value.toLowerCase();
+        if(value.indexOf(term) > -1){
+          matchingIDs.push(item.id);
+        }
+      }
+    }
+  }
+
+
+  $(".event-card").each(function(){
+    $(this).hide();
+    var thisId = parseInt($(this).data("id"));
+    if(matchingIDs.indexOf(thisId) > -1) {
+      $(this).show();
+    }
+  })
+
+
 }
 
 $(document).ready(function(){
@@ -17,13 +72,21 @@ $(document).ready(function(){
   // if(!localStorage.getItem("data")) {
     $.get("https://sheetsu.com/apis/v1.0/ba3cacae").done(function(returnedData) {
       data = returnedData;
-      // localStorage.setItem("data",JSON.stringify(data));
+      cleanupData();
+      localStorage.setItem("data",JSON.stringify(data));
       displayEvents();
     });
   // } else {
   //   data = JSON.parse(localStorage.getItem("data"));
   //   displayEvents();
   // }
+
+  $("body").on("keyup",".filter-events",function(){
+    var term = $(this).val();
+    term = term.toLowerCase();
+    filterEvents(term);
+
+  });
 
   $("body").on("click",".event-card",function(){
     var id = $(this).data("id");
@@ -44,10 +107,6 @@ $(document).ready(function(){
     e.stopPropagation();
   });
 
-  // $("body").on("click",".event-popup-wrapper",function(){
-  //   hidePop();
-  // });
-
   $(window).on("keydown",function(e){
     if(e.keyCode == 37) {
       navigatePopup("previous");
@@ -67,19 +126,26 @@ var monthNames = ["January","February","March","April","May","June","July","Augu
 var data;
 
 function navigatePopup(direction) {
+  var popupEl = $(".event-popup-wrapper .event-popup");
+
   if($(".event-popup-wrapper").is(":visible")) {
     var currentId = parseInt($(".event-popup-wrapper").data("id"));
+
+    popupEl.removeClass("shakeright").removeClass("shakeleft");
+    popupEl.width(popupEl.width());
 
     if(direction == "next") {
       currentId++;
       if(currentId > Object.keys(data).length) {
         currentId = 1;
       }
+      popupEl.addClass("shakeright");
     } else {
       currentId--;
       if(currentId < 1) {
         currentId = Object.keys(data).length;
       }
+      popupEl.addClass("shakeleft");
     }
     showPop(currentId);
   }
@@ -88,25 +154,26 @@ function navigatePopup(direction) {
 
 function showPop(id){
   var pop = $(".event-popup-wrapper");
-
   pop.show();
 
   for(var k in data){
     var item = data[k];
-
     pop.data("id",id);
 
     if(item.id == id) {
       for(var j in item){
-        if(dataKeys[j]) {
-          var className = dataKeys[j];
-          var itemData = item[j];
 
-          if(j == "Timestamp") {
-            itemData = formatDate(itemData);
-          }
-          pop.find("." + className + " .value").text(itemData);
+      if(pop.find("." + j).length > 0){
+        var value = item[j];
+        if(j == "event-date"){
+          value = formatDate(value);
         }
+        if(j == "event-attendance"){
+          value = numberWithCommas(value);
+        }
+        pop.find("." + j + " .value").text(value);
+      }
+
       }
     }
   }
@@ -118,18 +185,18 @@ function hidePop(){
 
 function formatDate(dateString) {
   var date = new Date(dateString);
-  var dayNum = date.getDay();
+  var dayNum = date.getDay(); //Number of the day of the week
   var dayOfWeek = dayNames[dayNum];
   var dayOfMonth = date.getDate();
   var year = date.getFullYear();
   var monthNumber = date.getMonth();
   var monthName = monthNames[monthNumber];
-  return monthName + " " + dayNum + ", " + year;
+  return monthName + " " + dayOfMonth + ", " + year;
 }
 
 function dateSort(a,b){
-  var dateA = new Date(a["Timestamp"]);
-  var dateB = new Date(b["Timestamp"]);
+  var dateA = new Date(a["event-date"]);
+  var dateB = new Date(b["event-date"]);
   if(dateA > dateB) {
     return 1;
   } else {
@@ -151,28 +218,30 @@ function displayEvents(){
 
   for(var k in data){
     var itemEl = $(".event-card.template").clone();
+
     var item = data[k];
     item.id = id;
     itemEl.data("id",id);
     id++;
 
-    //Date
-    var dateString = formatDate(item.Timestamp);
-    itemEl.find(".event-date .value").text(dateString);
 
-    //Club Name
-    var clubName = item["Club Name"];
-    itemEl.find(".event-club .value").text(clubName);
 
-    //Club Attendance
-    var attendance = item["How many people were there?"];
-    itemEl.find(".event-attendance .value").text(numberWithCommas(attendance));
+    for(var j in item){
+      if(itemEl.find("." + j).length > 0){
+        var value = item[j];
 
-    participants = participants + parseInt(attendance);
-
-    //Club Location
-    var location = item["Event Location"];
-    itemEl.find(".event-location .value").text(location);
+        if(j == "event-date"){
+          value = formatDate(value);
+        }
+        if(j == "event-attendance"){
+          participants = participants + parseInt(value);
+        }
+        if(j == "event-attendance"){
+          value = numberWithCommas(value);
+        }
+        itemEl.find("." + j + " .value").text(value);
+      }
+    }
 
     itemEl.removeClass("template");
     $(".events").append(itemEl);
@@ -183,5 +252,5 @@ function displayEvents(){
 }
 
 function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
