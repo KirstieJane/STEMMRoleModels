@@ -3,6 +3,7 @@
     <link rel="stylesheet/less" href="style.less" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+    <title>Mozilla Club Events</title>
 
     <script src="jquery.js" type="text/javascript" charset="utf-8"></script>
     <script src="app.js" type="text/javascript" charset="utf-8"></script>
@@ -39,11 +40,19 @@
 
     <div class="month">
       <h1>
-        <input class="filter-events" placeholder="Search & filter"/>
+        <input class="filter-events" placeholder="Search event details or location"/>
 
         <span class="event-count"></span> Events
         <span class="participants"><span class="participant-count"></span> Participants</span>
       </h1>
+
+      <div class="no-results">
+        <p>
+          <strong>Dang, no matches!</strong>
+          <br>Watch this car dance instead...
+        </p>
+        <p class="fa fa-car"></p>
+      </div>
       <div class="events">
         <!-- event cards will be added here -->
       </div>
@@ -64,19 +73,21 @@
       <div class="event-popup">
         <div class="event-data">
 
-            <h1>
-              Event at <span class="club-name"><span class="value">Mozilla Rio Club</span></span>
-              <span class="event-date"><span class="value">March 16, 2016</span></span>
-            </h1>
+          <h1>
+            Event at <span class="club-name"><span class="value">Mozilla Rio Club</span></span>
+            <span class="event-date"><span class="value">March 16, 2016</span></span>
+          </h1>
+
+          <div class="left-col">
 
             <h2>Description</h2>
             <p class="event-description">
               <span class="value"></span>
             </p>
 
-            <h2>Event Location</h2>
-            <p class="event-location">
-              <span class="value"></span>
+            <h2>Attendance</h2>
+            <p class="event-attendance">
+              <span class="value">12</span> people showed up!
             </p>
 
             <h2>Web Literacy Concepts Covered</h2>
@@ -84,26 +95,34 @@
               <span class="value"></span>
             </p>
 
+            <h2>Event Links</h2>
+            <ul>
+              <li class="event-creations"><span class="value"></span></li>
+              <li class="event-links-photos"><span class="value"></span></li>
+              <li class="event-links-video"><span class="value"></span></li>
+              <li class="event-links-blogpost"><span class="value"></span></li>
+            </ul>
 
-            <h2>Attendance</h2>
-            <p class="event-attendance">
-              <span class="value">12</span> People
+            <h2>Feedback from attendees</h2>
+            <p class="event-feedback-attendees"><span class="value"></span></p>
+
+          </div>
+
+          <div class="right-col">
+            <h2>Event Location</h2>
+            <p class="event-location">
+              <span class="value"></span>
             </p>
-
             <h2>Club Location</h2>
-            <p class="event-city">
-                <span class="value"></div>
-            </p>
-            <p class="event-country">
-                <span class="value"></div>
-            </p>
-
-            <h2>Club Organizer</h2>
             <p>
-              Luke Pacholski<br/>
-              <a href="https://twitter.com/flukeout">@flukeout</a>
+              <span class="event-city"><span class="value"></span></span><br/>
+              <span class="club-country"><span class="value"></span></span>
             </p>
-
+            <h2>Club Organizer</h2>
+            <p class="club-organizer">
+              <span class="value"></span>
+            </p>
+          </div>
 
         </div>
       </div>

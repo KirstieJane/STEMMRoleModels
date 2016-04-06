@@ -97,6 +97,7 @@ header {
       color: rgba(0,0,0,.4);
       font-size: 26px;
       font-weight: 300;
+      margin-left: 15px;
     }
   }
 }
@@ -152,7 +153,7 @@ header {
   text-align: center;
   transition: all .3s ease-out;
   top: ~"calc(50% - 100px)";
-  left: ~"calc(50% - 100px)";
+  left: ~"calc(50% - 150px)";
   color: rgba(0,0,0,.4);
 
   h2 {
@@ -209,6 +210,21 @@ header {
   background: rgba(0,0,0,.7);
   display: none;
 
+  .not-specified {
+    color: rgba(0,0,0,.3);
+    font-style: italic;
+  }
+
+  .left-col {
+    float: left;
+    width: 55%;
+  }
+
+  .right-col {
+    float: right;
+    width: 40%;
+  }
+
   .close-pop {
     height: 40px;
     width: 40px;
@@ -219,7 +235,7 @@ header {
     cursor: pointer;
     transition: opacity .15s ease-out;
     padding: 10px;
-    text-align: center;
+
 
     .key-label {
       color: white;
@@ -236,6 +252,11 @@ header {
       opacity: 1;
     }
 
+  }
+
+  ul {
+    margin: 5px 0 30px 0;
+    padding: 0 0 0 22px;
   }
 
   .event-nav {
@@ -272,9 +293,10 @@ header {
     background: white;
     width: 70%;
     height: ~"calc(100% - 100px)";
-    padding: 20px 30px;
+    padding: 20px 35px 20px 35px;
     margin: 30px auto 0 auto;
     box-shadow: 0px 4px 15px rgba(0,0,0,.8);
+    overflow-y: scroll;
   }
 
   h2 {
@@ -343,4 +365,39 @@ a {
 
 .fa-user {
   font-size: 90%;
+}
+
+.no-results {
+  display: none;
+  position: absolute;
+  width: 300px;
+  text-align: center;
+  top: ~"calc(50% - 100px)";
+  left: ~"calc(50% - 150px)";
+  color: rgba(0,0,0,.4);
+
+  strong {
+    font-size: 20px;
+  }
+
+  .fa-car {
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
+    line-height: 90px;
+    margin: 20px 0 0 0;
+    animation: strobe 1s infinite;
+    transform-origin: bottom;
+    transform-origin: bottom;
+    animation: strobe 1s infinite;
+
+  }
+}
+
+@keyframes strobe {
+    0% { -webkit-transform:   skew(4deg,0deg) scaleX(1); }
+    10% { -webkit-transform:  skew(1deg,0deg) scaleY(.9) ; }
+    50% { -webkit-transform:  skew(-4deg,0deg) scaleX(1); }
+    60% { -webkit-transform:  skew(-1deg,0deg) scaleY(.9) ; }
+    100% { -webkit-transform: skew(4deg,0deg) scaleX(1); }
 }
