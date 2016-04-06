@@ -220,9 +220,9 @@ function dateSort(a,b){
   var dateA = new Date(a["event-date"]);
   var dateB = new Date(b["event-date"]);
   if(dateA > dateB) {
-    return 1;
-  } else {
     return -1;
+  } else {
+    return 1;
   }
 }
 
