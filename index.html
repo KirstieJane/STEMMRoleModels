@@ -40,7 +40,12 @@
 
     <div class="month">
       <h1>
-        <input class="filter-events" placeholder="Search event details or location"/>
+        <span class="filter-events-wrapper">
+          <input class="filter-events" placeholder="Search event details or location"/>
+          <a class="clear-search" href="#">
+            <img src="images/x-black.svg"/>
+          </a>
+        </span>
         <span class="event-count"></span> Events
         <span class="participants"><span class="participant-count"></span> Participants</span>
       </h1>
@@ -67,7 +72,7 @@
         <img src="images/chevron.svg"/>
       </div>
       <div class="close-pop">
-        <img src="images/x.svg"/>
+        <img src="images/x-white.svg"/>
         <div class="key-label">ESC</div>
       </div>
 
@@ -134,8 +139,8 @@
     <div class="event-card template">
       <div class="event-date"><span class="value"></span></div>
       <div class="club-name"><span class="value"></span></div>
-      <div class="event-location"><i class="fa fa-map-marker"></i> <span class="value"></span></div>
-      <div class="event-attendance"><i class="fa fa-user"></i> <span class="value"></span> People</div>
+      <div class="club-country"><i class="fa fa-map-marker"></i> <span class="value"></span></div>
+      <div class="event-attendance"><span class="value"></span> People</div>
     </div>
 
   </body>

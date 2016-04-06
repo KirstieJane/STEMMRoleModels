@@ -50,9 +50,23 @@ $(document).ready(function(){
   //   displayEvents();
   // }
 
+  // Search & Filter stuff
+
+  $(".filter-events").val();
+  $("body").on("click",".filter-events-wrapper .clear-search",function(){
+    $(".filter-events").val("");
+    $(".clear-search").hide();
+    filterEvents("");
+  });
+
   $("body").on("keyup",".filter-events",function(){
     var term = $(this).val();
     term = term.toLowerCase();
+    if(term.length == 0){
+      $(".clear-search").hide();
+    } else {
+      $(".clear-search").show();
+    }
     filterEvents(term);
   });
 
@@ -139,21 +153,27 @@ function showPop(id){
         if(pop.find("." + j).length > 0){
           var value = item[j];
 
-
           if(j == "event-date"){
             value = formatDate(value);
           }
+
           if(j == "event-attendance"){
             value = numberWithCommas(value);
           }
-
 
           if(value.length == 0){
             value = "Not specified";
             pop.find("." + j + " .value").addClass("not-specified");
           }
 
-          pop.find("." + j + " .value").text(value);
+          pop.find("." + j + " .value").html("");
+
+          if(validURL(value)){
+            pop.find("." + j + " .value").append("<a href="+value+">" + value + "</a>");
+          } else {
+            pop.find("." + j + " .value").text(value);
+          }
+
         }
       }
     }
@@ -233,12 +253,20 @@ function displayEvents(){
         if(j == "event-date"){
           value = formatDate(value);
         }
+
         if(j == "event-attendance"){
-          participants = participants + parseInt(value);
+          if(!isNaN(parseInt(value))){
+            participants = participants + parseInt(value);
+          }
         }
+
         if(j == "event-attendance"){
           value = numberWithCommas(value);
         }
+        if(value.length == 0){
+          value = "Unknown";
+        }
+
         itemEl.find("." + j + " .value").text(value);
       }
     }
@@ -325,4 +353,11 @@ function getUrlParameter(sParam){
       return sParameterName[1];
     }
   }
+}
+
+// Checks if something is a valid URL
+
+function validURL(str) {
+  var regexp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/
+  return regexp.test(str);
 }
