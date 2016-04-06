@@ -41,7 +41,6 @@
     <div class="month">
       <h1>
         <input class="filter-events" placeholder="Search event details or location"/>
-
         <span class="event-count"></span> Events
         <span class="participants"><span class="participant-count"></span> Participants</span>
       </h1>
@@ -53,9 +52,11 @@
         </p>
         <p class="fa fa-car"></p>
       </div>
+
       <div class="events">
         <!-- event cards will be added here -->
       </div>
+
     </div>
 
     <div class="event-popup-wrapper">
@@ -80,46 +81,48 @@
 
           <div class="left-col">
 
-            <h2>Description</h2>
-            <p class="event-description">
+            <h2 id="description">Description</h2>
+            <p heading="description" class="event-description">
               <span class="value"></span>
             </p>
 
-            <h2>Attendance</h2>
-            <p class="event-attendance">
+            <h2 id="event-attendance">Attendance</h2>
+            <p heading="event-attendance" class="event-attendance">
               <span class="value">12</span> people showed up!
             </p>
 
-            <h2>Web Literacy Concepts Covered</h2>
+            <h2 id="event-skills">Web Literacy Concepts Covered</h2>
             <p class="event-skills">
               <span class="value"></span>
             </p>
 
-            <h2>Event Links</h2>
+            <h2 id="event-skills">Event Links</h2>
             <ul>
-              <li class="event-creations"><span class="value"></span></li>
-              <li class="event-links-photos"><span class="value"></span></li>
-              <li class="event-links-video"><span class="value"></span></li>
-              <li class="event-links-blogpost"><span class="value"></span></li>
+              <li heading="event-skills" class="event-creations"><span class="value"></span></li>
+              <li heading="event-skills" class="event-links-photos"><span class="value"></span></li>
+              <li heading="event-skills" class="event-links-video"><span class="value"></span></li>
+              <li heading="event-skills" class="event-links-blogpost"><span class="value"></span></li>
             </ul>
 
-            <h2>Feedback from attendees</h2>
-            <p class="event-feedback-attendees"><span class="value"></span></p>
+            <h2 id="feedback-attendees">Feedback from attendees</h2>
+            <p heading="feedback-attendees" class="event-feedback-attendees"><span class="value"></span></p>
 
           </div>
 
           <div class="right-col">
-            <h2>Event Location</h2>
-            <p class="event-location">
+            <h2 id="event-location">Event Location</h2>
+            <p heading="event-location" class="event-location">
               <span class="value"></span>
             </p>
-            <h2>Club Location</h2>
+
+            <h2 id="club-location">Club Location</h2>
             <p>
-              <span class="event-city"><span class="value"></span></span><br/>
-              <span class="club-country"><span class="value"></span></span>
+              <span heading="club-location" class="event-city"><span class="value"></span></span><br/>
+              <span heading="club-location" class="club-country"><span class="value"></span></span>
             </p>
-            <h2>Club Organizer</h2>
-            <p class="club-organizer">
+
+            <h2 id="club-organizer">Club Organizer</h2>
+            <p heading="club-organizer" class="club-organizer">
               <span class="value"></span>
             </p>
           </div>

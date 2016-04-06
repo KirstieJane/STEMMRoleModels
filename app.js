@@ -133,6 +133,8 @@ function showPop(id){
 
       history.replaceState({}, "Mozilla Clubs Event Report " + item.id, "?event=" + item.id);
 
+      pop.find(".not-specified").removeClass("not-specified");
+
       for(var j in item){
         if(pop.find("." + j).length > 0){
           var value = item[j];
@@ -145,7 +147,6 @@ function showPop(id){
             value = numberWithCommas(value);
           }
 
-          pop.find("." + j + " .value").removeClass("not-specified");
 
           if(value.length == 0){
             value = "Not specified";
@@ -158,7 +159,20 @@ function showPop(id){
     }
   }
 
-  console.log("jamham");
+  //This will loop through and make the headings fainter that don't have anything on em......
+  pop.find("[heading]").each(function(){
+    var heading = $(this).attr("heading");
+
+    var total = pop.find("[heading="+heading+"]").length;
+    var unfilled = pop.find("[heading="+heading+"] .not-specified").length;
+    if(total == unfilled) {
+      pop.find("[id="+heading+"]").addClass("not-specified");
+    }
+
+  });
+
+
+
 }
 
 function hidePop(){

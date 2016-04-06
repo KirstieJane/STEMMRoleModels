@@ -211,7 +211,7 @@ header {
   display: none;
 
   .not-specified {
-    color: rgba(0,0,0,.3);
+    color: rgba(0,0,0,.25);
     font-style: italic;
   }
 
@@ -235,13 +235,15 @@ header {
     cursor: pointer;
     transition: opacity .15s ease-out;
     padding: 10px;
-
+    text-align: center;
 
     .key-label {
       color: white;
       padding-top: 5px;
       font-size: 14px;
       text-align: center;
+      width: 100%;
+      margin: 0 auto;
     }
 
     img {
@@ -251,12 +253,29 @@ header {
     &:hover {
       opacity: 1;
     }
-
   }
 
   ul {
     margin: 5px 0 30px 0;
     padding: 0 0 0 22px;
+    list-style-type: none;
+
+    li {
+      position: relative;
+
+      :before {
+        content: "•";
+        color: #BBB;
+        position: absolute;
+        top: -2px;
+        font-size: 18px;
+        left: -15px;
+
+      }
+
+    }
+
+
   }
 
   .event-nav {
@@ -390,7 +409,6 @@ a {
     transform-origin: bottom;
     transform-origin: bottom;
     animation: strobe 1s infinite;
-
   }
 }
 
