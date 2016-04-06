@@ -26,8 +26,8 @@
   <body>
     <header>
       <div class="inner-wrapper">
-        <a class="button" href="http://goo.gl/forms/wDc7b8AqI3">+ Add Event Report</a>
         <h1>Mozilla Club Events</h1>
+        <a class="button" href="http://goo.gl/forms/wDc7b8AqI3">+ Add Event Report</a>
       </div>
     </header>
 
@@ -39,16 +39,22 @@
     </div>
 
     <div class="month">
-      <h1>
+
+      <section class="month-header">
+        <h1>
+          <span class="event-count"></span> Events
+          <span class="participants"><span class="participant-count"></span> Participants</span>
+        </h1>
+
         <span class="filter-events-wrapper">
           <input class="filter-events" placeholder="Search event details or location"/>
           <a class="clear-search" href="#">
             <img src="images/x-black.svg"/>
           </a>
         </span>
-        <span class="event-count"></span> Events
-        <span class="participants"><span class="participant-count"></span> Participants</span>
-      </h1>
+      </section>
+
+
 
       <div class="no-results">
         <p>
