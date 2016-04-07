@@ -82,6 +82,11 @@ header {
     width: 300px;
     position: relative;
 
+    .fa-search {
+      color: rgba(0,0,0,.4);
+      margin-right: 5px;
+    }
+
     .clear-search {
       display: none;
       position: absolute;
@@ -103,7 +108,7 @@ header {
   }
 
   .filter-events {
-    width: 100%;
+    width: 250px;
     box-sizing: border-box;
     padding: 3px 0 0 0;
     font-family: inherit;
@@ -149,7 +154,6 @@ header {
 .events {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: flex-start;
   margin: 0 -10px;
 }
@@ -191,7 +195,8 @@ header {
     text-align: right;
     margin: 0 0 25px 0;
     flex: 1;
-
+    width: 100%;
+    display: block;
   }
 
   .event-attendance {
@@ -409,20 +414,21 @@ header {
     color: rgba(0,0,0,.5);
   }
 
+  .event-date {
+    text-align: right;
+    display: block;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    position: relative;
+    color: rgba(0,0,0,.5);
+  }
+
   h1 {
     font-weight: 400;
-    padding: 0 0 5px 0;
+    padding: 0 0 2px 0;
     margin: 0 0 30px 0;
     font-size: 28px;
     border-bottom: solid 2px #ddd;
-
-    .event-date {
-      float: right;
-      font-size: 22px;
-      position: relative;
-      top: 5px;
-      color: rgba(0,0,0,.5);
-    }
   }
 
 }
@@ -432,9 +438,22 @@ a {
 }
 .shakeleft {
   animation: shakeleft .2s ease-out;
+  .event-data {
+    animation: fadeMeSon .4s ease-out;
+  }
 }
+
 .shakeright {
   animation: shakeright .2s ease-out;
+  .event-data {
+    animation: fadeMeSon .4s ease-out;
+  }
+}
+@keyframes fadeMeSon {
+  0%   { opacity: 0;  }
+  // 40%  { opacity: 0; }
+  // 60%  { opacity: 0; }
+  100% { opacity: 1;  }
 }
 
 

@@ -177,7 +177,7 @@ function showPop(id){
           }
 
           if(value.length == 0){
-            value = "Not specified";
+            value = "Not filled in";
             pop.find("." + j + " .value").addClass("not-specified");
           }
 
@@ -197,16 +197,12 @@ function showPop(id){
   //This will loop through and make the headings fainter that don't have anything on em......
   pop.find("[heading]").each(function(){
     var heading = $(this).attr("heading");
-
     var total = pop.find("[heading="+heading+"]").length;
     var unfilled = pop.find("[heading="+heading+"] .not-specified").length;
     if(total == unfilled) {
       pop.find("[id="+heading+"]").addClass("not-specified");
     }
-
   });
-
-
 
 }
 
