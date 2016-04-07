@@ -1,0 +1,154 @@
+@media only screen and (max-width:500px) {
+
+  header {
+    h1 {
+      text-align: center;
+      display: block;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      display: block;
+      float: none;
+      text-align: center;
+    }
+  }
+
+
+  .month-header {
+
+    h1 {
+      text-align: center;
+      font-size: 20px;
+
+      * {
+        font-size: 20px !important;
+      }
+    }
+
+    .filter-events-wrapper {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .event-popup-wrapper {
+
+    .event-popup {
+      padding: 15px 20px;
+      margin: 0px;
+      width: 85%;
+      margin: 15px auto 0 auto;
+      height: 90%;
+    }
+
+    h1 {
+      font-size: 22px;
+      padding: 0;
+      margin: 0 0 18px 0;
+      // padding-right: 55px;
+      text-align: center;
+    }
+
+    .event-description {
+      font-size: 20px;
+    }
+
+    .event-date {
+      float: none;
+      display: block;
+      // text-align: right;
+      color: rgba(0,0,0,.6);
+      font-size: 18px;
+      margin-bottom: 5px;
+      margin: 10px 0 15px 0;
+      text-align: center;
+    }
+
+
+    .close-pop, .event-nav {
+      opacity: .3;
+      border: solid 2px white;
+      box-sizing: border-box;
+      height: 50px;
+      width: 50px;
+
+
+      &:hover {
+        opacity: .45;
+      }
+
+    }
+
+    .close-pop {
+      background: black;
+      // display: none;
+      border-radius: 50%;
+      right: 40px;
+      top: 25px;
+      z-index: 9999999;
+
+      img {
+        width: 18px;
+        position: relative;
+        top: -2px;
+      }
+
+      .key-label {
+        display: none;
+      }
+
+    }
+
+    .right-col,.left-col {
+      float: none;
+      width: auto;
+    }
+
+
+    .event-nav {
+      position: absolute;
+      top: 25px;
+      cursor: pointer;
+      background: black;
+      padding: 0;
+      text-align: center;
+      border-radius: 50%;
+      transition: opacity .15s ease-out;
+      z-index: 9999999;
+
+      img {
+        position: relative;
+        top: 3px;
+        width: 20px;
+      }
+
+      &.previous {
+        left: 25px;
+      }
+
+      &.next {
+        left: 80px;
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+  }
+
+
+
+
+}
+
+@media only screen and (max-width:850px) {
+
+	.event-nav {
+    background: rgba(0,0,0,.5);
+	}
+
+
+}

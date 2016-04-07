@@ -26,7 +26,7 @@ $(document).ready(function(){
 
   var eventId = parseInt(getUrlParameter("event"));
 
-  // if(!localStorage.getItem("data")) {
+  if(!localStorage.getItem("data")) {
     $.get("https://sheetsu.com/apis/v1.0/ba3cacae").done(function(returnedData) {
       data = returnedData;
       cleanupData();
@@ -37,10 +37,14 @@ $(document).ready(function(){
         showPop(eventId);
       }
     });
-  // } else {
-  //   data = JSON.parse(localStorage.getItem("data"));
-  //   displayEvents();
-  // }
+  } else {
+    data = JSON.parse(localStorage.getItem("data"));
+    displayEvents();
+    if(eventId){
+      showPop(eventId);
+    }
+
+  }
 
   // Search & Filter stuff
 

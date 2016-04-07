@@ -275,6 +275,10 @@ header {
   background: rgba(0,0,0,.7);
   display: none;
 
+  .event-data {
+    overflow: auto;
+  }
+
   .not-specified {
     color: rgba(0,0,0,.25);
     font-style: italic;
@@ -352,6 +356,10 @@ header {
     opacity: .4;
     cursor: pointer;
     transition: opacity .15s ease-out;
+    user-select: none;
+    border-radius: 4px;
+    z-index: 9999999999;
+
 
     &:hover {
       opacity: 1;
@@ -485,41 +493,5 @@ a {
   100% {  transform: skew(4deg,0deg) scaleX(1); }
 }
 
-@media only screen and (max-width:500px) {
-
-  header {
-    h1 {
-      text-align: center;
-      display: block;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .button {
-      display: block;
-      float: none;
-      text-align: center;
-    }
-  }
 
 
-  .month-header {
-
-    h1 {
-      text-align: center;
-      font-size: 20px;
-
-      * {
-        font-size: 20px !important;
-      }
-    }
-
-    .filter-events-wrapper {
-      display: block;
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  }
-
-
-}
