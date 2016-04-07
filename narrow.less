@@ -37,19 +37,28 @@
   .event-popup-wrapper {
 
     .event-popup {
-      padding: 15px 20px;
-      margin: 0px;
-      width: 85%;
-      margin: 15px auto 0 auto;
-      height: 90%;
+
+      position: fixed;
+      top: 10px;
+      bottom: 10px;
+      left: 10px;
+      margin: 0;
+      right: 10px;
+      width: auto;
+      height: auto;
+      // padding: 15px 20px;
+      // margin: 0px;
+      // width: 85%;
+      // margin: 15px auto 0 auto;
+      // height: 90%;
     }
 
     h1 {
       font-size: 22px;
       padding: 0;
       margin: 0 0 18px 0;
-      // padding-right: 55px;
-      text-align: center;
+      text-align: left;
+      width: ~"calc(100% - 70px)";
     }
 
     .event-description {
@@ -59,12 +68,10 @@
     .event-date {
       float: none;
       display: block;
-      // text-align: right;
       color: rgba(0,0,0,.6);
       font-size: 18px;
-      margin-bottom: 5px;
-      margin: 10px 0 15px 0;
-      text-align: center;
+      margin: 0;
+      text-align: left;
     }
 
 
@@ -72,41 +79,35 @@
       opacity: .3;
       border: solid 2px white;
       box-sizing: border-box;
-      height: 50px;
-      width: 50px;
-
+      height: 55px;
+      width: 55px;
 
       &:hover {
         opacity: .45;
       }
-
     }
 
     .close-pop {
       background: black;
-      // display: none;
       border-radius: 50%;
-      right: 40px;
+      right: 25px;
       top: 25px;
       z-index: 9999999;
 
       img {
         width: 18px;
         position: relative;
-        top: -2px;
       }
 
       .key-label {
         display: none;
       }
-
     }
 
     .right-col,.left-col {
       float: none;
       width: auto;
     }
-
 
     .event-nav {
       position: absolute;
@@ -118,19 +119,23 @@
       border-radius: 50%;
       transition: opacity .15s ease-out;
       z-index: 9999999;
+      top: auto;
+      bottom: 30px;
 
       img {
         position: relative;
-        top: 3px;
+        top: 5px;
         width: 20px;
       }
 
       &.previous {
-        left: 25px;
+        left: auto;
+
+        right: 85px;
       }
 
       &.next {
-        left: 80px;
+        right: 25px;
         img {
           transform: rotate(180deg);
         }
