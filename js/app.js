@@ -24,6 +24,19 @@ var dataKeys = {
 
 $(document).ready(function(){
 
+  var myElement = $(".event-popup")[0];
+  var hammertime = new Hammer(myElement, {});
+  hammertime.on('swipe', function(ev) {
+    var delta = ev.deltaX;
+    if(Math.abs(delta) > 100) {
+      if(delta > 0) {
+        navigatePopup("next");
+      } else {
+        navigatePopup("previous");
+      }
+    }
+  });
+
   var eventId = parseInt(getUrlParameter("event"));
 
   if(!localStorage.getItem("data")) {
@@ -133,6 +146,8 @@ function navigatePopup(direction) {
 
 function showPop(id){
   var pop = $(".event-popup-wrapper");
+
+  pop.find(".event-popup").scrollTop("0");
   pop.show();
 
   for(var k in data){
