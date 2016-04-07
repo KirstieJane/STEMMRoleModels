@@ -1,11 +1,3 @@
-// TODO - store the results of the query in a separate object
-// Then iterate over it to give it some IDs etc..
-// Then we can use those IDs to show the full versions in teh popup. Woop
-
-// PROTOTYPE TODO - localstorage handling, so you dont have to get new data all the time if you dont want to
-
-// TODO when you've filtered some results, and pop one up, you can still go side to sdie through ALL ofm, should just be the filtered ones.
-
 var dayNames = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 var monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 var data;
