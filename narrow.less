@@ -1,41 +1,58 @@
 @media only screen and (max-width:500px) {
 
-
   * {
     line-height: 140%;
   }
+
   header {
+    text-align: center;
+
     h1 {
-      text-align: center;
       display: block;
       font-size: 24px;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
 
     .button {
       display: block;
       float: none;
       text-align: center;
+      width: 60%;
+      margin: 0 auto;
+
+    }
+
+    .inner-wrapper {
+      padding: 10px 15px 18px 15px;
     }
   }
 
 
-  .month-header {
+  .event-card {
+    max-width: 100%;
+  }
 
-    h1 {
-      text-align: center;
-      font-size: 20px;
+  .month {
+    padding: 20px;
+    .month-header {
 
-      * {
-        font-size: 20px !important;
+        h1 {
+          text-align: center;
+          font-size: 20px;
+          float: none;
+
+          * {
+            font-size: 20px !important;
+            font-weight: 400;
+          }
+        }
+
+        .filter-events-wrapper {
+          display: block;
+          width: 100%;
+          margin-bottom: 20px;
+        }
       }
-    }
-
-    .filter-events-wrapper {
-      display: block;
-      width: 100%;
-      margin-bottom: 20px;
-    }
   }
 
   .event-popup-wrapper {
@@ -73,7 +90,6 @@
       margin: 0;
       text-align: left;
     }
-
 
     .close-pop, .event-nav {
       opacity: .3;

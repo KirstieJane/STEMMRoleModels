@@ -68,7 +68,7 @@ $(document).ready(function(){
     filterEvents("");
   });
 
-  $("body").on("keyup",".filter-events",function(){
+  $("body").on("keyup",".filter-events",function(e){
     var term = $(this).val();
     term = term.toLowerCase();
     if(term.length == 0){
@@ -76,6 +76,10 @@ $(document).ready(function(){
     } else {
       $(".clear-search").show();
     }
+    if(e.keyCode == 13){
+      $(this).blur();
+    }
+
     filterEvents(term);
   });
 
