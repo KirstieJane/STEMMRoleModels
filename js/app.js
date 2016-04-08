@@ -67,6 +67,7 @@ $(document).ready(function(){
       $(".error-connecting").show();
       $(".throbber").hide();
     });
+
   // } else {
   //   data = JSON.parse(localStorage.getItem("data"));
   //   displayEvents();
@@ -294,6 +295,7 @@ function displayEvents(){
   for(var k in data){
     var itemEl = $(".event-card.template").clone();
 
+
     //Do the item
     var item = data[k];
     itemEl.data("id",item.id);
@@ -301,6 +303,22 @@ function displayEvents(){
     itemEl.removeClass("template");
     $(".events").append(itemEl);
 
+    var hasMedia = false;
+    var mediaTypes = ["event-creations","event-links-photos","event-links-blogpost","event-links-video"];
+
+    for(var i = 0; i < mediaTypes.length; i++) {
+      var mediaType = mediaTypes[i];
+      var link = item[mediaType];
+      if(link && validURL(link)){
+        hasMedia = true;
+      }
+    }
+
+    if(hasMedia){
+      itemEl.find(".media-indicator").addClass("has-media").attr("title","This report has links!");
+    } else {
+      itemEl.find(".media-indicator").attr("title","This report has no links!");
+    }
     // Count total attendance
     for(var j in item){
       var value = item[j];

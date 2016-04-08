@@ -169,7 +169,6 @@ header {
   background: white;
   box-shadow: 0px 1px 1px rgba(0,0,0,.2);
   margin: 8px;
-  // margin: 0 0 20px 0 ;
   color: rgba(0,0,0,.4);
   min-width: 150px;
   max-width: 300px;
@@ -179,6 +178,20 @@ header {
   position: relative;
   top: 0;
   transition: all .15s ease-out;
+  position: relative;
+
+  .media-indicator {
+    position: absolute;
+    bottom: 17px;
+    right: 15px;
+    opacity: .2;
+    font-size: 18px;
+
+    &.has-media {
+      opacity: .7;
+      color: #7abc5e;
+    }
+  }
 
   &:hover {
     opacity: .9;
