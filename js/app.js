@@ -2,11 +2,13 @@
 
 var dayNames = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 var monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-var data; // THIS STORES IT ALLLLLLLLL muahawhwhwhwhwahaha ALL OF IT.
+var rawData;
+var data = []; // THIS STORES IT ALLLLLLLLL muahawhwhwhwhwahaha ALL OF IT.
 
 var dataKeys = {
-  "Timestamp" : "event-date",
-  // "Date of Event" : "event-date",
+  "Status" : "report-status",
+  "Timestamp" : "event-timestamp",
+  "Date of Event" : "event-date",
   "Your Name" : "club-organizer",
   "Club Name" : "club-name",
   "Club Link" : "club-link",
@@ -17,7 +19,7 @@ var dataKeys = {
   "Event Description" : "event-description",
   "Event Creations" : "event-creations",
   "Web Literacy Skills" : "event-skills",
-  "Links to Curriculum" : "event-links-curriculum",
+  "Links to Curriculum (Optional)" : "event-links-curriculum",
   "Links to Photos (Optional)" : "event-links-photos",
   "Links to Blogpost (Optional)" : "event-links-blogpost",
   "Links to Video (Optional)" : "event-links-video",
@@ -54,7 +56,7 @@ $(document).ready(function(){
 
   // if(!localStorage.getItem("data")) {
     $.get("https://sheetsu.com/apis/v1.0/ba3cacae").done(function(returnedData) {
-      data = returnedData;
+      rawData = returnedData;
       cleanupData();
       localStorage.setItem("data",JSON.stringify(data));
       displayEvents();
@@ -141,19 +143,32 @@ function navigatePopup(direction) {
     popupEl.removeClass("shakeright").removeClass("shakeleft");
     popupEl.width(popupEl.width());
 
+    var visibleIDs = [];
+
+    for(var k in data){
+      var item = data[k];
+      if(item.visible) {
+        visibleIDs.push(item.id);
+      }
+    }
+
+    var currentIndex = visibleIDs.indexOf(currentId);
+
     if(direction == "next") {
-      currentId++;
-      if(currentId > Object.keys(data).length) {
-        currentId = 1;
+      currentIndex++;
+      if(currentIndex >= visibleIDs.length) {
+        currentIndex = 0;
       }
       popupEl.addClass("shakeright");
     } else {
-      currentId--;
-      if(currentId < 1) {
-        currentId = Object.keys(data).length;
+      currentIndex--;
+      if(currentIndex < 0) {
+        currentIndex = visibleIDs.length - 1;
       }
       popupEl.addClass("shakeleft");
     }
+    currentId = visibleIDs[currentIndex];
+
     showPop(currentId);
   }
 }
@@ -162,16 +177,22 @@ function navigatePopup(direction) {
 // Also changes the browser history, so you can share a link...
 
 function showPop(id){
+
+  var found = false;
+
   var pop = $(".event-popup-wrapper");
 
   pop.find(".event-popup").scrollTop("0");
-  pop.show();
 
   for(var k in data){
+
     var item = data[k];
     pop.data("id",id);
 
     if(item.id == id) {
+
+      found = true;
+      pop.show();
 
       history.replaceState({}, "Mozilla Clubs Event Report " + item.id, "?event=" + item.id);
 
@@ -182,6 +203,9 @@ function showPop(id){
           var value = item[j];
 
           if(j == "event-date"){
+            if(value == ""){
+              value = item["event-timestamp"];
+            }
             value = formatDate(value);
           }
 
@@ -217,6 +241,10 @@ function showPop(id){
     }
   });
 
+  if(!found) {
+    hidePop();
+  }
+
 }
 
 function hidePop(){
@@ -229,6 +257,9 @@ function hidePop(){
 
 function formatDate(dateString) {
   var date = new Date(dateString);
+  if(date == "Invalid Date") {
+    return "Date Unknown";
+  }
   var dayNum = date.getDay(); //Number of the day of the week
   var dayOfWeek = dayNames[dayNum];
   var dayOfMonth = date.getDate();
@@ -275,6 +306,9 @@ function displayEvents(){
         var value = item[j];
 
         if(j == "event-date"){
+          if(value == ""){
+            value = item["event-timestamp"];
+          }
           value = formatDate(value);
         }
 
@@ -313,15 +347,22 @@ function numberWithCommas(x) {
 // * Sorts the items according to the date (most recent first);
 
 function cleanupData(){
-  for(var i = 0; i < data.length; i++){
-    var item = data[i];
-    for(var k in item) {
-      var itemData = JSON.stringify(item[k]);
-      var newKey = dataKeys[k];
-      delete item[k];
-      item[newKey] = JSON.parse(itemData);
+
+  //Should just junk out the stuff that's not approved....?
+
+  for(var i = 0; i < rawData.length; i++){
+    var item = rawData[i];
+    if(item["Status"] == "Approved"){
+      var newItem = {};
+      for(var k in item) {
+        // var itemData = JSON.stringify(item[k]);
+        var newKey = dataKeys[k];
+        newItem[newKey] = item[k];
+      }
+      newItem.id = i + 2;
+      newItem.visible = true; //visible by default - this is important for the Popup
+      data.push(newItem);
     }
-    item.id = i + 2;
   }
   data = data.sort(dateSort);
 }
@@ -335,13 +376,15 @@ function filterEvents(term){
 
   for(var i = 0; i < data.length; i++){
     var item = data[i];
-
+    item.visible = false;
     for(var k in item){
       var value = item[k];
       if(typeof value ==  "string"){
         value = value.toLowerCase();
         if(value.indexOf(term) > -1){
           matchingIDs.push(item.id);
+          item.visible = true;
+          break;
         }
       }
     }
@@ -360,7 +403,6 @@ function filterEvents(term){
   } else {
     $(".no-results").hide();
   }
-
 }
 
 
