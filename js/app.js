@@ -94,7 +94,6 @@ $(document).ready(function(){
     if(e.keyCode == 13){
       $(this).blur();
     }
-
     filterEvents(term);
   });
 
@@ -128,7 +127,6 @@ $(document).ready(function(){
       hidePop();
     }
   });
-
 });
 
 // Navigates the event report details popup to either the next
@@ -177,7 +175,6 @@ function navigatePopup(direction) {
 // Also changes the browser history, so you can share a link...
 
 function showPop(id){
-
   var found = false;
 
   var pop = $(".event-popup-wrapper");
@@ -225,7 +222,6 @@ function showPop(id){
           } else {
             pop.find("." + j + " .value").text(value);
           }
-
         }
       }
     }
@@ -244,7 +240,6 @@ function showPop(id){
   if(!found) {
     hidePop();
   }
-
 }
 
 function hidePop(){
