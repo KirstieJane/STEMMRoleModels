@@ -21,3 +21,7 @@ This is a work in progress and uses test data for now.
 3. We access the spreadsheet using [Sheetsu](https://sheetsu.com/)
   * This gives us handy JSON data
 4. We display the data on the Dashboard
+
+##Features
+
+[Feature priority sorting](https://docs.google.com/presentation/d/1Gdb-Gg2NPxOKpU0PyvbijaV_GFmuFVkmJP9__Jdw2Pk/edit#slide=id.gf13f3be28_0_9)
