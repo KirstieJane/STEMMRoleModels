@@ -1,6 +1,6 @@
 var dayNames = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 var monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-var data;
+var data; // THIS STORES IT ALLLLLLLLL muahawhwhwhwhwahaha ALL OF IT.
 
 var dataKeys = {
   "Timestamp" : "event-date",
@@ -22,33 +22,44 @@ var dataKeys = {
   "Your Feedback" : "event-feedback-organizer"
 }
 
+var touchEnabled = false;
+
 $(document).ready(function(){
+
+  if('ontouchstart' in document.documentElement){
+    touchEnabled = true;
+  }
 
   var myElement = $(".event-popup")[0];
   var hammertime = new Hammer(myElement, {});
-  hammertime.on('swipe', function(ev) {
-    var delta = ev.deltaX;
-    if(Math.abs(delta) > 100) {
-      if(delta > 0) {
-        navigatePopup("next");
-      } else {
-        navigatePopup("previous");
+  if(touchEnabled){
+    hammertime.on('swipe', function(ev) {
+      var delta = ev.deltaX;
+      if(Math.abs(delta) > 100) {
+        if(delta > 0) {
+          navigatePopup("next");
+        } else {
+          navigatePopup("previous");
+        }
       }
-    }
-  });
+    });
+  }
 
   var eventId = parseInt(getUrlParameter("event"));
 
+  // For development, I'm just keeping the data in localstorage once it's loaded...
+
   if(!localStorage.getItem("data")) {
-    $.get("https://sheetsu.com/apis/v1.0/ba3cacae").done(function(returnedData) {
+    $.get("https://sheetsu.com/apis/v1.0/ba3cacaeb").done(function(returnedData) {
       data = returnedData;
       cleanupData();
       localStorage.setItem("data",JSON.stringify(data));
       displayEvents();
-
       if(eventId){
         showPop(eventId);
       }
+    }).fail(function(e){
+      console.log(e);
     });
   } else {
     data = JSON.parse(localStorage.getItem("data"));
@@ -56,7 +67,6 @@ $(document).ready(function(){
     if(eventId){
       showPop(eventId);
     }
-
   }
 
   // Search & Filter stuff

@@ -1,13 +1,31 @@
-##To-Do
+#To-Do
 
-####Mobile todo
+##Mobile todo
 * When you've filtered some results, and pop one up, you can still go side to sdie through ALL ofm, should just be the filtered ones.
-* Mobile mode sucks when there's a popup, you cant close it and you can't go side to side
-* And need to make all the stuff smaller
+
+##Stuff to put in the prototype clean slate
 
 
-####Stuff to put in the prototype clean slate
+####JS
+
 * Localstorage handling, so you dont have to get new data all the time if you dont want to
 * URL detecting
 * Checking for a parameter in the querystring
+* Touch checker
+* The replaceHistory stuff is pretty nice...
+
+####HTML
+
+* Vieport tag for mobile
+
+####CSS
+
+Include...
+
+* also, not digging client side LESS too much, can we something different?
+
+* Example of an animation syntax
+* Example of responsive design query syntax
+* Could maybe include it samples / snippets....
+* Variables? Not really using these but sure...
 
