@@ -1,9 +1,12 @@
+// Mozilla Clubs Events v1.0
+
 var dayNames = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 var monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 var data; // THIS STORES IT ALLLLLLLLL muahawhwhwhwhwahaha ALL OF IT.
 
 var dataKeys = {
   "Timestamp" : "event-date",
+  // "Date of Event" : "event-date",
   "Your Name" : "club-organizer",
   "Club Name" : "club-name",
   "Club Link" : "club-link",
@@ -49,8 +52,8 @@ $(document).ready(function(){
 
   // For development, I'm just keeping the data in localstorage once it's loaded...
 
-  if(!localStorage.getItem("data")) {
-    $.get("https://sheetsu.com/apis/v1.0/ba3cacaeb").done(function(returnedData) {
+  // if(!localStorage.getItem("data")) {
+    $.get("https://sheetsu.com/apis/v1.0/ba3cacae").done(function(returnedData) {
       data = returnedData;
       cleanupData();
       localStorage.setItem("data",JSON.stringify(data));
@@ -61,13 +64,13 @@ $(document).ready(function(){
     }).fail(function(e){
       console.log(e);
     });
-  } else {
-    data = JSON.parse(localStorage.getItem("data"));
-    displayEvents();
-    if(eventId){
-      showPop(eventId);
-    }
-  }
+  // } else {
+  //   data = JSON.parse(localStorage.getItem("data"));
+  //   displayEvents();
+  //   if(eventId){
+  //     showPop(eventId);
+  //   }
+  // }
 
   // Search & Filter stuff
 
