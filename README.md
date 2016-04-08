@@ -17,7 +17,7 @@ This is a work in progress and uses test data for now.
 
 ##How it works
 
-1. Users submit an event repot using the Google Form above
+1. Users submit an event report using the Google Form above
 2. The data from the form is then added to the Spreadsheet
 3. We access the spreadsheet using [Sheetsu](https://sheetsu.com/)
   * This gives us handy JSON data
