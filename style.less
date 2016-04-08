@@ -449,13 +449,11 @@ a {
     animation: fadeMeSon .4s ease-out;
   }
 }
+
 @keyframes fadeMeSon {
   0%   { opacity: 0;  }
-  // 40%  { opacity: 0; }
-  // 60%  { opacity: 0; }
   100% { opacity: 1;  }
 }
-
 
 @keyframes shakeleft {
   0% {   transform: translateX(0); }
@@ -477,7 +475,7 @@ a {
   font-size: 90%;
 }
 
-.no-results {
+.no-results, .error-connecting {
   display: none;
   width: 300px;
   text-align: center;
@@ -507,4 +505,29 @@ a {
   50% {   transform:  skew(-4deg,0deg) scaleX(1); }
   60% {   transform:  skew(-1deg,0deg) scaleY(.9) ; }
   100% {  transform: skew(4deg,0deg) scaleX(1); }
+}
+
+.error-connecting {
+  display: none;
+  width: 300px;
+  text-align: center;
+  width: 100%;
+  color: rgba(0,0,0,.4);
+  margin-top: 50px;
+
+  h2 {
+    margin: 0 0 5px 0;
+    font-weight: 500;
+    font-size: 22px;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  strong {
+    font-size: 20px;
+  }
+
 }

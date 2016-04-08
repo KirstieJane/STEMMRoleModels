@@ -64,7 +64,8 @@ $(document).ready(function(){
         showPop(eventId);
       }
     }).fail(function(e){
-      console.log(e);
+      $(".error-connecting").show();
+      $(".throbber").hide();
     });
   // } else {
   //   data = JSON.parse(localStorage.getItem("data"));
@@ -178,8 +179,9 @@ function showPop(id){
   var found = false;
 
   var pop = $(".event-popup-wrapper");
-
   pop.find(".event-popup").scrollTop("0");
+
+
 
   for(var k in data){
 
@@ -292,43 +294,25 @@ function displayEvents(){
   for(var k in data){
     var itemEl = $(".event-card.template").clone();
 
+    //Do the item
     var item = data[k];
-
     itemEl.data("id",item.id);
-
-    for(var j in item){
-      if(itemEl.find("." + j).length > 0){
-        var value = item[j];
-
-        if(j == "event-date"){
-          if(value == ""){
-            value = item["event-timestamp"];
-          }
-          value = formatDate(value);
-        }
-
-        if(j == "event-attendance"){
-          if(!isNaN(parseInt(value))){
-            participants = participants + parseInt(value);
-          }
-        }
-
-        if(j == "event-attendance"){
-          value = numberWithCommas(value);
-        }
-        if(value.length == 0){
-          value = "Unknown";
-        }
-
-        itemEl.find("." + j + " .value").text(value);
-      }
-    }
-
+    populateElement(itemEl, item);
     itemEl.removeClass("template");
     $(".events").append(itemEl);
+
+    // Count total attendance
+    for(var j in item){
+      var value = item[j];
+      if(j == "event-attendance"){
+        if(!isNaN(parseInt(value))){
+          participants = participants + parseInt(value);
+        }
+      }
+    }
+    $(".participant-count").text(numberWithCommas(participants));
   }
 
-  $(".participant-count").text(numberWithCommas(participants));
 }
 
 // Returns numbers with commas, so 1000000 becomes 1,000,000
@@ -421,4 +405,29 @@ function getUrlParameter(sParam){
 function validURL(str) {
   var regexp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/
   return regexp.test(str);
+}
+
+// Populates the element "el" with data from the item Object
+
+function populateElement(el, item){
+  for(var j in item){
+    if(el.find("." + j).length > 0){
+      var value = item[j];
+
+      if(j == "event-date"){
+        if(value == ""){
+          value = item["event-timestamp"];
+        }
+        value = formatDate(value);
+      }
+
+      if(j == "event-attendance"){
+        value = numberWithCommas(value);
+      }
+      if(value.length == 0){
+        value = "Unknown";
+      }
+      el.find("." + j + " .value").text(value);
+    }
+  }
 }
