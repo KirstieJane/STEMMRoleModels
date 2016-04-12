@@ -35,9 +35,9 @@ $(document).ready(function(){
     touchEnabled = true;
   }
 
-  var myElement = $(".event-popup")[0];
-  var hammertime = new Hammer(myElement, {});
   if(touchEnabled){
+    var myElement = $(".event-popup")[0];
+    var hammertime = new Hammer(myElement, {});
     hammertime.on('swipe', function(ev) {
       var delta = ev.deltaX;
       if(Math.abs(delta) > 100) {
@@ -279,6 +279,27 @@ function dateSort(a,b){
   }
 }
 
+// Changes the event count and participants total
+
+function updateCounts(){
+
+  var participants = 0;
+  var eventCount = 0;
+
+  for(var k in data){
+    var item = data[k];
+    if(item.visible) {
+      var attendance = parseInt(item["event-attendance"]);
+      if(!isNaN(attendance)){
+        participants = participants + attendance;
+      }
+      eventCount++;
+    }
+    $(".participant-count").text(numberWithCommas(participants));
+    $(".event-count").text(eventCount);
+  }
+}
+
 // For each event report that is loaded, this adds a little event card to the page
 // with some of the event data
 
@@ -287,14 +308,11 @@ function displayEvents(){
   $(".throbber").addClass("goodbye");
   $(".month").show();
 
-  var eventCount = Object.keys(data).length;
-  $(".event-count").text(eventCount);
 
   var participants = 0;
 
   for(var k in data){
     var itemEl = $(".event-card.template").clone();
-
 
     //Do the item
     var item = data[k];
@@ -328,9 +346,10 @@ function displayEvents(){
         }
       }
     }
-    $(".participant-count").text(numberWithCommas(participants));
+    // $(".participant-count").text(numberWithCommas(participants));
   }
 
+  updateCounts();
 }
 
 // Returns numbers with commas, so 1000000 becomes 1,000,000
@@ -369,6 +388,8 @@ function cleanupData(){
 
 function filterEvents(term){
 
+  term = term.trim();
+
   var matchingIDs = [];
 
   for(var i = 0; i < data.length; i++){
@@ -400,6 +421,9 @@ function filterEvents(term){
   } else {
     $(".no-results").hide();
   }
+
+  updateCounts();
+
 }
 
 
