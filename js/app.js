@@ -202,7 +202,10 @@ function showPop(id){
         if(pop.find("." + j).length > 0){
           var value = item[j];
 
+
+
           if(j == "event-date"){
+
             if(value == ""){
               value = item["event-timestamp"];
             }
@@ -279,12 +282,17 @@ function dateSort(a,b){
   }
 }
 
-// Changes the event count and participants total
+// Counts & updates the number of...
+// * Countries
+// * Events
+// * Participants
+// ...for all visible events.
 
 function updateCounts(){
 
   var participants = 0;
   var eventCount = 0;
+  var countries = [];
 
   for(var k in data){
     var item = data[k];
@@ -293,11 +301,17 @@ function updateCounts(){
       if(!isNaN(attendance)){
         participants = participants + attendance;
       }
+      var country = item["club-country"];
+      if(country != "" && countries.indexOf(country) < 0) {
+        countries.push(country);
+      }
       eventCount++;
     }
-    $(".participant-count").text(numberWithCommas(participants));
-    $(".event-count").text(eventCount);
   }
+
+  $(".country-count").text(numberWithCommas(countries.length));
+  $(".participant-count").text(numberWithCommas(participants));
+  $(".event-count").text(eventCount);
 }
 
 // For each event report that is loaded, this adds a little event card to the page
@@ -361,20 +375,23 @@ function numberWithCommas(x) {
 // * Replaces the original keys in each item's object with the ones above
 // * Adds a row number to each item to match what's in the spreadsheet
 // * Sorts the items according to the date (most recent first);
+// * If the Event Date is missing (it shouldn't) it uses the form's submitted timestamp
+// * Only uses data with "Approved" in the status column
 
 function cleanupData(){
-
-  //Should just junk out the stuff that's not approved....?
-
   for(var i = 0; i < rawData.length; i++){
     var item = rawData[i];
     if(item["Status"] == "Approved"){
       var newItem = {};
       for(var k in item) {
-        // var itemData = JSON.stringify(item[k]);
         var newKey = dataKeys[k];
         newItem[newKey] = item[k];
       }
+
+      if(newItem["event-date"] == "") {
+        newItem["event-date"] = newItem["event-timestamp"];
+      }
+
       newItem.id = i + 2;
       newItem.visible = true; //visible by default - this is important for the Popup
       data.push(newItem);
@@ -423,7 +440,6 @@ function filterEvents(term){
   }
 
   updateCounts();
-
 }
 
 
