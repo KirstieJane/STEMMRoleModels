@@ -10,6 +10,7 @@ var dataKeys = {
   "Timestamp" : "event-timestamp",
   "Date of Event" : "event-date",
   "Your Name" : "club-organizer",
+  "Your Twitter Handle (Optional)" : "club-contact-details",
   "Club Name" : "club-name",
   "Club Link" : "club-link",
   "City" : "event-city",
@@ -202,10 +203,7 @@ function showPop(id){
         if(pop.find("." + j).length > 0){
           var value = item[j];
 
-
-
           if(j == "event-date"){
-
             if(value == ""){
               value = item["event-timestamp"];
             }
@@ -218,15 +216,36 @@ function showPop(id){
 
           if(value.length == 0){
             value = "Not filled in";
-            pop.find("." + j + " .value").addClass("not-specified");
+            pop.find("." + j + " .value").addClass("not-specified").parent().addClass("not-specified");
           }
 
-          pop.find("." + j + " .value").html("");
+          var valueEl = pop.find("." + j + " .value");
+          valueEl.html("");
 
-          if(validURL(value)){
-            pop.find("." + j + " .value").append("<a href="+value+">" + value + "</a>");
-          } else {
-            pop.find("." + j + " .value").text(value);
+          var words = value.split(" ");
+
+          for(i = 0; i < words.length; i++) {
+            var word = words[i];
+
+            var lastChar = word.charAt(word.length-1);
+
+            var regexp = /,|\./
+            var specialChar = false;
+            if(regexp.test(lastChar)){
+              word = word.slice(0,-1);
+              specialChar = true;
+            }
+
+            var append;
+            if(validURL(word)) {
+              append = "<a href='"+word+"'>" + word + "</a>";
+            } else {
+              append = word;
+            }
+            if(specialChar) {
+              append = append + lastChar;
+            }
+            valueEl.html(valueEl.html() + " " + append);
           }
         }
       }
@@ -461,7 +480,7 @@ function getUrlParameter(sParam){
 // Checks if something is a valid URL
 
 function validURL(str) {
-  var regexp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/
+  var regexp = /[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/
   return regexp.test(str);
 }
 

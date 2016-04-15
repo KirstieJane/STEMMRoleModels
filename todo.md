@@ -1,6 +1,9 @@
 #To-Do
 * Make the function that populates the divs in the popup and event card generic
-
+* Considering defining some more info about the data in the key object like
+  * What kind of data is this? Link / text, etc
+  * What to show if it's missing (alternat string)
+  * Show it at all if missing?
 
 ##Mobile todo
 * When you've filtered some results, and pop one up, you can still go side to sdie through ALL ofm, should just be the filtered ones.
