@@ -12,7 +12,7 @@ This is a work in progress and uses test data for now.
   * Used to submit event reports
 * [The Spreadsheet](https://docs.google.com/spreadsheets/d/1QHl2bjBhMslyFzR5XXPzMLdzzx7oeSKTbgR5PM8qp64/edit#gid=1045576576)
   * This is where all the data lives
-* [Event Report Dashboard](mozilla.github.io/clubs-events)
+* [Event Report Dashboard](http://mozilla.github.io/clubs-events/)
   * Displays the reports
 
 ##How it works

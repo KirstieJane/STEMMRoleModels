@@ -5,28 +5,6 @@ var monthNames = ["January","February","March","April","May","June","July","Augu
 var rawData;
 var data = []; // THIS STORES IT ALLLLLLLLL muahawhwhwhwhwahaha ALL OF IT.
 
-var dataKeys = {
-  "Status" : "report-status",
-  "Timestamp" : "event-timestamp",
-  "Date of Event" : "event-date",
-  "Your Name" : "club-organizer",
-  "Your Twitter Handle (Optional)" : "club-contact-details",
-  "Club Name" : "club-name",
-  "Club Link" : "club-link",
-  "City" : "event-city",
-  "Country" : "club-country",
-  "Event Location" : "event-location",
-  "Attendance" : "event-attendance",
-  "Event Description" : "event-description",
-  "Event Creations" : "event-creations",
-  "Web Literacy Skills" : "event-skills",
-  "Links to Curriculum (Optional)" : "event-links-curriculum",
-  "Links to Photos (Optional)" : "event-links-photos",
-  "Links to Blogpost (Optional)" : "event-links-blogpost",
-  "Links to Video (Optional)" : "event-links-video",
-  "Feedback from Attendees" : "event-feedback-attendees",
-  "Your Feedback" : "event-feedback-organizer"
-}
 
 var touchEnabled = false;
 
@@ -56,10 +34,15 @@ $(document).ready(function(){
   // For development, I'm just keeping the data in localstorage once it's loaded...
 
   // if(!localStorage.getItem("data")) {
-    $.get("https://sheetsu.com/apis/v1.0/ba3cacae").done(function(returnedData) {
+    $.get(sheetsuURL).done(function(returnedData) {
       rawData = returnedData;
       cleanupData();
       localStorage.setItem("data",JSON.stringify(data));
+
+      if(data.length == 0) {
+        $(".no-events").show();
+      }
+
       displayEvents();
       if(eventId){
         showPop(eventId);
@@ -68,7 +51,6 @@ $(document).ready(function(){
       $(".error-connecting").show();
       $(".throbber").hide();
     });
-
   // } else {
   //   data = JSON.parse(localStorage.getItem("data"));
   //   displayEvents();
@@ -182,8 +164,6 @@ function showPop(id){
 
   var pop = $(".event-popup-wrapper");
   pop.find(".event-popup").scrollTop("0");
-
-
 
   for(var k in data){
 
