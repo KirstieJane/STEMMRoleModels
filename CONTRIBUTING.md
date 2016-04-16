@@ -133,7 +133,9 @@ Once you've identified one of the issues above that you feel you can contribute 
 
 ## Recognising contributions
 
-If you're logged into GitHub you can see everyone who has contributed to the repository at our [live contributors page][link_contributorslive]. If you aren't logged in we have a [static version][link_contributorsstatic] of the page but it might not be completely up to date!
+If you're logged into GitHub you can see everyone who has contributed to the repository via our [live contributors page][link_contributorslive]. (You might have to add `KirstieJane/STEMMRoleModels` as the repository name before you click to sign in via GitHub.)
+
+If you aren't logged in we have a [static version][link_contributorsstatic] of the page but it might not be completely up to date!
 
 These pages are powered by the [Let's all build a hat rack][link_hatrackhome] project, and we love them. 
 
@@ -186,7 +188,7 @@ And if you've found typos in this (or any other) page, you could consider submit
 [link_pushpullblog]: https://www.igvita.com/2011/12/19/dont-push-your-pull-requests/
 [link_branches]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
 [link_updateupstreamwiki]: https://github.com/KirstieJane/STEMMRoleModels/wiki/Syncing-your-fork-to-the-original-repository-via-the-browser
-[link_contributorslive]: https://labhr.github.io/js-hatrack/#repo=kirstiejane/Stemmrolemodels
+[link_contributorslive]: https://labhr.github.io/js-hatrack/#repo=KirstieJane/STEMMRoleModels
 [link_contributorsstatic]: http://kirstiejane.github.io/STEMMRoleModels/octohatrack_output/Scrapbook_20160317092940/index.html
 [link_hatrackhome]: https://labhr.github.io/
 [link_hatrackidea]: http://hawthornlandings.org/2015/02/13/a-place-to-hang-your-hat/
