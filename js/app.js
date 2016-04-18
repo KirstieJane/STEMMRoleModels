@@ -36,6 +36,7 @@ $(document).ready(function(){
   // if(!localStorage.getItem("data")) {
     $.get(sheetsuURL).done(function(returnedData) {
       rawData = returnedData;
+
       cleanupData();
       localStorage.setItem("data",JSON.stringify(data));
 
