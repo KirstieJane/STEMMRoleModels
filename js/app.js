@@ -194,6 +194,13 @@ function showPop(id){
             value = numberWithCommas(value);
           }
 
+          if(j == "club-contact-details"){
+            if(value.length > 0) {
+              value = value.replace("@","");
+              value = "https://twitter.com/" + value;
+            }
+          }
+
           if(value.length == 0){
             value = "Not filled in";
             pop.find("." + j + " .value").addClass("not-specified").parent().addClass("not-specified");
