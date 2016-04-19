@@ -5,7 +5,6 @@ var monthNames = ["January","February","March","April","May","June","July","Augu
 var rawData;
 var data = []; // THIS STORES IT ALLLLLLLLL muahawhwhwhwhwahaha ALL OF IT.
 
-
 var touchEnabled = false;
 
 $(document).ready(function(){
@@ -31,34 +30,29 @@ $(document).ready(function(){
 
   var eventId = parseInt(getUrlParameter("event"));
 
-  // For development, I'm just keeping the data in localstorage once it's loaded...
+  $.get("https://spreadsheets.google.com/feeds/cells/1QHl2bjBhMslyFzR5XXPzMLdzzx7oeSKTbgR5PM8qp64/ohaibtm/public/values?alt=json").done(function(returnedData) {
 
-  // if(!localStorage.getItem("data")) {
-    $.get(sheetsuURL).done(function(returnedData) {
-      rawData = returnedData;
+    rawData = parseDriveData(returnedData);
 
-      cleanupData();
-      localStorage.setItem("data",JSON.stringify(data));
+    cleanupData();
 
-      if(data.length == 0) {
-        $(".no-events").show();
-      }
+    localStorage.setItem("data",JSON.stringify(data));
 
-      displayEvents();
-      if(eventId){
-        showPop(eventId);
-      }
-    }).fail(function(e){
-      $(".error-connecting").show();
-      $(".throbber").hide();
-    });
-  // } else {
-  //   data = JSON.parse(localStorage.getItem("data"));
-  //   displayEvents();
-  //   if(eventId){
-  //     showPop(eventId);
-  //   }
-  // }
+    if(data.length == 0) {
+      $(".no-events").show();
+    }
+
+    displayEvents();
+    if(eventId){
+      showPop(eventId);
+    }
+
+  }).fail(function(e){
+    $(".error-connecting").show();
+    $(".throbber").hide();
+  });
+
+
 
   // Search & Filter stuff
 
@@ -178,7 +172,8 @@ function showPop(id){
 
       history.replaceState({}, "Mozilla Clubs Event Report " + item.id, "?event=" + item.id);
 
-      pop.find(".not-specified").removeClass("not-specified");
+      pop.find(".value").addClass("not-specified").text("Not filled in");
+      pop.find(".value").parent().addClass("not-specified");
 
       for(var j in item){
         if(pop.find("." + j).length > 0){
@@ -202,9 +197,8 @@ function showPop(id){
             }
           }
 
-          if(value.length == 0){
-            value = "Not filled in";
-            pop.find("." + j + " .value").addClass("not-specified").parent().addClass("not-specified");
+          if(value.length > 0){
+            pop.find("." + j + " .value").removeClass("not-specified").parent().removeClass("not-specified");
           }
 
           var valueEl = pop.find("." + j + " .value");
@@ -224,7 +218,6 @@ function showPop(id){
               specialChar = true;
             }
 
-            var append;
             if(validURL(word)) {
               append = "<a href='"+word+"'>" + word + "</a>";
             } else {
@@ -233,7 +226,8 @@ function showPop(id){
             if(specialChar) {
               append = append + lastChar;
             }
-            valueEl.html(valueEl.html() + " " + append);
+
+            valueEl.html(valueEl.html() + append + " ");
           }
         }
       }
@@ -404,6 +398,8 @@ function cleanupData(){
       data.push(newItem);
     }
   }
+
+  console.log(data);
   data = data.sort(dateSort);
 }
 
@@ -495,4 +491,38 @@ function populateElement(el, item){
       el.find("." + j + " .value").text(value);
     }
   }
+}
+
+// Formats JSON data returned from Google Spreadsheet and formats it into
+// an array with a series of objects with key value pairs like "column-name":"value"
+
+function parseDriveData(driveData){
+  var headings = {};
+  var newData = {};
+  var finalData = [];
+  var entries = driveData.feed.entry;
+
+  for(var i = 0; i < entries.length; i++){
+    var entry = entries[i];
+    var row = parseInt(entry.gs$cell.row);
+    var col = parseInt(entry.gs$cell.col);
+    var value = entry.content.$t;
+
+    if(row == 1) {
+      headings[col] = value;
+    }
+
+    if(row > 1) {
+      if(!newData[row]) {
+        newData[row] = {};
+      }
+      newData[row][headings[col]] = value;
+    }
+  }
+
+  for(var k in newData){
+    finalData.push(newData[k]);
+  }
+
+  return finalData;
 }

@@ -11,16 +11,23 @@ body, html {
 .button {
   display: inline-block;
   color: white;
-  border: solid 2px white;
+  // border: solid 2px white;
+  color: white;
+
+  background: #009a6f;
   padding: 9px 12px 6px 12px;
   text-decoration: none;
   border-radius: 2px;
-  opacity: .8;
+  // opacity: .8;
   transition: all .15s ease-out;
 
   &:hover {
-    opacity: 1;
-    background: rgba(255,255,255,.15);
+    background: #0baa79;// opacity: 1;
+    // background: rgba(255,255,255,.15);
+  }
+
+  &:active {
+    background: #009a6f;
   }
 }
 
@@ -422,6 +429,11 @@ header {
 
   p {
     margin: 0 0 25px 0;
+
+  }
+
+  p .value {
+    white-space: pre-wrap;
   }
 
   .event-date {
