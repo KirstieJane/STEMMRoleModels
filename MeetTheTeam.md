@@ -6,7 +6,7 @@ The lead developer for the STEMM Role Models app is [Kirstie Whitaker](www.kirst
 ## Amy Orsborn <img src="https://wp.nyu.edu/amyo/wp-content/uploads/sites/646/2014/09/IMG_20140627_124741-195x300.jpg" width="150" align="right"/>
 [Amy Orsborn](https://wp.nyu.edu/amyo/) is a postdoctoral researcher at New York University. She uses engineering techniques to investigate the central nervous system and develops tools to study neural signals at different spatial scales. She is a talented illustrator and has used her skills to communicate a [plethora of scientific findings](https://wp.nyu.edu/amyo/illustrations/). 
 <BR CLEAR=ALL>
-## Erin Rich <img src="https://i1.rgstatic.net/ii/profile.image/AS%3A314017770344449%401451879078664_l/Erin_Rich.png" width="150" align="right"/>
+## Erin Rich <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAMGAAAAJDNkZjZiMzJlLWJkNjAtNGJhOC04NTM5LTBhNTgwYjc0MzlmYg.jpg" width="150" align="right"/>
 [Erin Rich](erich001.github.io) is an assistant project scientist at the University of California at Berkeley. She studies the functional organisation of prefrontal cortex and was inspired to join the team after experiencing the difficulties associated with finding enough women to ensure a 50/50 male/female representation whem co-organising a recent symposium.
 <BR CLEAR=ALL>
 ## Elizabeth Minor <img src="http://hackthehearst.berkeley.edu/images/mentor-elizabeth-minor.jpg" width="150" align="right"/>
