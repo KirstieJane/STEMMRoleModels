@@ -7,7 +7,8 @@ This is a work in progress, it will be updated as we get feedback and ideas from
 
 #### The layout
 
-![Here](https://github.com/erich001/STEMMRoleModels/blob/master/conceptualdesign.pdf) is an image of how one would navigate the app. 
+How one would navigate the app
+![App nagivation](https://github.com/KirstieJane/STEMMRoleModels/raw/gh-pages/SchematicDesign/conceptualdesign.png)
 
 Main interface pages include:
    * Home
@@ -44,6 +45,4 @@ Here's where we need your help!
   
 ###### Other
   * What suggestions do you have? Let us know!
-
-  
 
