@@ -1,0 +1,14 @@
+header#banner.hero-unit
+  .container
+    h1 STEMMRoleModels
+    p.lead Testing Yeoman with angular-full-stack generator
+    img(src='assets/images/yeoman.png', alt='I\'m Yeoman')
+
+.container
+  .row
+    .col-lg-12
+      h1.page-header This configuration features:
+      ul.nav.nav-tabs.nav-stacked.col-md-4.col-lg-4.col-sm-6(ng-repeat='thing in $ctrl.awesomeThings')
+        li
+          a(href='#', uib-tooltip='{{thing.info}}')
+            | {{thing.name}}

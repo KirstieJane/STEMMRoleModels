@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "rootDir": "./client",
+        "outDir": ".tmp"
+    },
+    "filesGlob": [
+        "client/{app,components}/**/!(*.spec).ts",
+        "client/typings/**/*.d.ts"
+    ],
+    "files": [
+        "client/app/allaboutus/allaboutus.controller.ts",
+        "client/app/allaboutus/allaboutus.ts",
+        "client/app/app.ts",
+        "client/app/main/main.controller.ts",
+        "client/app/main/main.ts",
+        "client/app/multimedia/multimedia.controller.ts",
+        "client/app/multimedia/multimedia.ts",
+        "client/app/newsearch/newsearch.controller.ts",
+        "client/app/newsearch/newsearch.ts",
+        "client/components/footer/footer.directive.ts",
+        "client/components/modal/modal.service.ts",
+        "client/components/navbar/navbar.controller.ts",
+        "client/components/navbar/navbar.directive.ts",
+        "client/components/ui-router/ui-router.mock.ts",
+        "client/components/util/util.module.ts",
+        "client/components/util/util.service.ts",
+        "client/typings/angularjs/angular.d.ts",
+        "client/typings/jquery/jquery.d.ts",
+        "client/typings/lodash/lodash.d.ts",
+        "client/typings/socket.io-client/socket.io-client.d.ts",
+        "client/typings/tsd.d.ts"
+    ]
+}

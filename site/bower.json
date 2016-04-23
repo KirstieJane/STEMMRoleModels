@@ -1,0 +1,20 @@
+{
+  "name": "stemmrollmodels",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "~1.5.0",
+    "json3": "~3.3.1",
+    "es5-shim": "~3.0.1",
+    "bootstrap": "~3.1.1",
+    "angular-resource": "~1.5.0",
+    "angular-cookies": "~1.5.0",
+    "angular-sanitize": "~1.5.0",
+    "angular-bootstrap": "~1.1.2",
+    "font-awesome": ">=4.1.0",
+    "lodash": "~2.4.1",
+    "angular-ui-router": "~0.2.15"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.5.0"
+  }
+}

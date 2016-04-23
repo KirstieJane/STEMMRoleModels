@@ -1,0 +1,41 @@
+.container
+  .row
+  .col-lg-4
+    include ../../components/sidebar/sidebar.jade
+  .col-lg-4
+    h1.page-header New search
+
+    p
+      | This is the page at which you would enter your search terms
+
+    p We'd start with some instructions [that haven't been written yet!]
+    p There would be certain terms related to the potential speaker:
+      ul
+        li Name
+        li Field
+        li SubField
+        li Keyword(s)
+        li Location
+        li Highest degree
+
+    p And then certain filters based on how each member of the database has identified as a role model:
+      ul(style="list-style: none;")
+        form
+          li
+            label Woman
+              input(type="checkbox" checked)
+            label Person of color
+              input(type="checkbox")
+            label Living with a disability
+              input(type="checkbox")
+            label LGBTQ
+              input(type="checkbox")
+            label Parent/carer
+              input(type="checkbox")
+            label Non-traditional career path
+              input(type="checkbox")
+
+  .col-lg-4
+    a(href="https://github.com/KirstieJane/STEMMRoleModels/blob/master/SchematicDesign/conceptualdesign.pdf")
+      img.img-responsive(src="./assets/images/new_search_design.png" alt="New search design")
+
