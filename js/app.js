@@ -30,7 +30,7 @@ $(document).ready(function(){
 
   var eventId = parseInt(getUrlParameter("event"));
 
-  $.get("https://spreadsheets.google.com/feeds/cells/1QHl2bjBhMslyFzR5XXPzMLdzzx7oeSKTbgR5PM8qp64/ohaibtm/public/values?alt=json").done(function(returnedData) {
+  $.get(sheetURL).done(function(returnedData) {
 
     rawData = parseDriveData(returnedData);
 
@@ -94,6 +94,11 @@ $(document).ready(function(){
   $("body").on("click",".event-popup-wrapper .close-pop",function(e){
     hidePop();
     e.stopPropagation();
+  });
+
+  $("body").on("click",".event-popup-wrapper .expand a",function(e){
+    $(this).closest(".event-description").removeClass("long");
+    return false;
   });
 
   $(window).on("keydown",function(e){
@@ -228,6 +233,14 @@ function showPop(id){
             }
 
             valueEl.html(valueEl.html() + append + " ");
+          }
+          if(j == "event-description"){
+            var descriptionHeight = valueEl.parent().height();
+            if(descriptionHeight > 150) {
+              valueEl.parent().addClass("long");
+            } else {
+              valueEl.parent().removeClass("long");
+            }
           }
         }
       }

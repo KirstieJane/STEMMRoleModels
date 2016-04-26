@@ -1,17 +1,8 @@
-// Your Sheetsu URL
-var sheetsuURL = "https://sheetsu.com/apis/v1.0/ba3cacae";
+// Your Google Drive Spreadsheet URL
+var sheetID = "1QHl2bjBhMslyFzR5XXPzMLdzzx7oeSKTbgR5PM8qp64";
+var sheetURL = "https://spreadsheets.google.com/feeds/cells/"+sheetID+"/ohaibtm/public/values?alt=json";
 
-// Column Names
-//
-// Create an entry here for each Colum Name you have in your spreadsheet.
-// Give it an alternate name, which will connect it to the markup.
-//
-// For example..
-//
-// "Time of Event" : "time-of-event" will look for the following markup:
-// <span class="time-of-event"><span class="value"></span></span>
-// ...and place the value into the .value span.
-
+// Name of column and what element classname to insert the data into.
 var dataKeys = {
   "Status" : "report-status",
   "Timestamp" : "event-timestamp",
