@@ -2,7 +2,8 @@
   <head>
     <link rel="stylesheet/less" href="style.less" type="text/css">
     <link rel="stylesheet/less" href="narrow.less" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://flukeout.github.io/mozmaker-icon-font/cdn/mozmaker-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" sizes="196x196" href="https://mozilla.org/media/img/favicon/favicon-196x196.png">
     <title>Mozilla Clubs Event Reports</title>
@@ -86,6 +87,7 @@
     </div>
 
     <div class="event-popup-wrapper">
+
       <div class="event-nav previous">
         <img src="images/chevron.svg"/>
       </div>
@@ -97,9 +99,12 @@
         <div class="key-label">ESC</div>
       </div>
 
+      <div class="large-photo">
+        <div class="photo"></div>
+      </div>
+
       <div class="event-popup">
         <div class="event-data">
-
           <span class="event-date"><span class="value">March 16, 2016</span></span>
 
           <h1>
@@ -110,7 +115,11 @@
             <h2 id="description">Description</h2>
             <div heading="description" class="event-description">
               <span class="value"></span>
-              <div class='expand'><a href="#">Read Full</a></div>
+              <div class='expand'>
+                <a href="#">
+                  Read More <i class="fa fa-angle-down"></i>
+                </a>
+              </div>
             </div>
 
             <h2 id="event-links-curriculum">Curriculum Used</h2>
@@ -119,7 +128,7 @@
             </p>
 
             <h2 id="event-skills">Web Literacy Concepts Covered</h2>
-            <p class="event-skills">
+            <p class="event-skills" heading="event-skills">
               <span class="value"></span>
             </p>
 
@@ -138,11 +147,15 @@
           </div>
 
           <div class="right-col">
+
             <h2 id="event-attendance">Attendance</h2>
             <p heading="event-attendance" class="event-attendance">
               <span class="value">12</span> people showed up!
             </p>
 
+            <div class="event-photo">
+              <img src=""/>
+            </div>
 
             <h2 id="club-location">Club Location</h2>
             <p>
@@ -159,19 +172,23 @@
                 <span class="value"></span>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
+
+
+
     </div>
 
     <div class="event-card template">
-      <div class="fa fa-external-link-square media-indicator"></div>
-      <div class="event-date"><span class="value"></span></div>
-      <div class="club-name"><span class="value"></span></div>
-      <div class="club-country"><i class="fa fa-map-marker"></i> <span class="value"></span></div>
-      <div class="event-attendance"><span class="value"></span> People</div>
+      <div class="top no-photo">
+        <div class="event-date"><span class="value"></span></div>
+      </div>
+      <div class="bottom">
+        <div class="club-name"><span class="value"></span></div>
+        <span class="event-attendance"><span class="value"></span> People</span>
+        <span class="club-country"><i class="icon-map-marker"></i><span class="value"></span></span>
+      </div>
     </div>
 
   </body>

@@ -57,6 +57,7 @@ $(document).ready(function(){
   // Search & Filter stuff
 
   $(".filter-events").val();
+
   $("body").on("click",".filter-events-wrapper .clear-search",function(){
     $(".filter-events").val("");
     $(".clear-search").hide();
@@ -80,6 +81,15 @@ $(document).ready(function(){
   $("body").on("click",".event-card",function(){
     var id = $(this).data("id");
     showPop(id);
+  });
+
+  $("body").on("click",".event-popup .event-photo img",function(e){
+    $(".event-popup-wrapper .large-photo").show();
+    e.stopPropagation();
+  });
+
+  $("body").on("click",".event-popup-wrapper .large-photo",function(e){
+    $(".event-popup-wrapper .large-photo").hide();
   });
 
   $("body").on("click",".event-popup-wrapper .event-nav",function(e){
@@ -114,11 +124,18 @@ $(document).ready(function(){
   });
 });
 
+
+function hideLargePhoto(){
+  $(".large-photo").hide();
+}
+
 // Navigates the event report details popup to either the next
 // or previous event chronologically
 
 function navigatePopup(direction) {
   var popupEl = $(".event-popup-wrapper .event-popup");
+
+  hideLargePhoto();
 
   if($(".event-popup-wrapper").is(":visible")) {
     var currentId = parseInt($(".event-popup-wrapper").data("id"));
@@ -161,12 +178,10 @@ function navigatePopup(direction) {
 
 function showPop(id){
   var found = false;
-
   var pop = $(".event-popup-wrapper");
   pop.find(".event-popup").scrollTop("0");
 
   for(var k in data){
-
     var item = data[k];
     pop.data("id",id);
 
@@ -179,6 +194,7 @@ function showPop(id){
 
       pop.find(".value").addClass("not-specified").text("Not filled in");
       pop.find(".value").parent().addClass("not-specified");
+      pop.find(".event-photo").hide();
 
       for(var j in item){
         if(pop.find("." + j).length > 0){
@@ -189,6 +205,14 @@ function showPop(id){
               value = item["event-timestamp"];
             }
             value = formatDate(value);
+          }
+
+          if(j == "event-photo") {
+            if(value) {
+              pop.find(".event-photo").show();
+              pop.find(".event-photo img").attr("src",value);
+              pop.find(".large-photo .photo").css("background-image","url(" + value + ")");
+            }
           }
 
           if(j == "event-attendance"){
@@ -248,12 +272,16 @@ function showPop(id){
   }
 
   //This will loop through and make the headings fainter that don't have anything on em......
+
   pop.find("[heading]").each(function(){
+    $(this).removeClass("not-specified");
     var heading = $(this).attr("heading");
     var total = pop.find("[heading="+heading+"]").length;
     var unfilled = pop.find("[heading="+heading+"] .not-specified").length;
     if(total == unfilled) {
       pop.find("[id="+heading+"]").addClass("not-specified");
+    } else {
+      pop.find("[id="+heading+"]").removeClass("not-specified");
     }
   });
 
@@ -349,6 +377,9 @@ function displayEvents(){
     itemEl.removeClass("template");
     $(".events").append(itemEl);
 
+
+
+
     var hasMedia = false;
     var mediaTypes = ["event-creations","event-links-photos","event-links-blogpost","event-links-video"];
 
@@ -368,6 +399,14 @@ function displayEvents(){
     // Count total attendance
     for(var j in item){
       var value = item[j];
+
+      if(j == "event-photo") {
+        if(value) {
+          itemEl.find(".top").removeClass("no-photo");
+          itemEl.find(".top").css("background-image","url("+value+")");
+        }
+      }
+
       if(j == "event-attendance"){
         if(!isNaN(parseInt(value))){
           participants = participants + parseInt(value);
@@ -412,7 +451,6 @@ function cleanupData(){
     }
   }
 
-  console.log(data);
   data = data.sort(dateSort);
 }
 
@@ -487,14 +525,12 @@ function populateElement(el, item){
   for(var j in item){
     if(el.find("." + j).length > 0){
       var value = item[j];
-
       if(j == "event-date"){
         if(value == ""){
           value = item["event-timestamp"];
         }
         value = formatDate(value);
       }
-
       if(j == "event-attendance"){
         value = numberWithCommas(value);
       }

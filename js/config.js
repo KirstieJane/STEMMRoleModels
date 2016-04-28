@@ -16,6 +16,7 @@ var dataKeys = {
   "Event Location" : "event-location",
   "Attendance" : "event-attendance",
   "Event Description" : "event-description",
+  "Event Cover Photo" : "event-photo",
   "Event Creations" : "event-creations",
   "Web Literacy Skills" : "event-skills",
   "Links to Curriculum (Optional)" : "event-links-curriculum",

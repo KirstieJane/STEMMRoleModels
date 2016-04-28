@@ -166,14 +166,9 @@ header {
 
 .event-card {
   flex: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  flex-direction: column;
   cursor: pointer;
-  padding: 16px 20px;
   background: white;
-  box-shadow: 0px 1px 1px rgba(0,0,0,.2);
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
   margin: 8px;
   color: rgba(0,0,0,.4);
   min-width: 150px;
@@ -185,6 +180,49 @@ header {
   top: 0;
   transition: all .15s ease-out;
   position: relative;
+
+  .top {
+    background-color: #587dd6;
+    height: 80px;
+    padding: 16px 20px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+    &.no-photo {
+      background-image: ~"url(images/clubs-logo.svg)";
+      background-size: cover;
+      background-position: center 65%;
+      background-repeat: no-repeat;
+      background-size: 80%;
+    }
+
+    .event-date {
+      position: absolute;
+      padding: 5px 7px 2px 7px;
+      color: white;
+      bottom: -11px;
+      font-size: 13px;
+      background: rgba(23,50,114,1);
+      padding: 5px 9px 2px 9px;
+      background: #3f5ea9;
+      text-transform: uppercase;
+    }
+
+    .club-name {
+      bottom: 2px;
+      left: 7px;
+      margin-bottom: 3px !important;
+    }
+
+    .event-date {
+      right: 10px;
+    }
+  }
+
+  .bottom {
+    padding: 15px 14px;
+  }
 
   .media-indicator {
     position: absolute;
@@ -199,11 +237,23 @@ header {
     }
   }
 
+  .event-attendance {
+    padding-right: 10px;
+  }
+
   &:hover {
     opacity: .9;
     position: relative;
     top: -2px;
     box-shadow: 0px 3px 2px rgba(0,0,0,.15);
+  }
+
+  .club-country .icon-map-marker {
+    color: #2b488e;
+    opacity: .5;
+    position: relative;
+    margin-right: 2px;
+    top: 2px;
   }
 
   .club-country, .event-attendance {
@@ -212,9 +262,7 @@ header {
 
   .event-date {
     text-align: right;
-    margin: 0 0 25px 0;
-    flex: 1;
-    width: 100%;
+    margin: 0;
     display: block;
   }
 
@@ -229,6 +277,7 @@ header {
   .club-name {
     color: rgba(0,0,0,.8);
     margin: 0 0 5px 0;
+    font-size: 18px;
   }
 
   &.template {
@@ -315,7 +364,20 @@ header {
 
   .right-col {
     float: right;
-    width: 35%;
+    width: 38%;
+
+    .event-photo {
+      img {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        cursor: pointer;
+
+        &:hover {
+          opacity: .9;
+        }
+      }
+    }
   }
 
   .close-pop {
@@ -378,7 +440,7 @@ header {
     cursor: pointer;
     transition: opacity .15s ease-out;
     border-radius: 4px;
-    z-index: 9999999999;
+    z-index: 999;
     user-select: none;
 
     * {
@@ -405,6 +467,38 @@ header {
     }
   }
 
+  .large-photo {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.8);
+    z-index:9999;
+
+    .photo {
+      width: ~"calc(100% - 80px)";
+      height: ~"calc(100% - 80px)";
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 0 auto;
+      position: relative;
+      top: 40px;
+      cursor: pointer;
+      animation: imagePop .2s ease-out;
+    }
+
+    @keyframes imagePop {
+      0% { transform: scale(.97) }
+      50% { transform: scale(1.02) }
+      100% { transform: scale(1) }
+    }
+
+  }
+
   .event-popup {
     background: white;
     width: 70%;
@@ -413,6 +507,20 @@ header {
     margin: 30px auto 0 auto;
     box-shadow: 0px 4px 15px rgba(0,0,0,.8);
     overflow-y: scroll;
+    position: relative;
+
+
+    &:after {
+      content: "";
+      background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+      height: 100px;
+      position: absolute;
+      width: 100%;
+      bottom: 0px;
+      left: 0;
+      z-index: 2;
+    }
+
   }
 
   h2 {
@@ -445,11 +553,12 @@ header {
     .expand {
       display: none;
       position: relative;
-      border-bottom: solid 1px #ddd;
+      border-bottom: dashed 1px #ddd;
       position: relative;
       overflow: visible;
       bottom: -10px;
       width: 100%;
+      text-align: right;
 
       a {
         text-decoration: none;
@@ -457,12 +566,19 @@ header {
         padding: 0 8px;
         position: relative;
         top: 13px;
-        left: 5%;
+        left: -40px;
         color: #999;
+        opacity: .7;
+        color: #1a77c4;
+
+        .fa {
+          position: relative;
+        }
 
         &:hover {
           text-decoration: none;
-          color: #666;
+          opacity: 1;
+          // color: #666;
         }
       }
     }
@@ -506,6 +622,8 @@ header {
     margin: 0 0 5px 15px;
     position: relative;
     color: rgba(0,0,0,.5);
+    position: relative;
+    top: 19px;
   }
 
   h1 {
@@ -614,5 +732,4 @@ a {
   strong {
     font-size: 20px;
   }
-
 }
