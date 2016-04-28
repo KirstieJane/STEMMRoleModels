@@ -294,6 +294,7 @@ function hidePop(){
   var clean_uri = location.protocol + "//" + location.host + location.pathname;
   window.history.replaceState({}, document.title, clean_uri);
   $(".event-popup-wrapper").hide();
+  hideLargePhoto();
 }
 
 // Formats the date from a Date objects to a string like April 2, 2016
