@@ -1,33 +1,50 @@
-User can add or manage the AdWords, Google analytics, Flood-light and non-Google tags using the GTM.
+What Google Tag Manager is and why it's an easy tool?
+Google Tag Manager (GTM) is a tool that allows you to to add tracking tags to your website or app. Contributors, such as marketers, traders can help track data on your site without having to add any hard code to your code base
+
+A tracking tag is snippet of code which enables you to collect data about your users, such as how many times they view a website page or how many times they click on a button. GTM connects with third party services like Google Analytics and Google AdWords, making it easy to send your data to different tools.
+It provides flexibility to user to add or manage the AdWords, Google analytics, Flood-light and non-Google tags using the GTM.
 
 How it works
   Followings are main components of the GTM:
+  1. Account
+  2. Container
+  3. Tags
+  4. Triggers
+  5. Variables
+  6. Folders
 
 Account
+An account is where you will hold all of the containers for tracking tags. A company or organization/institution has an account, which can hold GTM for multiple sites or apps associated with it.
 Each account can contains multiple containers
-  "One account per company/organization"
-
+  
 Container
 A container includes the tracking tags (e.g. Google Analytics, AdWords Conversion Tracking tags) that you want to use on the website.
-  "One container for one website"
+  One website should have one container. If comapany or organization having a dev or staging environment for their website, they should have a separate container for those URLs.
 
 Tags
 Tags are snippets of code on your site that collect data
-  "A tag must have at least one rule in order to fire"
+  A tag must have at least one rule in order to fire
 Google Tag Manager supports following tag types which can be use directly:
   1. AdWords Conversion Tracking
-  2. DoubleClick Floodlight Counter
-  3. DoubleClick Floodlight Sales
-  4. Google Analytics
-  5. GDN Remarketing
+  2. Crazyegg
+  3. comScore
+  4. DoubleClick Floodlight Counter
+  5. DoubleClick Floodlight Sales
+  6. Google Analytics
+  7. Clicktale
+  8. LinkedIn
+  9. GDN Remarketing
 
 There are other two custom tags available which allows you to implement custom tags which are not available in above list:
   1. Custom Image Tag
+     The Custom Image Tag type allows you to manage your own image tag with it's own custom triggers and parameters. For example, if you use a pixel image for tracking, enter the image URL in the Image URL field. 
+  
   2. Custom HTML Tag
+     The Custom HTML Tag type allows you to manage a tag which is implicitly supported via a Google Tag Manager, such as 3rd party tags,
   
 Rules
 The rule(s) attached to a tag govern when the tag is fired or not fired.
-  "A rule that blocks a tag from firing always overrides a firing rule"
+   A rule that blocks a tag from firing always overrides a firing rule
 Syntax: [Macro] [Operator] [Value]
 Example: url equals example.com/index.html
 
