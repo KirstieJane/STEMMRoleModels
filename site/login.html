@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <style type="text/css">
+        body {
+            background-color: pink;
+            color: #5a5656;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5em;
+        }
+        a { text-decoration: none; }
+        h1 { font-size: 1em; }
+        h1, p {
+            margin-bottom: 10px;
+        }
+        strong {
+            font-weight: bold;
+        }
+        .uppercase { text-transform: uppercase; }
+        /* ---------- LOGIN ---------- */
+        #login {
+            margin: 50px auto;
+            width: 300px;
+        }
+        form fieldset input[type="text"], input[type="password"] {
+            background-color: #e5e5e5;
+            border: none;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            color: #5a5656;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            height: 50px;
+            outline: none;
+            padding: 0px 10px;
+            width: 280px;
+            -webkit-appearance:none;
+        }
+        form fieldset input[type="submit"] {
+            background-color: #008dde;
+            border: none;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            color: #f4f4f4;
+            cursor: pointer;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            height: 50px;
+            text-transform: uppercase;
+            width: 300px;
+            -webkit-appearance:none;
+        }
+        form fieldset a {
+            color: #5a5656;
+            font-size: 10px;
+        }
+        form fieldset a:hover { text-decoration: underline; }
+        .btn-round {
+            background-color: #5a5656;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            color: #f4f4f4;
+            display: block;
+            font-size: 12px;
+            height: 50px;
+            line-height: 50px;
+            margin: 30px 125px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 50px;
+        }
+        #img{
+            position: fixed;
+            text-align: center;
+            font-weight: normal;
+            width: 120px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="img">
+    <div ><img src="csjm.jpg" width="100" height="100"></div>
+    <div ><strong>UIET CSJM University, Kanpur</strong></div>
+    </div>
+    <div id="login">
+        <h1><strong>Welcome at STEMMRoleModels</strong> Please login.</h1>
+        <form name="login"  action="login.php" method="post">
+            <fieldset>
+                <p><input type="text" required value="Username" name="userid"  onBlur="if (this.value === '')
+                            this.value = 'Username'" onFocus="if (this.value === 'Username')
+                                        this.value = ''"/></p>
+
+                <p><input type="password" required value="Password" name="pswrd" onBlur="if (this.value === '')
+                            this.value = 'Password'" onFocus="if (this.value === 'Password')
+                                        this.value = ''"/></p>
+                <p><a href="www.">Forgot Password?</a></p>
+                <input type="submit" value="Login"/>
+
+            </fieldset>
+        </form>
+
+      <script language="javascript">
+           
+                {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            
+        </script>
+    </div> <!-- end login -->
+</body>
+</html>
