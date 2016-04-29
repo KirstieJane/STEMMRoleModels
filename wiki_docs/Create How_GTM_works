@@ -61,3 +61,8 @@ Types of Variable
   
   Folders
   With folders, we can organize these items into logical groupings, making them easier to work with for our team members.
+  
+  How to add a tag?
+  Click “Create a new tag”. Tag name…let say, “Google Analytics page tracker” or any other name you want.
+  Select tag type, you’re going to choose Google Analytics Universal. Tracking IDs.. then go to the tracking code page for your Google Analytics property and you are going to copy the tracking ID from that page. And that is what you have to paste into your tag to tell Google Tag Manager that this is the property and website that we’re tracking in Google Analytics.
+  Add trigger to fire tag, you’re going to select all pages, you'll go ahead and click save and you’re done. In order to see any of our tags in action, you have to preview or publish the container. You’re already operating in a test environment so first go ahead and publish. Click create version, click publish.
