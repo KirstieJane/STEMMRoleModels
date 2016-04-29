@@ -41,24 +41,23 @@ There are other two custom tags available which allows you to implement custom t
   
   2. Custom HTML Tag
      The Custom HTML Tag type allows you to manage a tag which is implicitly supported via a Google Tag Manager, such as 3rd party tags,
-  
-Rules
-The rule(s) attached to a tag govern when the tag is fired or not fired.
-   A rule that blocks a tag from firing always overrides a firing rule
-Syntax: [Macro] [Operator] [Value]
-Example: url equals example.com/index.html
 
-Macros
-Macros supply dynamic data to tags and conditions.
-  "Macros are name-value pairs for which the value is populated during runtime"
+Triggers
+A trigger is composed of one event and one or more filters (except for custom events which don’t require a filter).
+     A trigger that blocks a tag from firing always overrides a firing rule.
+Each filter takes the form: [Variable] [Operator] [Value]
+     We can add multiple filters ([Variable] [Operator] [Value]) in a single trigger
+     Example: url equals example.com/index.html
 
-  Types of Macro
+Variables
+Variable supply dynamic data to tags and conditions.
+
+Types of Variable
+  1. User-defined variables
+     Variables are name-value pairs for which the value is populated during runtime.
+  2. Built-in variables
+     Built-in variables are a special category of variables that are pre-created and non-customizable.
+     Once a selection of built-in variables have been enabled, you can use them just like any other variable.
   
-  1. Constant String
-  2. JavaScript Variable
-  3. Data Layer
-  4. DOM Text
-  5. Dom attribute
-  6. URL
-  7. Custom Event
-  8. HTTP Referrer
+  Folders
+  With folders, we can organize these items into logical groupings, making them easier to work with for our team members.
