@@ -1,0 +1,68 @@
+What Google Tag Manager is and why it's an easy tool?
+Google Tag Manager (GTM) is a tool that allows you to to add tracking tags to your website or app. Contributors, such as marketers, traders can help track data on your site without having to add any hard code to your code base
+
+A tracking tag is snippet of code which enables you to collect data about your users, such as how many times they view a website page or how many times they click on a button. GTM connects with third party services like Google Analytics and Google AdWords, making it easy to send your data to different tools.
+It provides flexibility to user to add or manage the AdWords, Google analytics, Flood-light and non-Google tags using the GTM.
+
+How it works
+  Followings are main components of the GTM:
+  1. Account
+  2. Container
+  3. Tags
+  4. Triggers
+  5. Variables
+  6. Folders
+
+Account
+An account is where you will hold all of the containers for tracking tags. A company or organization/institution has an account, which can hold GTM for multiple sites or apps associated with it.
+Each account can contains multiple containers
+  
+Container
+A container includes the tracking tags (e.g. Google Analytics, AdWords Conversion Tracking tags) that you want to use on the website.
+  One website should have one container. If comapany or organization having a dev or staging environment for their website, they should have a separate container for those URLs.
+
+Tags
+Tags are snippets of code on your site that collect data
+  A tag must have at least one rule in order to fire
+Google Tag Manager supports following tag types which can be use directly:
+  1. AdWords Conversion Tracking
+  2. Crazyegg
+  3. comScore
+  4. DoubleClick Floodlight Counter
+  5. DoubleClick Floodlight Sales
+  6. Google Analytics
+  7. Clicktale
+  8. LinkedIn
+  9. GDN Remarketing
+
+There are other two custom tags available which allows you to implement custom tags which are not available in above list:
+  1. Custom Image Tag
+     The Custom Image Tag type allows you to manage your own image tag with it's own custom triggers and parameters. For example, if you use a pixel image for tracking, enter the image URL in the Image URL field. 
+  
+  2. Custom HTML Tag
+     The Custom HTML Tag type allows you to manage a tag which is implicitly supported via a Google Tag Manager, such as 3rd party tags,
+
+Triggers
+A trigger is composed of one event and one or more filters (except for custom events which don’t require a filter).
+     A trigger that blocks a tag from firing always overrides a firing rule.
+Each filter takes the form: [Variable] [Operator] [Value]
+     We can add multiple filters ([Variable] [Operator] [Value]) in a single trigger
+     Example: url equals example.com/index.html
+
+Variables
+Variable supply dynamic data to tags and conditions.
+
+Types of Variable
+  1. User-defined variables
+     Variables are name-value pairs for which the value is populated during runtime.
+  2. Built-in variables
+     Built-in variables are a special category of variables that are pre-created and non-customizable.
+     Once a selection of built-in variables have been enabled, you can use them just like any other variable.
+  
+  Folders
+  With folders, we can organize these items into logical groupings, making them easier to work with for our team members.
+  
+  How to add a tag?
+  Click “Create a new tag”. Tag name…let say, “Google Analytics page tracker” or any other name you want.
+  Select tag type, you’re going to choose Google Analytics Universal. Tracking IDs.. then go to the tracking code page for your Google Analytics property and you are going to copy the tracking ID from that page. And that is what you have to paste into your tag to tell Google Tag Manager that this is the property and website that we’re tracking in Google Analytics.
+  Add trigger to fire tag, you’re going to select all pages, you'll go ahead and click save and you’re done. In order to see any of our tags in action, you have to preview or publish the container. You’re already operating in a test environment so first go ahead and publish. Click create version, click publish.
