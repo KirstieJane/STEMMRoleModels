@@ -1,0 +1,25 @@
+# Install Docker using the following:
+
+# Update your APT package index.
+$ sudo apt-get update
+
+# Install Docker
+$ sudo apt-get install docker-engine
+
+# Start the docker daemon.
+$ sudo service docker start
+
+# To Verify docker is installed correctly.
+$ sudo docker run hello-world
+
+# Configure Docker to start on boot
+# Ubuntu uses systemd as its boot and service manager 15.04 onwards and upstart for versions 14.10 and below.
+# For 15.04 and up, to configure the docker daemon to start on boot, run
+$ sudo systemctl enable docker
+
+# For 14.10 and below the above installation method automatically configures upstart to start the docker daemon on boot
+
+# To install the latest version of Docker with apt-get:
+$ sudo apt-get upgrade docker-engine
+
+
