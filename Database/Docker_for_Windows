@@ -1,0 +1,28 @@
+# Docker Engine: Lightweight runtime environment and container packaging tool.
+# Docker Hub: Public container repository
+
+# Installing Docker on Windows
+Install the latest Docker for Windows built from here: https://github.com/boot2docker/windows-installer/releases/tag/v1.5.0 from its GitHub repo.
+After accepting this installation, we'll get the following three components:
+
+--> Boot2Docker Management tool and ISO: This is the Docker administration command-line interface (CLI).
+--> VirtualBox: We need the core of the Oracle VirtualBox VM desktop virtualization product to allow us to run the core Linux code from inside Windows.
+--> MSYS-git UNIX tools: The Docker Hub will pull containers from public Git repositories, so we need to have client tools available on our system.
+
+Next, double-click the pretty Boot2Docker Start Desktop icon to start the Boot2Docker management tool.  We'll prompted to allow VirtualBox to bind two virtual network interfaces, and before long we’ll see a decidedly Linux-y command prompt.
+
+# Now, to verify that Docker is functioning correctly, run the following command from the Boot2Docker client:
+docker run hello-world
+
+# Do Docker Stuff
+docker version 
+then,
+docker help
+
+If all goes well, we’ll see a bunch of explanatory text on your screen.
+
+# RTFM( Read the friendly mannual)
+https://docs.docker.com/userguide/
+
+
+
