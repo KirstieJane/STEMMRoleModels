@@ -382,7 +382,7 @@ function displayEvents(){
 
 
     var hasMedia = false;
-    var mediaTypes = ["event-creations","event-links-photos","event-links-blogpost","event-links-video"];
+    var mediaTypes = ["event-creations","speaker-links-prof","speaker-links-code","speaker-links-social"];
 
     for(var i = 0; i < mediaTypes.length; i++) {
       var mediaType = mediaTypes[i];

@@ -7,22 +7,22 @@ var dataKeys = {
   "Status" : "report-status", // Must be set to 'Approved'
   "Timestamp" : "event-timestamp",
   "Joined On" : "joined-date", // Shown in main listing
-  "Your Name" : "rec-name",
+  "Recommended By" : "rec-name",
   "Your Twitter Handle (Optional)" : "rec-twitter",
   "Speaker Name" : "speaker-name", // Shown in main listing
-  "Speake Email" : "speaker-email",
+  "Speaker Email" : "speaker-email",
   "City" : "speaker-city",
   "Country" : "speaker-country", // Shown in main listing
   "Event Location" : "event-location",
   "Number of Lectures" : "n-lectures", // Shown in main listing
   "Description" : "speaker-description",
   "Cover Photo" : "speaker-photo",
-  "Event Creations" : "event-creations",
-  "Web Literacy Skills" : "event-skills",
-  "Links to Curriculum (Optional)" : "event-links-curriculum",
-  "Links to Photos (Optional)" : "event-links-photos",
-  "Links to Blogpost (Optional)" : "event-links-blogpost",
-  "Links to Video (Optional)" : "event-links-video",
-  "Feedback from Attendees" : "event-feedback-attendees",
-  "Your Feedback" : "event-feedback-organizer"
+  "Subspecialty" : "event-creations",
+  "Specialty" : "speaker-specialty",
+  "Links to Previous Talks (Optional)" : "speaker-links-lectures",
+  "Links to Professional Pages (Optional)" : "speaker-links-prof",
+  "Links to Data/Code (Optional)" : "speaker-links-code",
+  "Links to Social Media (Optional)" : "speaker-links-social",
+  "Feedback from Attendees" : "attendee-feedback",
+  "Your Recommendation" : "rec-feedback"
 }
