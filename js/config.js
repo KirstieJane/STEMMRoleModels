@@ -4,17 +4,17 @@ var sheetURL = "https://spreadsheets.google.com/feeds/cells/"+sheetID+"/od6/publ
 
 // Name of column and what element classname to insert the data into.
 var dataKeys = {
-  "Status" : "report-status",
+  "Status" : "report-status", // Must be set to 'Approved'
   "Timestamp" : "event-timestamp",
-  "Date of Event" : "event-date",
+  "Date of Event" : "event-date", // Shown in main listing
   "Your Name" : "club-organizer",
   "Your Twitter Handle (Optional)" : "club-contact-details",
-  "Club Name" : "club-name",
+  "Speaker Name" : "speaker-name", // Shown in main listing
   "Club Link" : "club-link",
-  "City" : "event-city",
-  "Country" : "club-country",
+  "City" : "speaker-city",
+  "Country" : "speaker-country", // Shown in main listing
   "Event Location" : "event-location",
-  "Attendance" : "event-attendance",
+  "Number of Lectures" : "n-lectures", // Shown in main listing
   "Event Description" : "event-description",
   "Event Cover Photo" : "event-photo",
   "Event Creations" : "event-creations",

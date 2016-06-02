@@ -215,7 +215,7 @@ function showPop(id){
             }
           }
 
-          if(j == "event-attendance"){
+          if(j == "n-lectures"){
             value = numberWithCommas(value);
           }
 
@@ -340,11 +340,11 @@ function updateCounts(){
   for(var k in data){
     var item = data[k];
     if(item.visible) {
-      var attendance = parseInt(item["event-attendance"]);
+      var attendance = parseInt(item["n-lectures"]);
       if(!isNaN(attendance)){
         participants = participants + attendance;
       }
-      var country = item["club-country"];
+      var country = item["speaker-country"];
       if(country != "" && countries.indexOf(country) < 0) {
         countries.push(country);
       }
@@ -408,7 +408,7 @@ function displayEvents(){
         }
       }
 
-      if(j == "event-attendance"){
+      if(j == "n-lectures"){
         if(!isNaN(parseInt(value))){
           participants = participants + parseInt(value);
         }
@@ -532,7 +532,7 @@ function populateElement(el, item){
         }
         value = formatDate(value);
       }
-      if(j == "event-attendance"){
+      if(j == "n-lectures"){
         value = numberWithCommas(value);
       }
       if(value.length == 0){
