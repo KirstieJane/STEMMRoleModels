@@ -7,16 +7,16 @@ var dataKeys = {
   "Status" : "report-status", // Must be set to 'Approved'
   "Timestamp" : "event-timestamp",
   "Joined On" : "joined-date", // Shown in main listing
-  "Your Name" : "club-organizer",
-  "Your Twitter Handle (Optional)" : "club-contact-details",
+  "Your Name" : "rec-name",
+  "Your Twitter Handle (Optional)" : "rec-twitter",
   "Speaker Name" : "speaker-name", // Shown in main listing
   "Speake Email" : "speaker-email",
   "City" : "speaker-city",
   "Country" : "speaker-country", // Shown in main listing
   "Event Location" : "event-location",
   "Number of Lectures" : "n-lectures", // Shown in main listing
-  "Event Description" : "event-description",
-  "Event Cover Photo" : "event-photo",
+  "Description" : "speaker-description",
+  "Cover Photo" : "speaker-photo",
   "Event Creations" : "event-creations",
   "Web Literacy Skills" : "event-skills",
   "Links to Curriculum (Optional)" : "event-links-curriculum",
