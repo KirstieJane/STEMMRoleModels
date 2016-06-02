@@ -1,3 +1,4 @@
+
 # STEMM Role Models App
 
 ***Inspire future generations by providing the most exciting and diverse speakers for your conference.***
@@ -47,8 +48,8 @@ The founders of the STEMM Role Models app - [Kirstie][link_KirstieJane], [Amy][l
 The development of this app is mentored by the team behind the [Rosalind Franklin Appathon][link_rfappapthon] - a challenge launched in 2015 to find and support the development of new mobile phone apps to empower women in STEMM. The competition is funded by the [Royal Society's Rosalind Franklin award][link_royalsociety_rfaward] which was won in 2014 by the Prof [Rachel McKendry][link_rachelmckendry]. Check out her [awesome lecture][link_rachelmckendry_talk] on _Harnessing the power of mobile phones and big data for global health_.
 
 <a href="https://www.mozillascience.org/about">
-  <img 
-    src="http://mozillascience.github.io/working-open-workshop/assets/images/science-fox.svg" 
+  <img
+    src="http://mozillascience.github.io/working-open-workshop/assets/images/science-fox.svg"
     align="right"
     width=140
   </img>
@@ -113,7 +114,7 @@ Thank you so much (Danke schön! Merci beaucoup!) for visiting the project and w
 [link_erin]: https://github.com/erich001
 [link_elizabeth]: https://github.com/elizabethjm
 [link_rfappapthon]: http://www.rfappathon.org/
-[link_royalsociety_rfaward]: https://royalsociety.org/grants-schemes-awards/awards/rosalind-franklin-award/ 
+[link_royalsociety_rfaward]: https://royalsociety.org/grants-schemes-awards/awards/rosalind-franklin-award/
 [link_rachelmckendry]: https://www.ucl.ac.uk/tb/people/steering-group/rachel-mckendry
 [link_rachelmckendry_talk]: https://royalsociety.org/events/2014/11/rosalind-franklin-lecture/
 [link_openleaderscohort]: https://www.mozillascience.org/wow-introducing-working-open-workshops-and-the-open-leaders-cohort
