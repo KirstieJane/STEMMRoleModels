@@ -1,0 +1,177 @@
+@media only screen and (max-width:500px) {
+
+  * {
+    line-height: 140%;
+  }
+
+  header {
+    text-align: center;
+
+    h1 {
+      display: block;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .button {
+      display: block;
+      float: none;
+      text-align: center;
+      width: 60%;
+      margin: 0 auto;
+
+    }
+
+    .inner-wrapper {
+      padding: 10px 15px 18px 15px;
+    }
+  }
+
+
+  .event-card {
+    max-width: 100%;
+  }
+
+  .month {
+    padding: 20px;
+
+    .month-header {
+
+        h1 {
+          text-align: center;
+          font-size: 20px;
+          margin: 0 0 5px 0;
+          float: none;
+
+          * {
+            font-size: 20px !important;
+            font-weight: 400;
+          }
+        }
+
+        .filter-events-wrapper {
+          display: block;
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+  }
+
+  .event-popup-wrapper {
+
+    .event-popup {
+      position: fixed;
+      top: 10px;
+      bottom: 10px;
+      left: 10px;
+      margin: 0;
+      right: 10px;
+      width: auto;
+      height: auto;
+      padding: 25px 20px;
+
+    }
+
+    h1 {
+      font-size: 22px;
+      padding: 0;
+      margin: 0 0 18px 0;
+      text-align: left;
+      width: ~"calc(100% - 70px)";
+    }
+
+    .event-description {
+      font-size: 20px;
+    }
+
+    .event-date {
+      float: none;
+      display: block;
+      color: rgba(0,0,0,.6);
+      font-size: 18px;
+      margin: 0;
+      text-align: left;
+    }
+
+    .close-pop, .event-nav {
+      opacity: .3;
+      border: solid 2px white;
+      box-sizing: border-box;
+      height: 55px;
+      width: 55px;
+
+      &:hover {
+        opacity: .45;
+      }
+    }
+
+    .close-pop {
+      background: black;
+      border-radius: 50%;
+      right: 25px;
+      top: 25px;
+      z-index: 9999999;
+
+      img {
+        width: 18px;
+        position: relative;
+      }
+
+      .key-label {
+        display: none;
+      }
+    }
+
+    .right-col,.left-col {
+      float: none;
+      width: auto;
+    }
+
+    .event-nav {
+      position: absolute;
+      top: 25px;
+      cursor: pointer;
+      background: black;
+      padding: 0;
+      text-align: center;
+      border-radius: 50%;
+      transition: opacity .15s ease-out;
+      z-index: 9999999;
+      top: auto;
+      bottom: 30px;
+
+      img {
+        position: relative;
+        top: 5px;
+        width: 20px;
+      }
+
+      &.previous {
+        left: auto;
+
+        right: 85px;
+      }
+
+      &.next {
+        right: 25px;
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+  }
+
+
+
+
+}
+
+@media only screen and (max-width:850px) {
+
+	.event-nav {
+    background: rgba(0,0,0,.5);
+	}
+
+
+}

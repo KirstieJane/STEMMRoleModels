@@ -32,13 +32,13 @@
 
     <header>
       <div class="inner-wrapper">
-        <h1>STEMM Role Models</h1>
-        <a class="button" title="Add a role model" href="http://goo.gl/forms/wDc7b8AqI3">+ Add Role Model</a>
+        <h1>STEMM Speaker Recommendations</h1>
+        <a class="button" title="Add a new event report" href="http://goo.gl/forms/Hq0MpE4tC6VO8CmX2">+ Recommend Someone!</a>
       </div>
     </header>
 
     <div class="throbber">
-      <h2>Loading members...</h2>
+      <h2>Loading reports...</h2>
       <div class="dot"></div>
       <div class="dot"></div>
       <div class="dot"></div>
@@ -48,14 +48,14 @@
 
       <section class="month-header">
         <h1>
-          <span class="event-count"></span> Members
-          <span class="participants"><span class="participant-count"></span> People</span>
-          <span class="countries"><span class="country-count"></span> </span>
+          <span class="event-count"></span> Speakers have given
+          <span class="participants"><span class="participant-count"></span> Talks from </span>
+          <span class="countries"><span class="country-count"></span> Countries </span>
         </h1>
 
         <span class="filter-events-wrapper">
           <span class="fa fa-search"></span>
-          <input class="filter-events" placeholder="Search event details or location"/>
+          <input class="filter-events" placeholder="Search speaker details or location"/>
           <a class="clear-search" href="#">
             <img src="images/x-black.svg"/>
           </a>
@@ -72,7 +72,7 @@
 
       <div class="no-events">
         <p>
-          <strong>Dang, no event reports have been added yet!</strong>
+          <strong>Dang, no speakers have been added yet!</strong>
         </p>
       </div>
 
@@ -105,15 +105,15 @@
 
       <div class="event-popup">
         <div class="event-data">
-          <span class="event-date"><span class="value">March 16, 2016</span></span>
+          <span class="joined-date"><span class="value">March 16, 2016</span></span>
 
           <h1>
-            Event at <span class="club-name"><span class="value">Mozilla Rio Club</span></span>
+            <span class="speaker-name"><span class="value">Mozilla Rio Club</span></span>
           </h1>
 
           <div class="left-col">
-            <h2 id="description">Description</h2>
-            <div heading="description" class="event-description">
+            <h2 id="description">Bio</h2>
+            <div heading="description" class="speaker-description">
               <span class="value"></span>
               <div class='expand'>
                 <a href="#">
@@ -122,54 +122,60 @@
               </div>
             </div>
 
-            <h2 id="event-links-curriculum">Curriculum Used</h2>
-            <p class="event-links-curriculum" heading="event-links-curriculum">
+            <h2 id="speaker-links-lectures">Previous talks</h2>
+            <p class="speaker-links-lectures" heading="speaker-links-lectures">
               <span class="value"></span>
             </p>
 
-            <h2 id="event-skills">Web Literacy Concepts Covered</h2>
-            <p class="event-skills" heading="event-skills">
+            <h2 id="speaker-specialty">Specialty</h2>
+            <p class="speaker-specialty" heading="speaker-specialty">
               <span class="value"></span>
             </p>
 
-            <h2 heading="event-creations">Event Creations</h2>
+            <h2 heading="event-creations">Subspecialties</h2>
             <p heading="event-creations" class="event-creations"><span class="value"></span></li>
 
-            <h2 heading="event-links">Event Links</h2>
+            <h2 heading="speaker-characteristics">Identity</h2>
+            <p heading="speaker-characteristics" class="speaker-characteristics"><span class="value"></span></li>
+
+            <h2 heading="event-links">Links</h2>
             <ul>
-              <li heading="event-links" class="event-links-photos">Photos - <span class="value"></span></li>
-              <li heading="event-links" class="event-links-video">Videos - <span class="value"></span></li>
-              <li heading="event-links" class="event-links-blogpost">Blog Post - <span class="value"></span></li>
+              <li heading="event-links" class="speaker-links-prof">Professional pages - <span class="value"></span></li>
+              <li heading="event-links" class="speaker-links-social">Code and data - <span class="value"></span></li>
+              <li heading="event-links" class="speaker-links-code">Social media - <span class="value"></span></li>
             </ul>
 
             <h2 id="feedback-attendees">Feedback from attendees</h2>
-            <p heading="feedback-attendees" class="event-feedback-attendees"><span class="value"></span></p>
+            <p heading="feedback-attendees" class="attendee-feedback"><span class="value"></span></p>
           </div>
 
           <div class="right-col">
 
-            <h2 id="event-attendance">Attendance</h2>
-            <p heading="event-attendance" class="event-attendance">
-              <span class="value">12</span> people showed up!
+            <h2 id="n-lectures">Lectures</h2>
+            <p heading="n-lectures" class="n-lectures">
+              <span class="value">12</span> talks given!
             </p>
 
-            <div class="event-photo">
+            <div class="speaker-photo">
               <img src=""/>
             </div>
 
-            <h2 id="club-location">Club Location</h2>
+            <h2 id="club-location">Speaker Location</h2>
             <p>
-              <span heading="club-location" class="event-city"><span class="value"></span></span><br/>
-              <span heading="club-location" class="club-country"><span class="value"></span></span>
+              <span heading="club-location" class="speaker-city"><span class="value"></span></span><br/>
+              <span heading="club-location" class="speaker-country"><span class="value"></span></span>
             </p>
 
-            <h2 id="club-organizer">Club Organizer</h2>
+            <h2 id="rec-name">Recommended By</h2>
             <div class="info-grop">
-              <div heading="club-organizer" class="club-organizer">
+              <div heading="rec-name" class="rec-name">
                 <span class="value"></span>
               </div>
-              <div heading="club-organizer" class="club-contact-details">
+              <div heading="rec-name" class="rec-twitter">
                 <span class="value"></span>
+              </div>
+              <div heading="rec-name" class="rec-feedback">
+                  <blockquote><span class="value"></span></blockquote>
               </div>
             </div>
           </div>
@@ -181,13 +187,11 @@
     </div>
 
     <div class="event-card template">
-      <div class="top no-photo">
-        <div class="event-date"><span class="value"></span></div>
-      </div>
+      <div class="top no-photo"></div>
       <div class="bottom">
-        <div class="club-name"><span class="value"></span></div>
-        <span class="event-attendance"><span class="value"></span> People</span>
-        <span class="club-country"><i class="icon-map-marker"></i><span class="value"></span></span>
+        <div class="speaker-name"><span class="value"></span></div>
+        <div class="joined-date"><span class="value"></span></div>
+        <span class="speaker-country"><i class="icon-map-marker"></i><span class="value"></span></span>
       </div>
     </div>
 
