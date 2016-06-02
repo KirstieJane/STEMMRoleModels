@@ -1,0 +1,195 @@
+<html>
+  <head>
+    <link rel="stylesheet/less" href="style.less" type="text/css">
+    <link rel="stylesheet/less" href="narrow.less" type="text/css">
+    <link rel="stylesheet" href="http://flukeout.github.io/mozmaker-icon-font/cdn/mozmaker-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" sizes="196x196" href="https://mozilla.org/media/img/favicon/favicon-196x196.png">
+    <title>STEMM Role Models</title>
+
+    <script src="js/hammer.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/config.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      less = {
+        env: "development",
+        async: false,
+        fileAsync: false,
+        poll: 1000,
+        functions: {},
+        dumpLineNumbers: "comments",
+        relativeUrls: false,
+        rootpath: ":/a.com/"
+      };
+    </script>
+    <script src="less.js"></script>
+    <meta name="viewport" content="width=380, user-scalable=no">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="inner-wrapper">
+        <h1>STEMM Role Models</h1>
+        <a class="button" title="Add a role model" href="http://goo.gl/forms/wDc7b8AqI3">+ Add Role Model</a>
+      </div>
+    </header>
+
+    <div class="throbber">
+      <h2>Loading members...</h2>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+
+    <div class="month">
+
+      <section class="month-header">
+        <h1>
+          <span class="event-count"></span> Members
+          <span class="participants"><span class="participant-count"></span> People</span>
+          <span class="countries"><span class="country-count"></span> </span>
+        </h1>
+
+        <span class="filter-events-wrapper">
+          <span class="fa fa-search"></span>
+          <input class="filter-events" placeholder="Search event details or location"/>
+          <a class="clear-search" href="#">
+            <img src="images/x-black.svg"/>
+          </a>
+        </span>
+      </section>
+
+      <div class="no-results">
+        <p>
+          <strong>Dang, no matches!</strong>
+          <br>Watch this car dance instead...
+        </p>
+        <p class="fa fa-car"></p>
+      </div>
+
+      <div class="no-events">
+        <p>
+          <strong>Dang, no event reports have been added yet!</strong>
+        </p>
+      </div>
+
+      <div class="events">
+        <!-- event cards will be added here -->
+      </div>
+    </div>
+
+    <div class="error-connecting">
+      <h2>Dang, we couldn't get the reports!</h2>
+      <p>Please refresh the page the page to try again.
+    </div>
+
+    <div class="event-popup-wrapper">
+
+      <div class="event-nav previous">
+        <img src="images/chevron.svg"/>
+      </div>
+      <div class="event-nav next">
+        <img src="images/chevron.svg"/>
+      </div>
+      <div class="close-pop">
+        <img src="images/x-white.svg"/>
+        <div class="key-label">ESC</div>
+      </div>
+
+      <div class="large-photo">
+        <div class="photo"></div>
+      </div>
+
+      <div class="event-popup">
+        <div class="event-data">
+          <span class="event-date"><span class="value">March 16, 2016</span></span>
+
+          <h1>
+            Event at <span class="club-name"><span class="value">Mozilla Rio Club</span></span>
+          </h1>
+
+          <div class="left-col">
+            <h2 id="description">Description</h2>
+            <div heading="description" class="event-description">
+              <span class="value"></span>
+              <div class='expand'>
+                <a href="#">
+                  Read More <i class="fa fa-angle-down"></i>
+                </a>
+              </div>
+            </div>
+
+            <h2 id="event-links-curriculum">Curriculum Used</h2>
+            <p class="event-links-curriculum" heading="event-links-curriculum">
+              <span class="value"></span>
+            </p>
+
+            <h2 id="event-skills">Web Literacy Concepts Covered</h2>
+            <p class="event-skills" heading="event-skills">
+              <span class="value"></span>
+            </p>
+
+            <h2 heading="event-creations">Event Creations</h2>
+            <p heading="event-creations" class="event-creations"><span class="value"></span></li>
+
+            <h2 heading="event-links">Event Links</h2>
+            <ul>
+              <li heading="event-links" class="event-links-photos">Photos - <span class="value"></span></li>
+              <li heading="event-links" class="event-links-video">Videos - <span class="value"></span></li>
+              <li heading="event-links" class="event-links-blogpost">Blog Post - <span class="value"></span></li>
+            </ul>
+
+            <h2 id="feedback-attendees">Feedback from attendees</h2>
+            <p heading="feedback-attendees" class="event-feedback-attendees"><span class="value"></span></p>
+          </div>
+
+          <div class="right-col">
+
+            <h2 id="event-attendance">Attendance</h2>
+            <p heading="event-attendance" class="event-attendance">
+              <span class="value">12</span> people showed up!
+            </p>
+
+            <div class="event-photo">
+              <img src=""/>
+            </div>
+
+            <h2 id="club-location">Club Location</h2>
+            <p>
+              <span heading="club-location" class="event-city"><span class="value"></span></span><br/>
+              <span heading="club-location" class="club-country"><span class="value"></span></span>
+            </p>
+
+            <h2 id="club-organizer">Club Organizer</h2>
+            <div class="info-grop">
+              <div heading="club-organizer" class="club-organizer">
+                <span class="value"></span>
+              </div>
+              <div heading="club-organizer" class="club-contact-details">
+                <span class="value"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="event-card template">
+      <div class="top no-photo">
+        <div class="event-date"><span class="value"></span></div>
+      </div>
+      <div class="bottom">
+        <div class="club-name"><span class="value"></span></div>
+        <span class="event-attendance"><span class="value"></span> People</span>
+        <span class="club-country"><i class="icon-map-marker"></i><span class="value"></span></span>
+      </div>
+    </div>
+
+  </body>
+</html>
