@@ -23,6 +23,7 @@ var dataKeys = {
   "Links to Professional Pages (Optional)" : "speaker-links-prof",
   "Links to Data/Code (Optional)" : "speaker-links-code",
   "Links to Social Media (Optional)" : "speaker-links-social",
+  "Characteristics" : 'speaker-characteristics',
   "Feedback from Attendees" : "attendee-feedback",
   "Your Recommendation" : "rec-feedback"
 }
