@@ -200,7 +200,7 @@ function showPop(id){
         if(pop.find("." + j).length > 0){
           var value = item[j];
 
-          if(j == "event-date"){
+          if(j == "joined-date"){
             if(value == ""){
               value = item["event-timestamp"];
             }
@@ -316,8 +316,8 @@ function formatDate(dateString) {
 // Sorts event report objects by date
 
 function dateSort(a,b){
-  var dateA = new Date(a["event-date"]);
-  var dateB = new Date(b["event-date"]);
+  var dateA = new Date(a["joined-date"]);
+  var dateB = new Date(b["joined-date"]);
   if(dateA > dateB) {
     return -1;
   } else {
@@ -442,8 +442,8 @@ function cleanupData(){
         newItem[newKey] = item[k];
       }
 
-      if(newItem["event-date"] == "") {
-        newItem["event-date"] = newItem["event-timestamp"];
+      if(newItem["joined-date"] == "") {
+        newItem["joined-date"] = newItem["event-timestamp"];
       }
 
       newItem.id = i + 2;
@@ -526,7 +526,7 @@ function populateElement(el, item){
   for(var j in item){
     if(el.find("." + j).length > 0){
       var value = item[j];
-      if(j == "event-date"){
+      if(j == "joined-date"){
         if(value == ""){
           value = item["event-timestamp"];
         }

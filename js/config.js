@@ -6,11 +6,11 @@ var sheetURL = "https://spreadsheets.google.com/feeds/cells/"+sheetID+"/od6/publ
 var dataKeys = {
   "Status" : "report-status", // Must be set to 'Approved'
   "Timestamp" : "event-timestamp",
-  "Date of Event" : "event-date", // Shown in main listing
+  "Joined On" : "joined-date", // Shown in main listing
   "Your Name" : "club-organizer",
   "Your Twitter Handle (Optional)" : "club-contact-details",
   "Speaker Name" : "speaker-name", // Shown in main listing
-  "Club Link" : "club-link",
+  "Speake Email" : "speaker-email",
   "City" : "speaker-city",
   "Country" : "speaker-country", // Shown in main listing
   "Event Location" : "event-location",
