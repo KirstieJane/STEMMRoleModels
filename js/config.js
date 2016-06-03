@@ -15,7 +15,6 @@ var dataKeys = {
   "Country" : "speaker-country", // Shown in main listing
   "Event Location" : "event-location",
   "Number of Lectures" : "n-lectures", // Shown in main listing
-  "Description" : "speaker-description",
   "Cover Photo" : "speaker-photo",
   "Subspecialty" : "event-creations",
   "Specialty" : "speaker-specialty",
