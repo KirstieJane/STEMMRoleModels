@@ -83,7 +83,7 @@ $(document).ready(function(){
     showPop(id);
   });
 
-  $("body").on("click",".event-popup .event-photo img",function(e){
+  $("body").on("click",".event-popup .speaker-photo img",function(e){
     $(".event-popup-wrapper .large-photo").show();
     e.stopPropagation();
   });
@@ -107,7 +107,7 @@ $(document).ready(function(){
   });
 
   $("body").on("click",".event-popup-wrapper .expand a",function(e){
-    $(this).closest(".event-description").removeClass("long");
+    $(this).closest(".speaker-description").removeClass("long");
     return false;
   });
 
@@ -194,32 +194,32 @@ function showPop(id){
 
       pop.find(".value").addClass("not-specified").text("Not filled in");
       pop.find(".value").parent().addClass("not-specified");
-      pop.find(".event-photo").hide();
+      pop.find(".speaker-photo").hide();
 
       for(var j in item){
         if(pop.find("." + j).length > 0){
           var value = item[j];
 
-          if(j == "event-date"){
+          if(j == "joined-date"){
             if(value == ""){
               value = item["event-timestamp"];
             }
             value = formatDate(value);
           }
 
-          if(j == "event-photo") {
+          if(j == "speaker-photo") {
             if(value) {
-              pop.find(".event-photo").show();
-              pop.find(".event-photo img").attr("src",value);
+              pop.find(".speaker-photo").show();
+              pop.find(".speaker-photo img").attr("src",value);
               pop.find(".large-photo .photo").css("background-image","url(" + value + ")");
             }
           }
 
-          if(j == "event-attendance"){
+          if(j == "n-lectures"){
             value = numberWithCommas(value);
           }
 
-          if(j == "club-contact-details"){
+          if(j == "rec-twitter"){
             if(value.length > 0) {
               value = value.replace("@","");
               value = "https://twitter.com/" + value;
@@ -258,7 +258,7 @@ function showPop(id){
 
             valueEl.html(valueEl.html() + append + " ");
           }
-          if(j == "event-description"){
+          if(j == "speaker-description"){
             var descriptionHeight = valueEl.parent().height();
             if(descriptionHeight > 150) {
               valueEl.parent().addClass("long");
@@ -316,8 +316,8 @@ function formatDate(dateString) {
 // Sorts event report objects by date
 
 function dateSort(a,b){
-  var dateA = new Date(a["event-date"]);
-  var dateB = new Date(b["event-date"]);
+  var dateA = new Date(a["joined-date"]);
+  var dateB = new Date(b["joined-date"]);
   if(dateA > dateB) {
     return -1;
   } else {
@@ -340,11 +340,11 @@ function updateCounts(){
   for(var k in data){
     var item = data[k];
     if(item.visible) {
-      var attendance = parseInt(item["event-attendance"]);
+      var attendance = parseInt(item["n-lectures"]);
       if(!isNaN(attendance)){
         participants = participants + attendance;
       }
-      var country = item["club-country"];
+      var country = item["speaker-country"];
       if(country != "" && countries.indexOf(country) < 0) {
         countries.push(country);
       }
@@ -382,7 +382,7 @@ function displayEvents(){
 
 
     var hasMedia = false;
-    var mediaTypes = ["event-creations","event-links-photos","event-links-blogpost","event-links-video"];
+    var mediaTypes = ["event-creations","speaker-links-prof","speaker-links-code","speaker-links-social", "speaker-characteristics"];
 
     for(var i = 0; i < mediaTypes.length; i++) {
       var mediaType = mediaTypes[i];
@@ -401,14 +401,14 @@ function displayEvents(){
     for(var j in item){
       var value = item[j];
 
-      if(j == "event-photo") {
+      if(j == "speaker-photo") {
         if(value) {
           itemEl.find(".top").removeClass("no-photo");
           itemEl.find(".top").css("background-image","url("+value+")");
         }
       }
 
-      if(j == "event-attendance"){
+      if(j == "n-lectures"){
         if(!isNaN(parseInt(value))){
           participants = participants + parseInt(value);
         }
@@ -442,8 +442,8 @@ function cleanupData(){
         newItem[newKey] = item[k];
       }
 
-      if(newItem["event-date"] == "") {
-        newItem["event-date"] = newItem["event-timestamp"];
+      if(newItem["joined-date"] == "") {
+        newItem["joined-date"] = newItem["event-timestamp"];
       }
 
       newItem.id = i + 2;
@@ -526,13 +526,13 @@ function populateElement(el, item){
   for(var j in item){
     if(el.find("." + j).length > 0){
       var value = item[j];
-      if(j == "event-date"){
+      if(j == "joined-date"){
         if(value == ""){
           value = item["event-timestamp"];
         }
         value = formatDate(value);
       }
-      if(j == "event-attendance"){
+      if(j == "n-lectures"){
         value = numberWithCommas(value);
       }
       if(value.length == 0){
