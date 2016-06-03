@@ -33,7 +33,7 @@ button {
   background-color: rgb(177, 189, 193);
   bottom: 0;
   color: rgb(82, 134, 137);
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 60px;
 }
