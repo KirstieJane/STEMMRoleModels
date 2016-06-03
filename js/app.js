@@ -106,11 +106,6 @@ $(document).ready(function(){
     e.stopPropagation();
   });
 
-  $("body").on("click",".event-popup-wrapper .expand a",function(e){
-    $(this).closest(".speaker-description").removeClass("long");
-    return false;
-  });
-
   $(window).on("keydown",function(e){
     if(e.keyCode == 37) {
       navigatePopup("previous");
@@ -257,14 +252,6 @@ function showPop(id){
             }
 
             valueEl.html(valueEl.html() + append + " ");
-          }
-          if(j == "speaker-description"){
-            var descriptionHeight = valueEl.parent().height();
-            if(descriptionHeight > 150) {
-              valueEl.parent().addClass("long");
-            } else {
-              valueEl.parent().removeClass("long");
-            }
           }
         }
       }
