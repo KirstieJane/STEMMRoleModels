@@ -29,13 +29,24 @@ button {
 .container {
   padding: 15px 0 0 0;
 }
+
+/* Sticky footer*/
+html, body {
+  height: 100%;
+}
+.page-wrapper {
+  /* equal to footer height */
+  min-height: calc(100% - 60px);
+}
+.footer{
+  height: 60px;
+}
 .footer {
   background-color: rgb(177, 189, 193);
   bottom: 0;
   color: rgb(82, 134, 137);
   position: relative;
   width: 100%;
-  height: 60px;
 }
 .footer a {
   color: rgb(82, 134, 137);
