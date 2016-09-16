@@ -98,6 +98,8 @@ The current list of labels are [here][link_labels] and include:
     From [wikipedia][link_frontenddev_wiki]: front end development, also known as client side development, is the practice of producing HTML, CSS and JavaScript for a website or web application so that a user can see and interact with them directly.
     
     These issues are likely to be asking for help from experts, either in terms of submitting or reviewing code, or simply providing guidance and advice.
+    
+    If you're working on one of these issues you may need to read our [style guide](https://github.com/KirstieJane/STEMMRoleModels/blob/gh-pages/documentation/StyleGuide.md).
 
 <br>
 
