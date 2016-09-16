@@ -12,14 +12,25 @@ This document outlines basic aesthetic guidelines to use for all STEMM Role Mode
 
 There are several different versions of the STEMM Role Models logo used for different purposes. 
 
-* The full logo: [STEMMRoleModels/SchematicDesign/logo_full_160911.png](STEMMRoleModels/SchematicDesign/logo_full_160911.png)
-    The full logo should only be used when there is space for a large image (e.g. website homepage). 
+* The full logo: <img src="https://raw.githubusercontent.com/KirstieJane/STEMMRoleModels/gh-pages/SchematicDesign/logo_full_160911.png" width="300" align="right"/>
 
-* The small square logo: [STEMMRoleModels/SchematicDesign/logos_square_160911.png](STEMMRoleModels/SchematicDesign/logos_square_160911.png)
+    [SchematicDesign/logo_full_160911.png](https://github.com/KirstieJane/STEMMRoleModels/tree/gh-pages/SchematicDesign/logo_full_160911.png)
+
+    The full logo should only be used when there is space for a large image (e.g. website homepage). 
+<br>
+
+* The small square logo: <img src="https://raw.githubusercontent.com/KirstieJane/STEMMRoleModels/gh-pages/SchematicDesign/logo_square_160911.png" width="300" align="right"/>
+    
+    [SchematicDesign/logos_square_160911.png](https://github.com/KirstieJane/STEMMRoleModels/tree/gh-pages/SchematicDesign/logos_square_160911.png)
+    
     These logos should be used for social media and small icons. 
 
-* The banner logo: [STEMMRoleModels/SchematicDesign/logos_banner_160911.png](STEMMRoleModels/SchematicDesign/logos_banner_160911.png)
-    This should be used for banners, such as newsletters or headings at the top of a webpage. The version with the color gradients should only be used when the logo is sufficiently large that the detail will be visible. 
+* The banner logo: <img src="https://raw.githubusercontent.com/KirstieJane/STEMMRoleModels/gh-pages/SchematicDesign/logos_banner_160911.png" width="300" align="right"/>
+
+    [SchematicDesign/logos_banner_160911.png](https://github.com/KirstieJane/STEMMRoleModels/tree/gh-pages/SchematicDesign/logos_banner_160911.png)
+    
+    This should be used for banners, such as newsletters or headings at the top of a webpage. The version with the color gradients should only be used when the logo is sufficiently large that the detail will be visible.
+
 
 ### Colors and usage
 
