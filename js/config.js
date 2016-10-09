@@ -8,7 +8,7 @@ var dataKeys = {
   "Joined On" : "joined-date", // Shown in main listing
   "Recommended By" : "rec-name",
   "Your Twitter Handle (Optional)" : "rec-twitter",
-  "Speaker Name" : "speaker-name", // Shown in main listing
+  "first_name" : "speaker-name", // Shown in main listing
   "Speaker Email" : "speaker-email", // DELETE
   "City" : "city",
   "State" : "state",
