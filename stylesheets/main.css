@@ -1,7 +1,9 @@
 body {
+  font-family: "Gill Sans MT", Calibri, sans-serif;
   background-color: rgb(240, 241, 241);
 }
 button {
+  font-family: "Gill Sans MT", Calibri, sans-serif;
   background-color: rgb(192, 218, 218);
   border: none;
   border-radius: 2px;
@@ -30,6 +32,37 @@ button {
   padding: 15px 0 0 0;
 }
 
+/* Different text styles */
+
+h1 {
+    font-family: "Gill Sans MT", Calibri, sans-serif;
+    color: rgb(82, 134, 137);
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Gill Sans MT", Calibri, sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+h5 {
+    font-family: "Gill Sans MT", Calibri, sans-serif;
+    color: rgb(82, 134, 137);
+    font-weight: bold;
+    font-size: medium;
+    padding-top: 20px;
+}
+
+a {
+    color: rgb(196, 113, 62);
+}
+
+p {
+    font-family: "Gill Sans MT", Calibri, sans-serif;
+    font-size: medium;
+}
+
 /* Sticky footer*/
 html, body {
   height: 100%;
@@ -56,4 +89,20 @@ html, body {
 }
 .footer a:hover {
   text-decoration: none;
+}
+
+/* Responsive google forms */
+.form-container {
+    position: relative;
+    padding-bottom: 62.5%;
+    height: 0;
+    overflow: hidden;
+}
+
+.form-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
