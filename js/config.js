@@ -26,6 +26,8 @@ var dataKeys = {
   "data_code_websites" : "speaker-links-code",
   "social_websites" : "speaker-links-social",
   "role_models" : 'role_models',
-  "Feedback from Attendees" : "attendee-feedback",
-  "Your Recommendation" : "rec-feedback"
+  "testimonial_1" : 'testimonial-1',
+  "testimonial_2" : 'testimonial-2',
+  "testimonial_3" : 'testimonial-3',
+//  "Feedback from Attendees" : "attendee-feedback",
 }

@@ -1,6 +1,6 @@
 # STEMM Role Model Recommendation Acceptance Survey
 
-These are the questions included in the google form that collects information for the database: https://goo.gl/forms/rvA9nKv32vQvjknh1
+These are the questions included in the google form that collects information for the database: https://goo.gl/forms/IS8fKq3ueDfGvoD03.
 
 ## Introduction
 
@@ -26,8 +26,9 @@ Remember that you can skip any you don't want to answer.
 * What is your title? (Prof, Dr, Ms, etc)
 * What is your job title?
 * Where do you work?
-* In which city do you live?
-* In which country do you live?
+* In which city do you work?
+* In which state do you work?
+* In which country do you work?
 * Please include a link to a photograph of you
 
 ## Section 2: Your expertise
@@ -66,7 +67,7 @@ Would you like to be publicly identified as:
 * Someone with caring responsibilities (for example for children or elderly parents)
 * Someone who has taken a non-traditional career path
 * Someone for whom English is not a first language
-* Other: 
+* Other:
 
 ## Section 5: Approval
 

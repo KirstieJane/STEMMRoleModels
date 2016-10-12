@@ -2,13 +2,13 @@
 
 ## Recommend someone
 
-You can complete [this google form](https://goo.gl/forms/wkLVdTvg758u61yR2) to recommend someone is added to the database.
+You can complete [this google form](https://goo.gl/forms/TJKv7W6oTGdQJGEu2) to recommend someone is added to the database.
 
 On receiving the information we email them the...
 
 ## Acceptance survey
 
-This is a [google form](https://goo.gl/forms/rvA9nKv32vQvjknh1) that collects information for the database.
+This is a [google form](https://goo.gl/forms/IS8fKq3ueDfGvoD03) that collects information for the database.
 
 You can see the questions in the [recommendation_acceptance_survey.md](https://github.com/KirstieJane/STEMMRoleModels/blob/gh-pages/documentation/recommendation_acceptance_survey.md) in the [documentation folder](https://github.com/KirstieJane/STEMMRoleModels/tree/gh-pages/documentation) of this repository.
 

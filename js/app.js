@@ -207,6 +207,7 @@ function showPop(id){
               pop.find(".speaker-photo").show();
               pop.find(".speaker-photo img").attr("src",value);
               pop.find(".large-photo .photo").css("background-image","url(" + value + ")");
+              pop.find(".large-photo .photo").css("width","200px");
             }
           }
 
