@@ -331,7 +331,7 @@ function updateCounts(){
       if(!isNaN(attendance)){
         participants = participants + attendance;
       }
-      var country = item["speaker-country"];
+      var country = item["country"];
       if(country != "" && countries.indexOf(country) < 0) {
         countries.push(country);
       }
