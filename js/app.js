@@ -314,14 +314,14 @@ function dateSort(a,b){
 
 // Counts & updates the number of...
 // * Countries
-// * Events
+// * Role Models
 // * Participants
 // ...for all visible events.
 
 function updateCounts(){
 
   var participants = 0;
-  var eventCount = 0;
+  var rolemodelCount = 0;
   var countries = [];
 
   for(var k in data){
@@ -335,13 +335,13 @@ function updateCounts(){
       if(country != "" && countries.indexOf(country) < 0) {
         countries.push(country);
       }
-      eventCount++;
+      rolemodelCount++;
     }
   }
 
   $(".country-count").text(numberWithCommas(countries.length));
   $(".participant-count").text(numberWithCommas(participants));
-  $(".event-count").text(eventCount);
+  $(".rolemodel-count").text(rolemodelCount);
 }
 
 // For each event report that is loaded, this adds a little event card to the page

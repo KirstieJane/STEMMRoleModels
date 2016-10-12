@@ -4,9 +4,14 @@
     <link rel="stylesheet/less" href="../stylesheets/narrow.less" type="text/css">
     <link rel="stylesheet" href="http://flukeout.github.io/mozmaker-icon-font/cdn/mozmaker-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="../stylesheets/bootstrap.css" />
+    <link rel="stylesheet" href="../stylesheets/main.css">
+
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
-  <!--  <link rel="icon" type="image/png" sizes="196x196" href="https://mozilla.org/media/img/favicon/favicon-196x196.png"> -->
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/KirstieJane/STEMMRoleModels/gh-pages/images/stemm.ico" />
+
     <title>STEMM Role Models</title>
 
     <script src="../js/hammer.js" type="text/javascript" charset="utf-8"></script>
@@ -32,28 +37,67 @@
   <body>
 
     <header>
-      <div class="inner-wrapper">
-        <h1>STEMM Speaker Recommendations</h1>
-        <a class="button" title="Add a new event report" href="http://goo.gl/forms/Hq0MpE4tC6VO8CmX2">+ Recommend Someone!</a>
-      </div>
+        <div class="header">
+          <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="js-navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="new_homepage.html">Home</a></li>
+                  <li><a href="search_database.html">Search</a></li>
+                  <li><a href="add.html">Add</a></li>
+                  <li><a href="write.html">Write</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
     </header>
 
-    <div class="throbber">
-      <h2>Loading reports...</h2>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>STEMM Role Models database</h1>
+
+      </div>
     </div>
+  </div>
+
+  <div class="throbber">
+    <h2>Loading reports...</h2>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
 
     <div class="month">
 
+      <!-- Start a section that will contain the "month" information, which hasn't yet been
+      renamed from the original fork, but in our case contains the header information for
+      the database. -->
       <section class="month-header">
         <h1>
-          <span class="event-count"></span> Speakers have given
-          <span class="participants"><span class="participant-count"></span> Talks from </span>
-          <span class="countries"><span class="country-count"></span> Countries </span>
+          <!-- Format the top row that reports how many role models we have in
+               how many countries  -->
+          <span class="rolemodel-count"></span> role models from
+          <!-- <span class="participants"><span class="participant-count"></span> talks from </span> -->
+
+          <!-- The countries class turns the font grey -->
+          <span class="countries"><span class="country-count"></span> countries </span>
         </h1>
 
+       <!-- Add in the search bar! -->
         <span class="filter-events-wrapper">
           <span class="fa fa-search"></span>
           <input class="filter-events" placeholder="Search role model keywords or location"/>
@@ -63,6 +107,7 @@
         </span>
       </section>
 
+      <!-- Add a little place holder if there are no results -->
       <div class="no-results">
         <p>
           <strong>Dang, no matches!</strong>
@@ -71,6 +116,7 @@
         <p class="fa fa-car"></p>
       </div>
 
+      <!-- Add a little place holder if the database is empty! -->
       <div class="no-events">
         <p>
           <strong>Dang, no speakers have been added yet!</strong>
@@ -82,11 +128,14 @@
       </div>
     </div>
 
+    <!-- Add a little report if there is an error retrieving the role model entries -->
     <div class="error-connecting">
-      <h2>Dang, we couldn't get the reports!</h2>
+      <h2>Dang, we couldn't get the role model details!</h2>
       <p>Please refresh the page the page to try again.
     </div>
 
+    <!-- This section is for when you've clicked on a role model and are looking at
+    their information in more detail. -->
     <div class="event-popup-wrapper">
 
       <div class="event-nav previous">

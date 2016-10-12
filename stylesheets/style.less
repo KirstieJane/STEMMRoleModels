@@ -30,36 +30,40 @@ body, html {
   }
 }
 
-header {
-  background: #2b488e;
-  color: white;
-  padding: 0 20px;
+// COMMENTED OUT BY KIRSTIE ON 12th OCTOBER
+// header {
+//   background: #2b488e;
+//   color: white;
+//   padding: 0 20px;
+//
+//   .button {
+//     float: right;
+//     position: relative;
+//     top: 3px;
+//   }
+//
+//   .inner-wrapper {
+//     max-width: 1024;
+//     margin: 0 auto;
+//     padding: 15px 10px;
+//   }
+//
+//   h1 {
+//     margin: 0;
+//     padding: 0;
+//     font-weight: 400;
+//     color: rgba(255,255,255,.9);
+//     font-size: 32px;
+//     position: relative;
+//     top: 2px;
+//     display: inline-block;
+//   }
+// }
 
-  .button {
-    float: right;
-    position: relative;
-    top: 3px;
-  }
-
-  .inner-wrapper {
-    max-width: 1024;
-    margin: 0 auto;
-    padding: 15px 10px;
-  }
-
-  h1 {
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-    color: rgba(255,255,255,.9);
-    font-size: 32px;
-    position: relative;
-    top: 2px;
-    display: inline-block;
-  }
-}
-
-
+// =============================================================================
+// MONTH formatting
+// The ".month" part of the code is the banner at the top of the page
+// that shows how many talks the n speakers have given
 .month {
   display: none;
   padding: 30px;
@@ -85,9 +89,11 @@ header {
   .filter-events-wrapper {
     display: inline-block;
     float: right;
-    width: 300px;
+    width: 350px;
     position: relative;
 
+    // .fa-search is the search symbol
+    // (looks like a magnifying glass)
     .fa-search {
       color: rgba(0,0,0,.4);
       margin-right: 5px;
@@ -114,7 +120,7 @@ header {
   }
 
   .filter-events {
-    width: 250px;
+    width: 265px;
     box-sizing: border-box;
     padding: 3px 0 0 0;
     font-family: inherit;
@@ -149,6 +155,11 @@ header {
     }
   }
 }
+
+// End month formatting
+// =============================================================================
+
+
 
 .loading {
   text-align: center;
