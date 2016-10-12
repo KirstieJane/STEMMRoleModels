@@ -175,6 +175,8 @@ body, html {
   margin: 0 -10px;
 }
 
+// ============================================================================
+// Set the styles for the cards you see on the main database page
 .event-card {
   flex: 1;
   cursor: pointer;
@@ -192,6 +194,8 @@ body, html {
   transition: all .15s ease-out;
   position: relative;
 
+  // Styles for the top part of the card, which is a picture of the role model
+  // or blue if no picture is available.
   .top {
     background-color: #587dd6;
     height: 80px;
@@ -208,27 +212,28 @@ body, html {
       background-size: 80%;
     }
 
-    .event-date {
-      position: absolute;
-      padding: 5px 7px 2px 7px;
-      color: white;
-      bottom: -11px;
-      font-size: 13px;
-      background: rgba(23,50,114,1);
-      padding: 5px 9px 2px 9px;
-      background: #3f5ea9;
-      text-transform: uppercase;
-    }
-
-    .club-name {
-      bottom: 2px;
-      left: 7px;
-      margin-bottom: 3px !important;
-    }
-
-    .event-date {
-      right: 10px;
-    }
+    // Commented out by Kirstie on 12th October because I don't think we need it
+    // .event-date {
+    //   position: absolute;
+    //   padding: 5px 7px 2px 7px;
+    //   color: white;
+    //   bottom: -11px;
+    //   font-size: 13px;
+    //   background: rgba(23,50,114,1);
+    //   padding: 5px 9px 2px 9px;
+    //   background: #3f5ea9;
+    //   text-transform: uppercase;
+    // }
+    //
+    // .club-name {
+    //   bottom: 2px;
+    //   left: 7px;
+    //   margin-bottom: 3px !important;
+    // }
+    //
+    // .event-date {
+    //   right: 10px;
+    // }
   }
 
   .bottom {
@@ -295,6 +300,8 @@ body, html {
     display: none;
   }
 }
+// ============================================================================
+
 
 .throbber {
   position: absolute;
@@ -351,6 +358,9 @@ body, html {
   }
 }
 
+// =============================================================================
+// Format the role model detailed information that pops up when you click
+// on their name
 .event-popup-wrapper {
   position: fixed;
   top: 0;
@@ -478,6 +488,7 @@ body, html {
     }
   }
 
+  // Styles for the large photo of the role model in their detailed pop up
   .large-photo {
     display: none;
     width: 100%;
@@ -510,6 +521,7 @@ body, html {
 
   }
 
+  // These are the styles for the detailed role model information popup
   .event-popup {
     background: white;
     width: 70%;
@@ -520,17 +532,17 @@ body, html {
     overflow-y: scroll;
     position: relative;
 
-
-    &:after {
-      content: "";
-      background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-      height: 100px;
-      position: absolute;
-      width: 100%;
-      bottom: 0px;
-      left: 0;
-      z-index: 2;
-    }
+    // Commented out by Kirstie on 12th October - I think this fixes issue #78
+    // &:after {
+    //   content: "";
+    //   background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    //   height: 100px;
+    //   position: absolute;
+    //   width: 100%;
+    //   bottom: 0px;
+    //   left: 0;
+    //   z-index: 2;
+    // }
 
   }
 
@@ -605,16 +617,17 @@ body, html {
         overflow: hidden;
       }
 
-      &:after {
-        content: "";
-        background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-        height: 100px;
-        position: absolute;
-        width: 100%;
-        bottom: 35px;
-        left: 0;
-        z-index: 2;
-      }
+    // Commented out on 12th October by Kirstie...I think this fixes issue #78
+    //   &:after {
+    //     content: "";
+    //     background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    //     height: 100px;
+    //     position: absolute;
+    //     width: 100%;
+    //     bottom: 35px;
+    //     left: 0;
+    //     z-index: 2;
+    //  }
 
       .expand {
         display: block;

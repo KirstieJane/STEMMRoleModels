@@ -18,13 +18,13 @@ var dataKeys = {
   "country" : "country", // Shown in main listing
   "Event Location" : "event-location",
   "Number of Lectures" : "n-lectures", // Shown in main listing
-  "Cover Photo" : "speaker-photo",
+  "picture_link" : "speaker-photo",
   "research_area" : "research_area",
   "sub_specialities" : "subspecialities",
-  "Links to Previous Talks (Optional)" : "speaker-links-lectures",
-  "Links to Professional Pages (Optional)" : "speaker-links-prof",
-  "Links to Data/Code (Optional)" : "speaker-links-code",
-  "Links to Social Media (Optional)" : "speaker-links-social",
+  "video_links" : "speaker-links-lectures",
+  "professional_websites" : "speaker-links-prof",
+  "data_code_websites" : "speaker-links-code",
+  "social_websites" : "speaker-links-social",
   "role_models" : 'role_models',
   "Feedback from Attendees" : "attendee-feedback",
   "Your Recommendation" : "rec-feedback"

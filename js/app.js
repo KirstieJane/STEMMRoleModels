@@ -185,7 +185,7 @@ function showPop(id){
       found = true;
       pop.show();
 
-      history.replaceState({}, "Mozilla Clubs Event Report " + item.id, "?event=" + item.id);
+      history.replaceState({}, "Mozilla Clubs Event Report " + item.id, "?rolemodel=" + item.id);
 
       pop.find(".value").addClass("not-specified").text("Not filled in");
       pop.find(".value").parent().addClass("not-specified");
@@ -388,6 +388,9 @@ function displayEvents(){
     for(var j in item){
       var value = item[j];
 
+      // When you get to the speaker-photo item, if there is infact a URL for the
+      // speaker then get rid of the "no-photo" class and add in the URL as the
+      // background image for the "".top" class
       if(j == "speaker-photo") {
         if(value) {
           itemEl.find(".top").removeClass("no-photo");

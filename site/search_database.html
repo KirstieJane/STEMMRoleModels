@@ -167,49 +167,59 @@
     <div class="event-popup">
       <div class="event-data">
         <!-- Show when the role model joined the database -->
-        <span class="joined-date"><span class="value"></span></span>
+        Added to database on <span class="joined-date"><span class="value"></span></span>
         <h1>
           <span class="rolemodel-firstname"> <span class="value"></span></span>
           <span class="rolemodel-lastname"> <span class="value"></span></span>
         </h1>
 
+        <!-- =============================================================== -->
+        <!-- Set up the left hand column of the information -->
         <div class="left-col">
 
-            <h2 id="research_area">Research Area</h2>
+            <!-- Speciality -->
+            <h2 id="research_area">Speciality</h2>
             <p class="research_area" heading="research_area">
               <span class="value"></span>
             </p>
 
+            <!-- Subspecialities -->
             <h2 heading="subspecialities">Subspecialities</h2>
             <p heading="subspecialities" class="subspecialities"><span class="value"></span></li>
 
+            <!-- Role model group -->
             <h2 heading="role_models">Role model group</h2>
             <p heading="role_models" class="role_models"><span class="value"></span></li>
 
+            <!-- Links to more information -->
             <h2 heading="event-links">Links</h2>
             <ul>
               <li heading="event-links" class="speaker-links-prof">Professional pages: <span class="value"></span></li>
-              <li heading="event-links" class="speaker-links-social">Code and data: <span class="value"></span></li>
-              <li heading="event-links" class="speaker-links-code">Social media: <span class="value"></span></li>
+              <li heading="event-links" class="speaker-links-code">Code and data: <span class="value"></span></li>
+              <li heading="event-links" class="speaker-links-social">Social media: <span class="value"></span></li>
             </ul>
 
-            <h2 id="speaker-links-lectures">Previous talks</h2>
-            <p class="speaker-links-lectures" heading="speaker-links-lectures">
-              <span class="value"></span>
-            </p>
+            <!-- Links to videos of previous talks -->
+            <h2 id="speaker-links-lectures">Videos of previous presentations</h2>
+            <ul>
+              <li heading="speaker-links-lectures" class="speaker-links-lectures"><span class="value"></span></li>
+            </ul>
 
+            <!-- Testimonials -->
             <h2 id="feedback-attendees">Testimonials</h2>
             <p heading="feedback-attendees" class="attendee-feedback"><span class="value"></span></p>
-          </div>
+        </div> <!-- Thus ends the left hand column -->
 
-          <div class="right-col">
+        <!-- =============================================================== -->
+        <div class="right-col">
 
-            <h2 id="n-lectures">Invited presentations</h2>
+
+            <!-- <h2 id="n-lectures">Invited presentations</h2>
             <p heading="n-lectures" class="n-lectures">
               <span class="value">12</span> talks given!
-            </p>
+            </p> -->
 
-            <div class="speaker-photo">
+            <div class="speaker-photo" style="width: 200px">
               <img src=""/>
             </div>
 
@@ -239,25 +249,30 @@
 
     </div>
 
-<!-- ======================================================================= -->
-    <!-- This is the information that will be shown on the main database page
-          (so not the detailed role model information) that you get when you
-          click on the card, but the information you see in order to make the
-          decision to click! -->
-    <div class="event-card template">
-      <div class="top no-photo"></div>
-      <div class="bottom">
-        <div><span class="rolemodel-title"><span class="value"></span></span>
+  <!-- ===================================================================== -->
+  <!-- This is the information that will be shown on the main database page
+       (so not the detailed role model information) that you get when you
+       click on the card, but the information you see in order to make the
+       decision to click! -->
+  <div class="event-card template">
+    <!-- Put a picture at the top of the card -->
+    <div class="top no-photo"></div>
+
+    <!-- And fill in the role model's name, speciality and location
+         at the bottom of the card -->
+    <div class="bottom">
+      <div><span class="rolemodel-title"><span class="value"></span></span>
             <span class="rolemodel-firstname"> <span class="value"></span></span>
             <span class="rolemodel-lastname"> <span class="value"></span></span>
-        </div>
-        <div class="research_area"><span class="value"></span></div>
-        <span class="city"><i class="icon-map-marker"></i> <span class="value"></span></span>
-        <span class="state"> <span class="value"></span></span>
-        <span class="country"> <span class="value"></span></span>
-
+      </div>
+      <div class="research_area"><span class="value"></span></div>
+      <div><span class="city"><i class="icon-map-marker"></i> <span class="value"></span></span>
+            <span class="state"> <span class="value"></span></span>
+            <span class="country"> <span class="value"></span></span>
       </div>
     </div>
+  </div>
+  <!-- ===================================================================== -->
 
   </body>
 </html>
