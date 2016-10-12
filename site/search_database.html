@@ -80,96 +80,108 @@
     <div class="dot"></div>
   </div>
 
+  <!-- ===================================================================== -->
+  <div class="month">
 
-    <div class="month">
-
+    <!-- ================================================================= -->
+    <section class="month-header">
       <!-- Start a section that will contain the "month" information, which hasn't yet been
       renamed from the original fork, but in our case contains the header information for
       the database. -->
-      <section class="month-header">
-        <h1>
-          <!-- Format the top row that reports how many role models we have in
+      <h1>
+        <!-- Format the top row that reports how many role models we have in
                how many countries  -->
-          <span class="rolemodel-count"></span> role models from
-          <!-- <span class="participants"><span class="participant-count"></span> talks from </span> -->
-
-          <!-- The countries class turns the font grey -->
+        <span class="rolemodel-count"></span> role models from
+        <!-- The countries class turns the font grey -->
           <span class="countries"><span class="country-count"></span> countries </span>
-        </h1>
+      </h1>
 
-       <!-- Add in the search bar! -->
-        <span class="filter-events-wrapper">
-          <span class="fa fa-search"></span>
-          <input class="filter-events" placeholder="Search role model keywords or location"/>
-          <a class="clear-search" href="#">
-            <img src="images/x-black.svg"/>
-          </a>
-        </span>
-      </section>
+      <!-- Add in the search bar! -->
+      <span class="filter-events-wrapper">
+        <span class="fa fa-search"></span>
+        <input class="filter-events" placeholder="Search role model keywords or location"/>
+        <a class="clear-search" href="#">
+          <img src="images/x-black.svg"/>
+        </a>
+      </span>
 
-      <!-- Add a little place holder if there are no results -->
-      <div class="no-results">
-        <p>
-          <strong>Dang, no matches!</strong>
-          <br>Watch this car dance instead...
-        </p>
-        <p class="fa fa-car"></p>
-      </div>
+    </section> <!-- Thus ends the month header div -->
 
-      <!-- Add a little place holder if the database is empty! -->
-      <div class="no-events">
-        <p>
-          <strong>Dang, no speakers have been added yet!</strong>
-        </p>
-      </div>
+    <!-- =================================================================== -->
+    <!-- Add a little place holder if there are no results -->
+    <div class="no-results">
+      <p>
+        <strong>Dang, no matches!</strong>
+        <br>We'd love for you to <a href=add.html>recommend</a> someone!
+        <br>In the meantime, watch this car dance ;)
+      </p>
+      <p class="fa fa-car"></p>
+    </div>
 
+    <!-- =================================================================== -->
+    <!-- Add a little place holder if the database is empty! -->
+    <div class="no-events">
+      <p>
+        <strong>Dang, no role models have been added yet!</strong>
+      </p>
+    </div>
+
+      <!-- ================================================================= -->
       <div class="events">
         <!-- event cards will be added here -->
       </div>
-    </div>
+    </div> <!-- Thus ends the month div -->
 
-    <!-- Add a little report if there is an error retrieving the role model entries -->
+    <!-- =================================================================== -->
+    <!-- Add a little report if there is an error retrieving the
+         role model entries -->
     <div class="error-connecting">
       <h2>Dang, we couldn't get the role model details!</h2>
       <p>Please refresh the page the page to try again.
     </div>
 
-    <!-- This section is for when you've clicked on a role model and are looking at
-    their information in more detail. -->
+    <!-- =================================================================== -->
+    <!-- This section is for when you've clicked on a role model and are
+         looking at their information in more detail. -->
     <div class="event-popup-wrapper">
 
-      <div class="event-nav previous">
-        <img src="../images/chevron.svg"/>
-      </div>
-      <div class="event-nav next">
-        <img src="../images/chevron.svg"/>
-      </div>
-      <div class="close-pop">
-        <img src="../images/x-white.svg"/>
-        <div class="key-label">ESC</div>
-      </div>
+    <!-- Put little left and right arrows (chevrons) on either side of the role model
+         pop up so you can navigate easily, and include a little x picture so you can
+         exit this view -->
+    <div class="event-nav previous">
+      <img src="../images/chevron.svg"/>
+    </div>
+    <div class="event-nav next">
+      <img src="../images/chevron.svg"/>
+    </div>
+    <div class="close-pop">
+      <img src="../images/x-white.svg"/>
+      <div class="key-label">ESC</div>
+    </div>
 
-      <div class="large-photo">
-        <div class="photo"></div>
-      </div>
+    <!-- Add a photo of the role model -->
+    <div class="large-photo">
+      <div class="photo"></div>
+    </div>
 
-      <div class="event-popup">
-        <div class="event-data">
-          <span class="joined-date"><span class="value">1st March 2016</span></span>
+    <div class="event-popup">
+      <div class="event-data">
+        <!-- Show when the role model joined the database -->
+        <span class="joined-date"><span class="value"></span></span>
+        <h1>
+          <span class="rolemodel-firstname"> <span class="value"></span></span>
+          <span class="rolemodel-lastname"> <span class="value"></span></span>
+        </h1>
 
-          <h1>
-            <span class="speaker-name"><span class="value">Name</span></span>
-          </h1>
+        <div class="left-col">
 
-          <div class="left-col">
-
-            <h2 id="speaker-specialty">Specialty</h2>
-            <p class="speaker-specialty" heading="speaker-specialty">
+            <h2 id="research_area">Research Area</h2>
+            <p class="research_area" heading="research_area">
               <span class="value"></span>
             </p>
 
-            <h2 heading="event-creations">Subspecialties</h2>
-            <p heading="event-creations" class="event-creations"><span class="value"></span></li>
+            <h2 heading="subspecialities">Subspecialities</h2>
+            <p heading="subspecialities" class="subspecialities"><span class="value"></span></li>
 
             <h2 heading="role_models">Role model group</h2>
             <p heading="role_models" class="role_models"><span class="value"></span></li>
@@ -201,10 +213,10 @@
               <img src=""/>
             </div>
 
-            <h2 id="club-location">Speaker Location</h2>
+            <h2 id="club-location">Location</h2>
             <p>
-              <span heading="club-location" class="speaker-city"><span class="value"></span></span><br/>
-              <span heading="club-location" class="speaker-country"><span class="value"></span></span>
+              <span heading="club-location" class="city"><span class="value"></span></span><br/>
+              <span heading="club-location" class="country"><span class="value"></span></span>
             </p>
 
             <h2 id="rec-name">Recommended By</h2>
@@ -227,12 +239,23 @@
 
     </div>
 
+<!-- ======================================================================= -->
+    <!-- This is the information that will be shown on the main database page
+          (so not the detailed role model information) that you get when you
+          click on the card, but the information you see in order to make the
+          decision to click! -->
     <div class="event-card template">
       <div class="top no-photo"></div>
       <div class="bottom">
-        <div class="speaker-name"><span class="value"></span></div>
-        <div class="joined-date"><span class="value"></span></div>
-        <span class="speaker-country"><i class="icon-map-marker"></i><span class="value"></span></span>
+        <div><span class="rolemodel-title"><span class="value"></span></span>
+            <span class="rolemodel-firstname"> <span class="value"></span></span>
+            <span class="rolemodel-lastname"> <span class="value"></span></span>
+        </div>
+        <div class="research_area"><span class="value"></span></div>
+        <span class="city"><i class="icon-map-marker"></i> <span class="value"></span></span>
+        <span class="state"> <span class="value"></span></span>
+        <span class="country"> <span class="value"></span></span>
+
       </div>
     </div>
 

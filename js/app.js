@@ -422,7 +422,9 @@ function numberWithCommas(x) {
 function cleanupData(){
   for(var i = 0; i < rawData.length; i++){
     var item = rawData[i];
-    if(item["Status"] == "Approved"){
+
+    // Only include role models who have explicitly approved entering their data
+    if(item["approval"] == "Approved"){
       var newItem = {};
       for(var k in item) {
         var newKey = dataKeys[k];
