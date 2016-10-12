@@ -7,8 +7,9 @@ I'm working through the README of this awesome tool: https://github.com/burnash/
 
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
-
 scope = ['https://spreadsheets.google.com/feeds']
+
+import pandas as pd
 
 # AUTHORISE ACCESS TO THE GOOGLE API
 # Note that this works for Kirstie...if you need access then speak with her :)
@@ -47,11 +48,7 @@ else:
 # STEMMRM_data
 ws_database_data = gc.open_by_key('1x5k30BR1z8nVY8iUqvZa-YiZMVtRbvs71FcWjFDiL28').get_worksheet(0)
 database_data = ws_database_data.get_all_values()
-if len(database_data) > 2:
-    df_database_data = pd.DataFrame(database_data[2:])
-    df_database_data.columns = database_data[1]
-else:
-    df_database_data = pd.DataFrame(columns=database_data[1])
+df_database_data = pd.DataFrame(columns=database_data[0])
 
 
 #===============================================================================
@@ -60,24 +57,27 @@ else:
 
 # Fill in the columns of the df_database_data with the information provided
 # by the role model herself if she approved the addition at the end of the form
-for col in df_rec_acceptance.columns[1:]:
+for col in df_rec_acceptance.columns[:]:
     df_database_data.loc[:, col] = df_rec_acceptance.loc[df_rec_acceptance['approval']=='Approved', col]
 
 # Now fill in the spreadsheet itself
-for i in range(len(df_database_data)):
-    cell_list = ws_database_data.range('A{}:Q{}'.format(2+i, 2+i))
+for i in range(len(df_rec_acceptance)):
+    print i
+    cell_list = ws_database_data.range('A{}:S{}'.format(2+i, 2+i))
     data_list = list(df_database_data.iloc[i, :])
 
+    print cell_list
     for cell, data in zip(cell_list, data_list):
-        cell.value = data
+        print data
+        cell.value = '{}'.format(data)
 
-# Updaaate to google sheets
-ws_database_data.update_cells(cell_list)
+    # Updaaate to google sheets
+    ws_database_data.update_cells(cell_list)
 
 #===============================================================================
 # What do we need to add?
-
-* joined-date
+"""
 * rec-name
 * speaker-name
 *
+"""
