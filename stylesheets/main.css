@@ -32,6 +32,10 @@ button {
   padding: 15px 0 0 0;
 }
 
+.jumbotron {
+    max-width: 80%;
+}
+
 /* Different text styles */
 
 h1 {
