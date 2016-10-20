@@ -1,69 +1,70 @@
 <html>
-  <head>
-    <link rel="stylesheet/less" href="../stylesheets/style.less" type="text/css">
-    <link rel="stylesheet/less" href="../stylesheets/narrow.less" type="text/css">
-    <link rel="stylesheet" href="http://flukeout.github.io/mozmaker-icon-font/cdn/mozmaker-icons.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<head>
+  <link rel="stylesheet/less" href="../stylesheets/style.less" type="text/css">
+  <link rel="stylesheet/less" href="../stylesheets/narrow.less" type="text/css">
+  <link rel="stylesheet" href="http://flukeout.github.io/mozmaker-icon-font/cdn/mozmaker-icons.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 
-    <link rel="stylesheet" href="../stylesheets/bootstrap.css" />
-    <link rel="stylesheet" href="../stylesheets/main.css">
+  <link rel="stylesheet" href="../stylesheets/bootstrap.css" />
+  <link rel="stylesheet" href="../stylesheets/main.css">
 
-    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="../images/stemm.ico" />
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="../images/stemm.ico" />
 
-    <title>STEMM Role Models</title>
+  <title>STEMM Role Models</title>
 
-    <script src="../js/hammer.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../js/config.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../js/app.js" type="text/javascript" charset="utf-8"></script>
-    <script>
-      less = {
-        env: "development",
-        async: false,
-        fileAsync: false,
-        poll: 1000,
-        functions: {},
-        dumpLineNumbers: "comments",
-        relativeUrls: false,
-        rootpath: ":/a.com/"
-      };
-    </script>
-    <script src="../js/less.js"></script>
-    <meta name="viewport" content="width=380, user-scalable=no">
-  </head>
+  <script src="../js/hammer.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/config.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/app.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    less = {
+      env: "development",
+      async: false,
+      fileAsync: false,
+      poll: 1000,
+      functions: {},
+      dumpLineNumbers: "comments",
+      relativeUrls: false,
+      rootpath: ":/a.com/"
+    };
+  </script>
+  <script src="../js/less.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=380, user-scalable=no">
+</head>
 
-  <body>
+<body>
 
-    <header>
-        <div class="header">
-          <div class="navbar navbar-default" role="navigation">
-            <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-              <div class="collapse navbar-collapse" id="js-navbar-collapse">
-                <a class="pull-left" href="../index.html"><img src="../images/logo_banner_noGradient.png" height="60px"></a>
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="search_database.html">Search</a></li>
-                  <li><a href="add.html">Add</a></li>
-                  <li><a href="write.html">Write</a></li>
-                  <li><a href="faq.html">FAQ</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </div>
-            </div>
+  <header>
+    <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+            <a class="pull-left" href="../index.html"><img src="../images/logo_banner_noGradient.png" height="60px"></a>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="search_database.html">Search</a></li>
+              <li><a href="add.html">Add</a></li>
+              <li><a href="write.html">Write</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
           </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
 
   <div class="container">
@@ -92,10 +93,10 @@
       the database. -->
       <h1>
         <!-- Format the top row that reports how many role models we have in
-               how many countries  -->
+        how many countries  -->
         <span class="rolemodel-count"></span> role models from
         <!-- The countries class turns the font grey -->
-          <span class="countries"><span class="country-count"></span> countries </span>
+        <span class="countries"><span class="country-count"></span> countries </span>
       </h1>
 
       <!-- Add in the search bar! -->
@@ -128,96 +129,96 @@
       </p>
     </div>
 
-      <!-- ================================================================= -->
-      <div class="events">
-        <!-- event cards will be added here -->
-      </div>
-    </div> <!-- Thus ends the month div -->
+    <!-- ================================================================= -->
+    <div class="events">
+      <!-- event cards will be added here -->
+    </div>
+  </div> <!-- Thus ends the month div -->
 
-    <!-- =================================================================== -->
+  <!-- =================================================================== -->
     <!-- Add a little report if there is an error retrieving the
-         role model entries -->
+    role model entries -->
     <div class="error-connecting">
       <h2>Dang, we couldn't get the role model details!</h2>
-      <p>Please refresh the page the page to try again.
+      <p>Please refresh the page the page to try again.</p>
     </div>
 
     <!-- =================================================================== -->
     <!-- This section is for when you've clicked on a role model and are
-         looking at their information in more detail. -->
+    looking at their information in more detail. -->
     <div class="event-popup-wrapper">
 
     <!-- Put little left and right arrows (chevrons) on either side of the role model
          pop up so you can navigate easily, and include a little x picture so you can
          exit this view -->
-    <div class="event-nav previous">
-      <img src="../images/chevron.svg"/>
-    </div>
-    <div class="event-nav next">
-      <img src="../images/chevron.svg"/>
-    </div>
-    <div class="close-pop">
-      <img src="../images/x-white.svg"/>
-      <div class="key-label">ESC</div>
-    </div>
+         <div class="event-nav previous">
+          <img src="../images/chevron.svg"/>
+        </div>
+        <div class="event-nav next">
+          <img src="../images/chevron.svg"/>
+        </div>
+        <div class="close-pop">
+          <img src="../images/x-white.svg"/>
+          <div class="key-label">ESC</div>
+        </div>
 
-    <!-- Add a photo of the role model -->
-    <div class="large-photo">
-      <div class="photo"></div>
-    </div>
+        <!-- Add a photo of the role model -->
+        <div class="large-photo">
+          <div class="photo"></div>
+        </div>
 
-    <div class="event-popup">
-      <div class="event-data">
-        <!-- Show when the role model joined the database -->
-        Added to database on <span class="joined-date"><span class="value"></span></span>
-        <h1>
-          <span class="rolemodel-firstname"> <span class="value"></span></span>
-          <span class="rolemodel-lastname"> <span class="value"></span></span>
-        </h1>
+        <div class="event-popup">
+          <div class="event-data">
+            <!-- Show when the role model joined the database -->
+            Added to database on <span class="joined-date"><span class="value"></span></span>
+            <h1>
+              <span class="rolemodel-firstname"> <span class="value"></span></span>
+              <span class="rolemodel-lastname"> <span class="value"></span></span>
+            </h1>
 
-        <!-- =============================================================== -->
-        <!-- Set up the left hand column of the information -->
-        <div class="left-col">
+            <!-- =============================================================== -->
+            <!-- Set up the left hand column of the information -->
+            <div class="left-col">
 
-            <!-- Speciality -->
-            <h2 id="research_area">Speciality</h2>
-            <p class="research_area" heading="research_area">
-              <span class="value"></span>
-            </p>
+              <!-- Speciality -->
+              <h2 id="research_area">Speciality</h2>
+              <p class="research_area" heading="research_area">
+                <span class="value"></span>
+              </p>
 
-            <!-- Subspecialities -->
-            <h2 heading="subspecialities">Subspecialities</h2>
-            <p heading="subspecialities" class="subspecialities"><span class="value"></span></li>
+              <!-- Subspecialities -->
+              <h2 heading="subspecialities">Subspecialities</h2>
+              <p heading="subspecialities" class="subspecialities"><span class="value"></span></p>
 
-            <!-- Role model group -->
-            <h2 heading="role_models">Role model group</h2>
-            <p heading="role_models" class="role_models"><span class="value"></span></li>
+              <!-- Role model group -->
+              <h2 heading="role_models">Role model group</h2>
+              <p heading="role_models" class="role_models"><span class="value"></span></p>
 
-            <!-- Links to more information -->
-            <h2 heading="event-links">Links</h2>
-            <ul>
-              <li heading="event-links" class="speaker-links-prof">Professional pages: <span class="value"></span></li>
-              <li heading="event-links" class="speaker-links-code">Code and data: <span class="value"></span></li>
-              <li heading="event-links" class="speaker-links-social">Social media: <span class="value"></span></li>
-            </ul>
+              <!-- Links to more information -->
+              <h2 heading="event-links">Links</h2>
+              <ul>
+                <li heading="event-links" class="speaker-links-prof">Professional pages: <span class="value"></span></li>
+                <li heading="event-links" class="speaker-links-code">Code and data: <span class="value"></span></li>
+                <li heading="event-links" class="speaker-links-social">Social media: <span class="value"></span></li>
+              </ul>
 
-            <!-- Links to videos of previous talks -->
-            <h2 id="speaker-links-lectures">Videos of previous presentations</h2>
-            <ul>
-              <li heading="speaker-links-lectures" class="speaker-links-lectures"><span class="value"></span></li>
-            </ul>
+              <!-- Links to videos of previous talks -->
+              <h2 id="speaker-links-lectures">Videos of previous presentations</h2>
+              <ul>
+                <li heading="speaker-links-lectures" class="speaker-links-lectures"><span class="value"></span></li>
+              </ul>
 
-            <!-- Testimonials -->
-            <h2 id="testimonial-1">Testimonials</h2>
-            <ul>
-              <li heading="testimonial-1" class="testimonial-1"><span class="value"></span></li>
-              <li heading="testimonial-2" class="testimonial-2"><span class="value"></span></li>
-              <li heading="testimonial-3" class="testimonial-3"><span class="value"></span></li>
-            </ul>
-        </div> <!-- Thus ends the left hand column -->
+              <!-- Testimonials -->
+              <h2 id="testimonial-1">Testimonials</h2>
+              <ul>
+                <li heading="testimonial-1" class="testimonial-1"><span class="value"></span></li>
+                <li heading="testimonial-2" class="testimonial-2"><span class="value"></span></li>
+                <li heading="testimonial-3" class="testimonial-3"><span class="value"></span></li>
+              </ul>
+            </div> <!-- Thus ends the left hand column -->
 
-        <!-- =============================================================== -->
-        <div class="right-col">
+            <!-- =============================================================== -->
+            <div class="right-col">
 
 
             <!-- <h2 id="n-lectures">Invited presentations</h2>
@@ -244,7 +245,7 @@
                 <span class="value"></span>
               </div>
               <div heading="rec-name" class="rec-feedback">
-                  <blockquote><span class="value"></span></blockquote>
+                <blockquote><span class="value"></span></blockquote>
               </div>
             </div>
           </div>
@@ -255,26 +256,26 @@
 
     </div>
 
-  <!-- ===================================================================== -->
-  <!-- This is the information that will be shown on the main database page
+    <!-- ===================================================================== -->
+    <!-- This is the information that will be shown on the main database page
        (so not the detailed role model information) that you get when you
        click on the card, but the information you see in order to make the
        decision to click! -->
-  <div class="event-card template">
-    <!-- Put a picture at the top of the card -->
+    <div class="event-card template">
+      <!-- Put a picture at the top of the card -->
     <div class="top no-photo"></div>
 
     <!-- And fill in the role model's name, speciality and location
-         at the bottom of the card -->
+    at the bottom of the card -->
     <div class="bottom">
       <div><span class="rolemodel-title"><span class="value"></span></span>
-            <span class="rolemodel-firstname"> <span class="value"></span></span>
-            <span class="rolemodel-lastname"> <span class="value"></span></span>
+        <span class="rolemodel-firstname"> <span class="value"></span></span>
+        <span class="rolemodel-lastname"> <span class="value"></span></span>
       </div>
       <div class="research_area"><span class="value"></span></div>
       <div><span class="city"><i class="icon-map-marker"></i> <span class="value"></span></span>
-            <span class="state"> <span class="value"></span></span>
-            <span class="country"> <span class="value"></span></span>
+        <span class="state"> <span class="value"></span></span>
+        <span class="country"> <span class="value"></span></span>
       </div>
     </div>
   </div>
@@ -283,13 +284,13 @@
 
   <div class="panel panel-default">
     <div class="panel-body">
-        <h2>Would you like to help us develop the STEMM Role Models site?</h2>
-          Help with layout, content (text, images) and spelling mistakes all welcome! We'd love to hear your feedback.<br>
-          Please <a href="contact.html">
-            contact us</a> for more information on how to get involved.
+      <h2>Would you like to help us develop the STEMM Role Models site?</h2>
+      Help with layout, content (text, images) and spelling mistakes all welcome! We'd love to hear your feedback.<br>
+      Please <a href="contact.html">
+      contact us</a> for more information on how to get involved.
     </div>
   </div>
 
 
-  </body>
+</body>
 </html>
