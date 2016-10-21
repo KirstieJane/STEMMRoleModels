@@ -118,3 +118,7 @@ html, body {
     padding: 0 0 0 0 ;
     background-color: rgb(209, 211, 212);
 }
+
+.not-specified {
+  display: none;
+}

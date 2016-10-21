@@ -228,7 +228,7 @@ function showPop(id){
           var valueEl = pop.find("." + j + " .value");
           valueEl.html("");
 
-          var words = value.split(" ");
+          var words = value.split(/ |[\r\n]+/);
 
           for(i = 0; i < words.length; i++) {
             var word = words[i];
@@ -243,7 +243,7 @@ function showPop(id){
             }
 
             if(validURL(word)) {
-              append = "<a href='"+word+"'>" + word + "</a>";
+              append = "<a href='"+word+"'>" + word + "<br /></a>";
             } else {
               append = word;
             }
