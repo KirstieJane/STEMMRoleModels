@@ -137,7 +137,8 @@ html, body {
     position: relative;
     padding-bottom: 62.5%;
     height: 0;
-    overflow: hidden;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .form-container iframe {
