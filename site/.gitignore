@@ -1,0 +1,12 @@
+node_modules
+public
+.tmp
+.idea
+.tscache
+client/bower_components
+dist
+/server/config/local.env.js
+npm-debug.log
+coverage
+*.tmp.txt
+.baseDir.ts
