@@ -84,8 +84,8 @@ You can also hang out, ask questions and share stories in the [STEMMRoleModels r
 
 You might be interested in:
 
-* Our applications to the Rosalind Franklin Appathon: [ApplicationMaterials_FirstRound.md](ApplicationMaterials/RFAppathon/ApplicationMaterials_FirstRound.md) and [ApplicationMaterials_SecondRound.md](ApplicationMaterials/RFAppathon/ApplicationMaterials_SecondRound.md)
-* An example profile: [ProfileExample.md](ProfileExample.md)
+* Our applications to the Rosalind Franklin Appathon: [ApplicationMaterials_FirstRound.md](documentation/ApplicationMaterials/RFAppathon/ApplicationMaterials_FirstRound.md) and [ApplicationMaterials_SecondRound.md](documentation/ApplicationMaterials/RFAppathon/ApplicationMaterials_SecondRound.md)
+* An example profile: [ProfileExample.md](documentation/SchematicDesign/ProfileExample.md)
 * Our [Lean Canvas business plan][link_leancanvas]
 
 And of course, you'll want to know our:
