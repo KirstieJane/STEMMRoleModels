@@ -69,7 +69,7 @@ Our primary goal is to support women in STEMM and while the app is aimed at conf
 
 ## Get involved
 
-If you think you can help in any of the areas listed above (and we bet you can) or in any of the many areas that we haven't yet thought of (and here we're *sure* you can) then please check out our [contributors' guidelines](CONTRIBUTING.md) and our [roadmap](../../issues/1).
+If you think you can help in any of the areas listed above (and we bet you can) or in any of the many areas that we haven't yet thought of (and here we're *sure* you can) then please check out our [contributors' guidelines](CONTRIBUTING.md) and our [roadmap](https://github.com/KirstieJane/STEMMRoleModels/issues/1).
 
 Please note that it's very important to us that we maintain a positive and supportive environment for everyone who wants to participate. When you join us we ask that you follow our [code of conduct](CODE_OF_CONDUCT.md) in all interactions both on and offline.
 
@@ -84,14 +84,14 @@ You can also hang out, ask questions and share stories in the [STEMMRoleModels r
 
 You might be interested in:
 
-* Our applications to the Rosalind Franklin Appathon: [ApplicationMaterials_FirstRound.md](ApplicationMaterials/RFAppathon/ApplicationMaterials_FirstRound.md) and [ApplicationMaterials_SecondRound.md](ApplicationMaterials/RFAppathon/ApplicationMaterials_SecondRound.md)
-* An example profile: [ProfileExample.md](ProfileExample.md)
+* Our applications to the Rosalind Franklin Appathon: [ApplicationMaterials_FirstRound.md](documentation/ApplicationMaterials/RFAppathon/ApplicationMaterials_FirstRound.md) and [ApplicationMaterials_SecondRound.md](documentation/ApplicationMaterials/RFAppathon/ApplicationMaterials_SecondRound.md)
+* An example profile: [ProfileExample.md](documentation/SchematicDesign/ProfileExample.md)
 * Our [Lean Canvas business plan][link_leancanvas]
 
 And of course, you'll want to know our:
 
 * [Contributors' guidelines](CONTRIBUTING.md)
-* [Roadmap](../../issues/1)
+* [Roadmap](https://github.com/KirstieJane/STEMMRoleModels/issues/1)
 
 
 ## Thank you
